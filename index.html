@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mory AI Labs | Le Futur Intelligent</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="./assets/css/style.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        /* Lenis Smooth Scroll placeholder */
+        html.lenis {
+            height: auto;
+        }
+
+        .lenis.lenis-smooth {
+            scroll-behavior: auto;
+        }
+
+        .lenis.lenis-smooth [data-lenis-prevent] {
+            oversizer-behavior: contain;
+        }
+
+        .lenis.lenis-stopped {
+            overflow: hidden;
+        }
+
+        .lenis.lenis-scrolling iframe {
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body class="relative">
+
+    <!-- Grain Overlay -->
+    <div class="grain"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-40 px-6 py-6 transition-all duration-300 opacity-0 -translate-y-full" id="navbar">
+        <div
+            class="max-w-screen-2xl mx-auto flex justify-between items-center bg-white/5 backdrop-blur-md rounded-full px-6 py-3 border border-white/10 shadow-lg shadow-black/20">
+            <!-- Left: Time & Location -->
+            <div class="hidden md:flex gap-4 text-sm font-medium opacity-60">
+                <span id="time-display">00:00:00</span>
+                <span>Paris, FR</span>
+            </div>
+
+            <!-- Center: Logo -->
+            <a href="index.html"
+                class="absolute left-1/2 -translate-x-1/2 text-2xl font-bold tracking-tighter text-mory-accent drop-shadow-[0_0_10px_rgba(0,255,148,0.5)]">
+                MORY AI
+            </a>
+
+            <!-- Right: Menu & CTA -->
+            <div class="flex items-center gap-6">
+                <!-- Desktop Links -->
+                <div class="hidden md:flex gap-6 text-sm font-semibold">
+                    <a href="about.html" class="hover:text-mory-accent transition-colors">À Propos</a>
+                    <a href="services.html" class="hover:text-mory-highlight transition-colors">Services</a>
+                </div>
+
+                <a href="contact.html"
+                    class="group flex items-center gap-2 bg-mory-accent text-mory-bg px-5 py-2 rounded-full text-sm font-bold hover:bg-mory-highlight hover:text-white transition-all duration-300 shadow-[0_0_15px_rgba(0,255,148,0.3)] hover:shadow-[0_0_20px_rgba(255,127,63,0.4)]">
+                    <span>Discutons</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main id="smooth-wrapper">
+        <div id="smooth-content">
+
+            <!-- HERO SECTION -->
+            <section class="h-screen flex flex-col justify-center px-6 pt-24 relative overflow-hidden">
+                <div class="max-w-screen-2xl mx-auto w-full">
+                    <div class="text-reveal-container">
+                        <h1 class="text-[5rem] md:text-[8rem] leading-[0.9] text-reveal active">
+                            INTELLIGENCE <br>
+                            <span class="text-mory-accent">AUTOMATISÉE.</span>
+                        </h1>
+                    </div>
+
+                    <div class="mt-12 flex justify-between items-end">
+                        <p class="max-w-md text-lg text-mory-secondary text-reveal-container">
+                            <span class="block text-reveal delay-200 active">
+                                Nous construisons des agents autonomes et l'infrastructure de données pour les
+                                entreprises de demain.
+                            </span>
+                        </p>
+                        <i data-lucide="arrow-down" class="w-12 h-12 animate-bounce opacity-50 text-mory-highlight"></i>
+                    </div>
+                </div>
+
+                <!-- Background Abstract (Image) -->
+                <div class="absolute -z-10 inset-0 hero-parallax opacity-90 mix-blend-normal">
+                    <img src="./assets/images/hero-bg.png" alt="Mory AI Labs Hero" class="w-full h-full object-cover">
+                </div>
+                <!-- Gradient Overlay for readability -->
+                <div class="absolute -z-10 inset-0 bg-gradient-to-b from-mory-bg/60 via-transparent to-mory-bg"></div>
+            </section>
+
+            <!-- MARQUEE -->
+            <section class="py-12 border-y border-white/10 bg-white/5 overflow-hidden backdrop-blur-sm">
+                <div class="flex whitespace-nowrap animate-marquee">
+                    <span class="text-6xl font-black text-transparent stroke-text-white px-8">DATA ENGINEERING • MACHINE
+                        LEARNING • AGENTS IA • AUTOMATISATION • </span>
+                    <span class="text-6xl font-black text-transparent stroke-text-white px-8">DATA ENGINEERING • MACHINE
+                        LEARNING • AGENTS IA • AUTOMATISATION • </span>
+                </div>
+            </section>
+
+            <!-- SELECTED WORKS -->
+            <section class="py-32 px-6">
+                <div class="max-w-screen-2xl mx-auto">
+                    <div class="flex justify-between items-end mb-24 reveal-on-scroll">
+                        <h2 class="text-6xl md:text-8xl font-bold uppercase tracking-tighter">Projets<br><span
+                                class="text-mory-highlight">Récents</span></h2>
+                        <div class="hidden md:block text-right">
+                            <span
+                                class="block text-sm font-bold uppercase tracking-widest opacity-50 mb-2 text-mory-accent">Portfolio</span>
+                            <span class="text-4xl font-light">2023 — 24</span>
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-x-12 gap-y-24">
+                        <!-- Project 1 -->
+                        <div class="group cursor-pointer reveal-on-scroll">
+                            <div
+                                class="aspect-[4/5] bg-white/5 rounded-3xl overflow-hidden mb-8 relative border border-white/5 shadow-2xl shadow-black/50">
+                                <div
+                                    class="absolute inset-0 bg-mory-bg/40 group-hover:bg-transparent transition-colors duration-500">
+                                </div>
+                                <img src="https://images.unsplash.com/photo-1639322537228-ad7117a7a6ebd?q=80&w=2000&auto=format&fit=crop"
+                                    alt="Nexus Auto-Agent"
+                                    class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out opacity-80 group-hover:opacity-100">
+                                <div
+                                    class="absolute bottom-8 left-8 bg-black/60 backdrop-blur-md px-6 py-3 rounded-full border border-mory-accent/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform translate-y-4 group-hover:translate-y-0 shadow-[0_0_15px_rgba(0,255,148,0.2)]">
+                                    <span class="text-mory-accent font-medium">Voir l'Étude de Cas</span>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="text-3xl font-bold mb-2 group-hover:text-mory-accent transition-colors">
+                                        Nexus Auto-Agent</h3>
+                                    <p class="text-mory-secondary">Automatisation Fintech</p>
+                                </div>
+                                <span
+                                    class="bg-mory-accent/10 text-mory-accent border border-mory-accent/20 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">AGENT
+                                    IA</span>
+                            </div>
+                        </div>
+
+                        <!-- Project 2 (Offset) -->
+                        <div class="group cursor-pointer md:mt-32 reveal-on-scroll">
+                            <div
+                                class="aspect-[4/5] bg-white/5 rounded-3xl overflow-hidden mb-8 relative border border-white/5 shadow-2xl shadow-black/50">
+                                <div
+                                    class="absolute inset-0 bg-mory-bg/40 group-hover:bg-transparent transition-colors duration-500">
+                                </div>
+                                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2000&auto=format&fit=crop"
+                                    alt="Data Lake V2"
+                                    class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out opacity-80 group-hover:opacity-100">
+                            </div>
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3
+                                        class="text-3xl font-bold mb-2 group-hover:text-mory-highlight transition-colors">
+                                        Data Lake V2</h3>
+                                    <p class="text-mory-secondary">Infrastructure Entreprise</p>
+                                </div>
+                                <span
+                                    class="bg-mory-highlight/10 text-mory-highlight border border-mory-highlight/20 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">DATA
+                                    ENG</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PROCESS SECTION -->
+            <section class="py-32 px-6 bg-white/5 border-t border-white/10 relative">
+                <div
+                    class="absolute top-0 right-0 w-[30vw] h-[30vw] bg-mory-highlight/10 rounded-full blur-[100px] pointer-events-none">
+                </div>
+                <div class="max-w-screen-2xl mx-auto relative z-10">
+                    <h2 class="text-4xl font-bold mb-24 text-center">NOTRE PROCESSUS</h2>
+                    <div class="grid md:grid-cols-3 gap-12">
+                        <!-- Step 1 -->
+                        <div
+                            class="border-t border-white/20 pt-8 reveal-on-scroll group hover:border-mory-accent transition-colors">
+                            <span
+                                class="text-6xl font-light text-white/10 group-hover:text-mory-accent mb-8 block transition-colors">01</span>
+                            <h3 class="text-2xl font-bold mb-4">Découverte</h3>
+                            <p class="text-mory-secondary">Nous analysons votre infrastructure et vos objectifs pour
+                                identifier les opportunités IA à fort impact.</p>
+                        </div>
+                        <!-- Step 2 -->
+                        <div class="border-t border-white/20 pt-8 reveal-on-scroll group hover:border-mory-highlight transition-colors"
+                            style="transition-delay: 100ms">
+                            <span
+                                class="text-6xl font-light text-white/10 group-hover:text-mory-highlight mb-8 block transition-colors">02</span>
+                            <h3 class="text-2xl font-bold mb-4">Architecture</h3>
+                            <p class="text-mory-secondary">Conception détaillée des pipelines de données et des
+                                workflows d'agents avant le développement.</p>
+                        </div>
+                        <!-- Step 3 -->
+                        <div class="border-t border-white/20 pt-8 reveal-on-scroll group hover:border-mory-accent transition-colors"
+                            style="transition-delay: 200ms">
+                            <span
+                                class="text-6xl font-light text-white/10 group-hover:text-mory-accent mb-8 block transition-colors">03</span>
+                            <h3 class="text-2xl font-bold mb-4">Déploiement</h3>
+                            <p class="text-mory-secondary">Développement itératif et tests rigoureux pour une
+                                intégration fluide en production.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-24 px-6 border-t border-white/10 relative overflow-hidden bg-black/40">
+        <!-- Footer Glow -->
+        <div
+            class="absolute top-0 left-1/2 -translate-x-1/2 w-[50vw] h-[50vw] bg-mory-accent/5 rounded-full blur-3xl pointer-events-none">
+        </div>
+
+        <div class="max-w-screen-2xl mx-auto flex justify-between items-start relative z-10">
+            <div>
+                <h2
+                    class="text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-mory-accent to-mory-highlight">
+                    Mory AI Labs</h2>
+                <p class="opacity-60 max-w-xs">Construire l'infrastructure intelligente de demain.</p>
+            </div>
+            <div class="flex gap-12">
+                <div class="flex flex-col gap-4">
+                    <span class="text-xs font-bold uppercase tracking-widest opacity-50 text-mory-accent">Réseaux</span>
+                    <a href="#" class="hover:text-mory-highlight transition-colors">LinkedIn</a>
+                    <a href="#" class="hover:text-mory-highlight transition-colors">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="./src/js/main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

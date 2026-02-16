@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Mory AI Labs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="relative opacity-0 transition-opacity duration-700 ease-in-out">
+    <div class="grain"></div>
+
+    <nav class="fixed top-0 w-full z-40 px-6 py-6 transition-all duration-300" id="navbar">
+        <div
+            class="max-w-screen-2xl mx-auto flex justify-between items-center bg-white/5 backdrop-blur-md rounded-full px-6 py-3 border border-white/10 shadow-lg shadow-black/20">
+            <div class="hidden md:flex gap-4 text-sm font-medium opacity-60">
+                <span id="time-display">00:00:00</span>
+                <span>Lille, FR</span>
+            </div>
+            <a href="index.html"
+                class="absolute left-1/2 -translate-x-1/2 text-2xl font-bold tracking-tighter text-mory-accent drop-shadow-[0_0_10px_rgba(0,255,148,0.5)]">MORY
+                AI LABS</a>
+            <div class="flex items-center gap-6">
+                <div class="hidden md:flex gap-6 text-sm font-semibold">
+                    <a href="about.html" class="hover:text-mory-accent transition-colors">À Propos</a>
+                    <a href="services.html" class="text-mory-highlight transition-colors">Services</a>
+                </div>
+                <a href="contact.html"
+                    class="group flex items-center gap-2 bg-mory-accent text-mory-bg px-5 py-2 rounded-full text-sm font-bold hover:bg-mory-highlight hover:text-white transition-all duration-300 shadow-[0_0_15px_rgba(0,255,148,0.3)]">
+                    <span>Discutons</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-24 px-6">
+        <div class="max-w-screen-xl mx-auto">
+            <h1 class="text-6xl md:text-9xl mb-24 text-reveal-container">
+                <span class="block text-reveal active delay-100">NOTRE</span>
+                <span class="block text-reveal active delay-200 text-mory-highlight">EXPERTISE.</span>
+            </h1>
+
+            <!-- Services List -->
+            <div class="space-y-32">
+                <!-- Service 1 -->
+                <div class="reveal-on-scroll">
+                    <span class="text-sm font-bold uppercase tracking-widest text-mory-accent mb-4 block">01 /
+                        Automatisation</span>
+                    <h2 class="text-4xl md:text-6xl font-bold mb-8 text-white">AGENTS IA & WORKFLOWS</h2>
+                    <div class="grid md:grid-cols-2 gap-12">
+                        <p class="text-lg text-mory-secondary">Nous concevons des agents IA personnalisés capables de
+                            gérer des flux de travail complexes de manière autonome. Du support client à
+                            l'automatisation des processus internes, nos agents réduisent la charge de travail manuelle
+                            jusqu'à 80%.</p>
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-3 text-white"><i data-lucide="check"
+                                    class="w-5 h-5 text-mory-accent"></i> Intégration LLM Sur Mesure</li>
+                            <li class="flex items-center gap-3 text-white"><i data-lucide="check"
+                                    class="w-5 h-5 text-mory-accent"></i> Systèmes Multi-Agents</li>
+                            <li class="flex items-center gap-3 text-white"><i data-lucide="check"
+                                    class="w-5 h-5 text-mory-accent"></i> Optimisation des Processus</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="reveal-on-scroll">
+                    <span class="text-sm font-bold uppercase tracking-widest text-mory-highlight mb-4 block">02 /
+                        Infrastructure</span>
+                    <h2 class="text-4xl md:text-6xl font-bold mb-8 text-white">DATA ENGINEERING</h2>
+                    <div class="grid md:grid-cols-2 gap-12">
+                        <p class="text-lg text-mory-secondary">Des pipelines robustes sont la colonne vertébrale de
+                            toute initiative IA. Nous construisons des pipelines ETL/ELT évolutifs, des entrepôts de
+                            données et des lacs qui garantissent que vos données sont propres, accessibles et prêtes en
+                            temps réel.</p>
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-3 text-white"><i data-lucide="check"
+                                    class="w-5 h-5 text-mory-highlight"></i> Data Warehousing Cloud</li>
+                            <li class="flex items-center gap-3 text-white"><i data-lucide="check"
+                                    class="w-5 h-5 text-mory-highlight"></i> Streaming Temps Réel</li>
+                            <li class="flex items-center gap-3 text-white"><i data-lucide="check"
+                                    class="w-5 h-5 text-mory-highlight"></i> Fiabilité des Données</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="reveal-on-scroll">
+                    <span class="text-sm font-bold uppercase tracking-widest text-mory-accent mb-4 block">03 /
+                        Insights</span>
+                    <h2 class="text-4xl md:text-6xl font-bold mb-8 text-white">MACHINE LEARNING</h2>
+                    <div class="grid md:grid-cols-2 gap-12">
+                        <p class="text-lg text-mory-secondary">Des modèles prédictifs qui pilotent la prise de décision.
+                            Qu'il s'agisse de prédiction de churn, de prévision de la demande ou de moteurs de
+                            recommandation, nous déployons des modèles qui impactent vos résultats.</p>
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-3 text-white"><i data-lucide="check"
+                                    class="w-5 h-5 text-mory-accent"></i> Analyse Prédictive</li>
+                            <li class="flex items-center gap-3 text-white"><i data-lucide="check"
+                                    class="w-5 h-5 text-mory-accent"></i> Vision par Ordinateur</li>
+                            <li class="flex items-center gap-3 text-white"><i data-lucide="check"
+                                    class="w-5 h-5 text-mory-accent"></i> NLP & Analyse de Sentiment</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-24 px-6 border-t border-white/10 bg-black/40">
+        <div class="max-w-screen-2xl mx-auto flex justify-between items-start">
+            <div>
+                <h2
+                    class="text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-mory-accent to-mory-highlight">
+                    Mory AI Labs</h2>
+                <p class="opacity-60 max-w-xs">Construire l'infrastructure intelligente de demain.</p>
+            </div>
+            <div class="flex gap-12">
+                <div class="flex flex-col gap-4">
+                    <span class="text-xs font-bold uppercase tracking-widest opacity-50 text-mory-accent">Réseaux</span>
+                    <a href="#" class="hover:text-mory-highlight transition-colors">LinkedIn</a>
+                    <a href="#" class="hover:text-mory-highlight transition-colors">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="./src/js/main.js"></script>
+    <script>
+        lucide.createIcons();
+        window.onload = () => document.body.classList.remove('opacity-0');
+    </script>
+</body>
+
+</html>
