@@ -45,11 +45,25 @@
 }
 
 @utility text-reveal {
+  /* Legacy class kept for fallback, but main animation is now JS-based */
   @apply translate-y-full opacity-0 transition-transform duration-1000 ease-out;
 }
 
 @utility text-reveal.active {
   @apply translate-y-0 opacity-100;
+}
+
+/* SplitType Character Styles */
+.word {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+}
+
+.char {
+  display: inline-block;
+  transform: translateY(110%);
+  transition: transform 0.5s;
 }
 
 @utility stroke-text-white {

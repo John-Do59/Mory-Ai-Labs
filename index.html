@@ -55,13 +55,13 @@
             <!-- Left: Time & Location -->
             <div class="hidden md:flex gap-4 text-sm font-medium opacity-60">
                 <span id="time-display">00:00:00</span>
-                <span>Paris, FR</span>
+                <span>Lille, FR</span>
             </div>
 
             <!-- Center: Logo -->
             <a href="index.html"
                 class="absolute left-1/2 -translate-x-1/2 text-2xl font-bold tracking-tighter text-mory-accent drop-shadow-[0_0_10px_rgba(0,255,148,0.5)]">
-                MORY AI
+                MORY AI LABS
             </a>
 
             <!-- Right: Menu & CTA -->
@@ -89,19 +89,16 @@
             <section class="h-screen flex flex-col justify-center px-6 pt-24 relative overflow-hidden">
                 <div class="max-w-screen-2xl mx-auto w-full">
                     <div class="text-reveal-container">
-                        <h1 class="text-[5rem] md:text-[8rem] leading-[0.9] text-reveal active">
-                            INTELLIGENCE <br>
-                            <span class="text-mory-accent">AUTOMATISÉE.</span>
+                        <h1 class="text-[5rem] md:text-[8rem] leading-[0.9]">
+                            AI Engineering <br>
+                            <span class="text-mory-accent">Solutions Data & IA.</span>
                         </h1>
                     </div>
 
                     <div class="mt-12 flex justify-between items-end">
-                        <p class="max-w-md text-lg text-mory-secondary text-reveal-container">
-                            <span class="block text-reveal delay-200 active">
-                                Nous construisons des agents autonomes et l'infrastructure de données pour les
-                                entreprises de demain.
-                            </span>
-                        </p>
+                        <div class="max-w-md text-lg text-mory-secondary h-[4rem]">
+                            <p id="hero-typewriter"></p>
+                        </div>
                         <i data-lucide="arrow-down" class="w-12 h-12 animate-bounce opacity-50 text-mory-highlight"></i>
                     </div>
                 </div>
@@ -133,7 +130,7 @@
                         <div class="hidden md:block text-right">
                             <span
                                 class="block text-sm font-bold uppercase tracking-widest opacity-50 mb-2 text-mory-accent">Portfolio</span>
-                            <span class="text-4xl font-light">2023 — 24</span>
+                            <span class="text-4xl font-light">2026 — 2027</span>
                         </div>
                     </div>
 
@@ -261,6 +258,8 @@
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="./src/js/main.js"></script>
     <script>
         lucide.createIcons();
