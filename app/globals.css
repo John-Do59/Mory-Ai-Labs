@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-inter: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    background-color: #051610; /* Vert Sombre Saphir Forêt */
+    color: #F0FDF4;
+    font-family: var(--font-inter);
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: #00FF94;
+    color: #051610;
+  }
+
+  /* Headings with Integral CF */
+  h1 {
+    font-family: var(--font-integral), sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    line-height: 1.1;
+  }
+
+  h2 {
+    font-family: var(--font-integral), sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    line-height: 1.15;
+  }
+
+  h3 {
+    font-family: var(--font-integral), sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+  }
+
+  h4, h5, h6 {
+    font-family: var(--font-integral), sans-serif;
+    font-weight: 500;
+    letter-spacing: 0em;
+  }
+}
+
+/* Grain Overlay */
+.grain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.025'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 999;
+}
+
+/* Transparent Liquid Glass Cards (Glassmorphism Translucide) */
+.glass-card-transparent, .neomorph-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(32px) saturate(180%);
+  -webkit-backdrop-filter: blur(32px) saturate(180%);
+  border-radius: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 
+    0 20px 50px rgba(0, 0, 0, 0.5),
+    inset 0 1px 1px rgba(255, 255, 255, 0.15),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card-transparent:hover, .neomorph-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(0, 255, 148, 0.3);
+  box-shadow: 
+    0 25px 60px rgba(0, 0, 0, 0.6),
+    0 0 30px rgba(0, 255, 148, 0.15),
+    inset 0 1px 2px rgba(255, 255, 255, 0.25);
+  transform: translateY(-4px);
+}
+
+.neomorph-inset {
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 
+    inset 0 2px 6px rgba(0, 0, 0, 0.6),
+    inset 0 -1px 2px rgba(255, 255, 255, 0.05);
+}
+
+.neomorph-pill {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 
+    0 4px 15px rgba(0, 0, 0, 0.3),
+    inset 0 1px 1px rgba(255, 255, 255, 0.12);
+  transition: all 0.3s ease;
+}
+
+.neomorph-pill:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(0, 255, 148, 0.25);
+}
+
+/* VisionOS Glass Panel (Translucide) */
+.vision-glass-panel {
+  background: radial-gradient(130% 130% at 50% 0%, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.02) 60%, rgba(0, 0, 0, 0.4) 100%);
+  backdrop-filter: blur(40px) saturate(190%);
+  -webkit-backdrop-filter: blur(40px) saturate(190%);
+  border-radius: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 
+    inset 0 1px 1px 0 rgba(255, 255, 255, 0.16),
+    inset 0 -1px 1px 0 rgba(0, 0, 0, 0.5),
+    0 25px 50px -12px rgba(0, 0, 0, 0.7);
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.vision-pill {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  border-radius: 9999px;
+}
+
+/* Marquee Stroke Text */
+.stroke-text-white {
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.3);
+  font-family: var(--font-integral), sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+/* Stat & Metrics Values */
+.stat-val {
+  font-family: var(--font-integral), sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}

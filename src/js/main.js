@@ -74,8 +74,8 @@ window.addEventListener('load', () => {
         });
 
         typewriter
-            .pauseFor(1000)
-            .typeString('Nous construisons des agents autonomes et l\'infrastructure de données pour les entreprises de demain.')
+            .pauseFor(800)
+            .typeString('De la R&D prédictive aux agents métiers autonomes : nous concevons, entraînons et déployons vos solutions d\'IA propriétaires.')
             .start();
     }
 
@@ -119,17 +119,31 @@ revealElements.forEach(element => {
     });
 });
 
-// 2. Parallax Effect for Hero Elements (Intensified)
+// 2. Parallax Effect for Hero Showcase Display
 gsap.to(".hero-parallax", {
     scrollTrigger: {
-        trigger: "body",
+        trigger: "#hero-section",
         start: "top top",
         end: "bottom top",
-        scrub: true
+        scrub: 1
     },
-    y: 400, // Increased from 200 for more pronounced effect
-    scale: 1.1, // Added scale for depth
-    opacity: 0.5 // Fade out slightly on scroll
+    y: 80,
+    ease: "power1.out"
+});
+
+// 2b. Parallax Effect for Project Images
+const parallaxImages = document.querySelectorAll('.parallax-image');
+parallaxImages.forEach(img => {
+    gsap.to(img, {
+        yPercent: 20,
+        ease: "none",
+        scrollTrigger: {
+            trigger: img.parentElement,
+            start: "top bottom",
+            end: "bottom top",
+            scrub: true
+        }
+    });
 });
 
 // 3. Navbar Blur/Darken on Scroll
@@ -137,4 +151,20 @@ ScrollTrigger.create({
     start: 'top -50',
     end: 99999,
     toggleClass: { className: 'bg-mory-bg/90', targets: '#navbar' }
+});
+
+// 4. Smooth Reveal for Project Bento Cards (iOS Liquid Glass Reveal)
+gsap.utils.toArray('.project-bento-reveal').forEach((card) => {
+    gsap.from(card, {
+        scrollTrigger: {
+            trigger: card,
+            start: "top 85%",
+            toggleActions: "play none none none"
+        },
+        y: 50,
+        opacity: 0,
+        scale: 0.97,
+        duration: 1,
+        ease: "power3.out"
+    });
 });

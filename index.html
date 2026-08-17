@@ -4,14 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mory AI Labs | Le Futur Intelligent</title>
+    <title>Mory AI Labs | Studio d'Ingénierie IA &amp; Agents Autonomes</title>
+    <meta name="description" content="Laboratoire d'ingénierie et de développement de solutions d'intelligence artificielle sur-mesure, agents autonomes et modèles prédictifs haute performance.">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link href="./assets/css/style.css" rel="stylesheet">
@@ -20,30 +19,14 @@
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <style>
-        /* Lenis Smooth Scroll placeholder */
-        html.lenis {
-            height: auto;
-        }
-
-        .lenis.lenis-smooth {
-            scroll-behavior: auto;
-        }
-
-        .lenis.lenis-smooth [data-lenis-prevent] {
-            oversizer-behavior: contain;
-        }
-
-        .lenis.lenis-stopped {
-            overflow: hidden;
-        }
-
-        .lenis.lenis-scrolling iframe {
-            pointer-events: none;
-        }
+        html.lenis { height: auto; }
+        .lenis.lenis-smooth { scroll-behavior: auto; }
+        .lenis.lenis-stopped { overflow: hidden; }
+        .lenis.lenis-scrolling iframe { pointer-events: none; }
     </style>
 </head>
 
-<body class="relative">
+<body class="relative bg-mory-bg text-mory-text selection:bg-mory-accent selection:text-mory-bg">
 
     <!-- Grain Overlay -->
     <div class="grain"></div>
@@ -85,144 +68,435 @@
     <main id="smooth-wrapper">
         <div id="smooth-content">
 
-            <!-- HERO SECTION -->
-            <section class="h-screen flex flex-col justify-center px-6 pt-24 relative overflow-hidden">
-                <div class="max-w-screen-2xl mx-auto w-full">
-                    <div class="text-reveal-container">
-                        <h1 class="text-[5rem] md:text-[8rem] leading-[0.9]">
-                            AI Engineering <br>
-                            <span class="text-mory-accent">Solutions Data & IA.</span>
+            <!-- HERO SECTION (PLEINE SECTION AVEC IMAGE HERO ENTIÈRE AU-DESSUS DU BACKGROUND) -->
+            <section class="min-h-screen flex flex-col justify-between px-6 pt-32 pb-16 relative overflow-hidden" id="hero-section">
+                <!-- Background Ambient Halos -->
+                <div class="absolute inset-0 bg-gradient-to-b from-[#1A0B2E]/40 via-transparent to-[#1A0B2E] pointer-events-none -z-20"></div>
+                <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[500px] bg-gradient-to-tr from-mory-accent/15 via-mory-highlight/10 to-transparent rounded-full blur-[150px] pointer-events-none -z-10"></div>
+
+                <!-- Hero Section Foreground Content Layer (z-20) -->
+                <div class="max-w-screen-2xl mx-auto w-full text-center relative z-20 pt-4">
+                    <!-- Top Neomorphic Pill -->
+                    <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full neomorph-pill text-xs font-mono text-white/90 mb-6 tracking-widest uppercase shadow-lg">
+                        <span class="w-2 h-2 rounded-full bg-mory-accent animate-pulse"></span>
+                        <span>Mory AI Labs · Studio d'Ingénierie IA</span>
+                    </div>
+
+                    <!-- Monumental H1 (Integral CF) -->
+                    <div class="text-reveal-container mb-4 max-w-5xl mx-auto">
+                        <h1 class="text-[2.8rem] sm:text-[4.5rem] md:text-[5.8rem] lg:text-[6.8rem] leading-[0.95] tracking-tighter uppercase font-black text-white drop-shadow-[0_4px_20px_rgba(0,0,0,0.8)]">
+                            Intelligence Artificielle <br>
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-mory-accent via-emerald-300 to-mory-highlight">Sur-Mesure &amp; Souveraine.</span>
                         </h1>
                     </div>
 
-                    <div class="mt-12 flex justify-between items-end">
-                        <div class="max-w-md text-lg text-mory-secondary h-[4rem]">
-                            <p id="hero-typewriter"></p>
-                        </div>
-                        <i data-lucide="arrow-down" class="w-12 h-12 animate-bounce opacity-50 text-mory-highlight"></i>
+                    <!-- Subtitle with Typewriter -->
+                    <div class="max-w-2xl mx-auto text-base sm:text-lg text-mory-secondary/95 mb-8 h-[3.5rem] flex items-center justify-center font-normal drop-shadow-md">
+                        <p id="hero-typewriter"></p>
+                    </div>
+
+                    <!-- Actions -->
+                    <div class="flex flex-wrap items-center justify-center gap-4">
+                        <a href="contact.html" class="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full bg-mory-accent text-mory-bg font-bold text-xs uppercase tracking-wider hover:bg-white hover:shadow-[0_0_30px_rgba(0,255,148,0.5)] transition-all duration-300">
+                            <span>Démarrer un Cadrage IA</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                        <a href="#solutions" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full neomorph-pill text-white text-xs font-semibold uppercase tracking-wider hover:bg-white/10 transition-all duration-300">
+                            <span>Explorer nos Solutions</span>
+                            <i data-lucide="chevron-down" class="w-4 h-4 opacity-60"></i>
+                        </a>
                     </div>
                 </div>
 
-                <!-- Background Abstract (Image) -->
-                <div class="absolute -z-10 inset-0 hero-parallax opacity-90 mix-blend-normal">
-                    <img src="./assets/images/hero-bg.png" alt="Mory AI Labs Hero" class="w-full h-full object-cover">
+                <!-- Hero Section Visual Image (Grande, dans toute la section, 100% visible, non tronquée, z-10 au-dessus du background) -->
+                <div class="relative z-10 hero-parallax w-full flex items-center justify-center my-auto py-8 pointer-events-none">
+                    <img src="./assets/images/Mory-AI-Labs.png" alt="Mory AI Labs Hero Visual"
+                        class="w-full h-auto max-h-[62vh] max-w-5xl object-contain drop-shadow-[0_20px_50px_rgba(0,255,148,0.22)] select-none">
                 </div>
-                <!-- Gradient Overlay for readability -->
-                <div class="absolute -z-10 inset-0 bg-gradient-to-b from-mory-bg/60 via-transparent to-mory-bg"></div>
+
+                <!-- Bottom Status Bar -->
+                <div class="max-w-screen-2xl mx-auto w-full relative z-20 flex flex-wrap items-center justify-between gap-4 text-xs font-mono text-white/60 pt-4 border-t border-white/[0.06]">
+                    <div class="flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-mory-accent"></span>
+                        <span>Agents Autonomes &amp; Modèles Prédictifs Métiers</span>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <span>100% Souverain &amp; Sécurisé</span>
+                        <span class="opacity-40">|</span>
+                        <span>Lille &amp; Paris</span>
+                    </div>
+                </div>
             </section>
 
-            <!-- MARQUEE -->
-            <section class="py-12 border-y border-white/10 bg-white/5 overflow-hidden backdrop-blur-sm">
+            <!-- MARQUEE (Integral CF) -->
+            <section class="py-8 border-y border-white/[0.08] bg-white/[0.02] overflow-hidden backdrop-blur-md">
                 <div class="flex whitespace-nowrap animate-marquee">
-                    <span class="text-6xl font-black text-transparent stroke-text-white px-8">DATA ENGINEERING • MACHINE
-                        LEARNING • AGENTS IA • AUTOMATISATION • </span>
-                    <span class="text-6xl font-black text-transparent stroke-text-white px-8">DATA ENGINEERING • MACHINE
-                        LEARNING • AGENTS IA • AUTOMATISATION • </span>
+                    <span class="text-3xl md:text-4xl font-black text-transparent stroke-text-white px-8">AGENTS IA AUTONOMES • MACHINE LEARNING PRÉDICTIF • COMPUTER VISION • LLM FINE-TUNING • ARCHITECTURES DATA &amp; PIPELINES • AUTOMATISATION INTELLIGENTE • </span>
+                    <span class="text-3xl md:text-4xl font-black text-transparent stroke-text-white px-8">AGENTS IA AUTONOMES • MACHINE LEARNING PRÉDICTIF • COMPUTER VISION • LLM FINE-TUNING • ARCHITECTURES DATA &amp; PIPELINES • AUTOMATISATION INTELLIGENTE • </span>
                 </div>
             </section>
 
-            <!-- SELECTED WORKS -->
-            <section class="py-32 px-6">
+            <!-- SECTION SOLUTIONS / PROJETS PHARES (NÉOMORPHISME COMPACT & ALTERNANCE GAUCHE / DROITE) -->
+            <section class="py-32 px-6 relative overflow-hidden" id="solutions">
+                <!-- Ambient Glows -->
+                <div class="absolute top-1/4 -left-40 w-[500px] h-[500px] bg-mory-accent/5 rounded-full blur-[160px] pointer-events-none -z-10"></div>
+                <div class="absolute bottom-1/4 -right-40 w-[500px] h-[500px] bg-mory-highlight/5 rounded-full blur-[160px] pointer-events-none -z-10"></div>
+
                 <div class="max-w-screen-2xl mx-auto">
-                    <div class="flex justify-between items-end mb-24 reveal-on-scroll">
-                        <h2 class="text-6xl md:text-8xl font-bold uppercase tracking-tighter">Projets<br><span
-                                class="text-mory-highlight">Récents</span></h2>
-                        <div class="hidden md:block text-right">
-                            <span
-                                class="block text-sm font-bold uppercase tracking-widest opacity-50 mb-2 text-mory-accent">Portfolio</span>
-                            <span class="text-4xl font-light">2026 — 2027</span>
+                    <!-- Section Header -->
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-20 reveal-on-scroll">
+                        <div>
+                            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full neomorph-pill text-xs font-mono text-mory-accent mb-4 tracking-wider uppercase">
+                                <span class="w-1.5 h-1.5 rounded-full bg-mory-accent animate-pulse"></span>
+                                Solutions &amp; Déploiements Opérationnels
+                            </div>
+                            <h2 class="text-3xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tight text-white">
+                                Nos Produits &amp; <span class="text-transparent bg-clip-text bg-gradient-to-r from-mory-accent to-mory-highlight">Innovations</span>
+                            </h2>
+                        </div>
+                        <div class="mt-4 md:mt-0 text-left md:text-right">
+                            <span class="block text-xs font-mono uppercase tracking-widest text-mory-secondary/50">Cas d'Usage B2B Concrets</span>
+                            <span class="text-xl font-light text-white/80">ROI &amp; Avantage Compétitif</span>
                         </div>
                     </div>
 
-                    <div class="grid md:grid-cols-2 gap-x-12 gap-y-24">
-                        <!-- Project 1 -->
-                        <div class="group cursor-pointer reveal-on-scroll">
-                            <div
-                                class="aspect-[4/5] bg-white/5 rounded-3xl overflow-hidden mb-8 relative border border-white/5 shadow-2xl shadow-black/50">
-                                <div
-                                    class="absolute inset-0 bg-mory-bg/40 group-hover:bg-transparent transition-colors duration-500">
-                                </div>
-                                <img src="https://images.unsplash.com/photo-1639322537228-ad7117a7a6ebd?q=80&w=2000&auto=format&fit=crop"
-                                    alt="Nexus Auto-Agent"
-                                    class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out opacity-80 group-hover:opacity-100">
-                                <div
-                                    class="absolute bottom-8 left-8 bg-black/60 backdrop-blur-md px-6 py-3 rounded-full border border-mory-accent/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform translate-y-4 group-hover:translate-y-0 shadow-[0_0_15px_rgba(0,255,148,0.2)]">
-                                    <span class="text-mory-accent font-medium">Voir l'Étude de Cas</span>
+                    <div class="flex flex-col gap-24">
+
+                        <!-- PROJECT 1 : ArboResilience (CARTE À GAUCHE / TEXTE À DROITE) -->
+                        <div class="project-bento-reveal grid lg:grid-cols-12 gap-8 lg:gap-12 items-center neomorph-card p-6 md:p-8 lg:p-10 relative overflow-hidden">
+                            <!-- Subtle Internal Ambient Backlight -->
+                            <div class="absolute -top-24 -left-24 w-64 h-64 bg-mory-accent/10 rounded-full blur-3xl pointer-events-none"></div>
+
+                            <!-- CARD COMPACTE (GAUCHE - COL 5) -->
+                            <div class="lg:col-span-5">
+                                <div class="neomorph-inset overflow-hidden relative group/mockup p-2">
+                                    <div class="flex items-center justify-between px-3 py-2 bg-black/40 rounded-t-xl border-b border-white/[0.04] mb-2">
+                                        <div class="flex items-center gap-1.5">
+                                            <span class="w-2.5 h-2.5 rounded-full bg-white/20"></span>
+                                            <span class="w-2.5 h-2.5 rounded-full bg-white/20"></span>
+                                            <span class="w-2.5 h-2.5 rounded-full bg-white/20"></span>
+                                        </div>
+                                        <span class="text-[11px] font-mono text-white/40 flex items-center gap-1">
+                                            <i data-lucide="shield-check" class="w-3 h-3 text-mory-accent"></i>
+                                            arboresilience.ai
+                                        </span>
+                                        <span class="w-2.5"></span>
+                                    </div>
+
+                                    <div class="relative aspect-[16/11] overflow-hidden rounded-lg bg-black/50">
+                                        <img src="./assets/images/ArboResilience.png" alt="ArboResilience Plateforme IA"
+                                            class="w-full h-full object-cover object-center group-hover/mockup:scale-105 transition-transform duration-700 ease-out opacity-90 group-hover/mockup:opacity-100">
+                                        
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent pointer-events-none"></div>
+
+                                        <div class="absolute bottom-2.5 left-2.5 right-2.5 flex items-center justify-between p-2 rounded-lg bg-black/80 backdrop-blur-md border border-white/[0.08] text-xs">
+                                            <div class="flex items-center gap-1.5">
+                                                <i data-lucide="tree-pine" class="w-3.5 h-3.5 text-mory-accent"></i>
+                                                <span class="font-medium text-white/90 text-[11px]">Modèle Climat 2100</span>
+                                            </div>
+                                            <span class="text-[9px] font-mono font-bold px-1.5 py-0.5 rounded bg-mory-accent/15 text-mory-accent">
+                                                GIEC CMIP6
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="flex justify-between items-start">
-                                <div>
-                                    <h3 class="text-3xl font-bold mb-2 group-hover:text-mory-accent transition-colors">
-                                        Nexus Auto-Agent</h3>
-                                    <p class="text-mory-secondary">Automatisation Fintech</p>
+
+                            <!-- TEXTE & CONVERSION (DROITE - COL 7) -->
+                            <div class="lg:col-span-7 flex flex-col justify-center">
+                                <div class="flex flex-wrap items-center gap-2 mb-3">
+                                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-semibold bg-mory-accent/10 text-mory-accent border border-mory-accent/20">
+                                        <i data-lucide="crosshair" class="w-3 h-3"></i>
+                                        Bureaux d'Études · Collectivités · Aménageurs
+                                    </span>
+                                    <span class="text-xs font-mono text-mory-secondary/60">#RésilienceForestière</span>
                                 </div>
-                                <span
-                                    class="bg-mory-accent/10 text-mory-accent border border-mory-accent/20 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">AGENT
-                                    IA</span>
+
+                                <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-white mb-2">
+                                    ArboResilience <span class="text-mory-accent text-base md:text-lg font-normal block md:inline">— Sécurisez vos plantations face au climat</span>
+                                </h3>
+
+                                <p class="text-mory-secondary/90 text-sm md:text-base leading-relaxed mb-5">
+                                    Évitez les pertes financières massives sur vos reboisements et aménagements urbains. Notre IA croise projections climatiques (GIEC CMIP6), topographie et stress hydrique pour certifier la viabilité de vos essences à horizon 2050–2100.
+                                </p>
+
+                                <div class="grid sm:grid-cols-3 gap-2.5 mb-5">
+                                    <div class="p-3 rounded-2xl neomorph-pill">
+                                        <div class="text-lg font-bold text-mory-accent stat-val">-70%</div>
+                                        <div class="text-[11px] text-white/70 font-medium">Mortalité post-plantation</div>
+                                    </div>
+                                    <div class="p-3 rounded-2xl neomorph-pill">
+                                        <div class="text-lg font-bold text-white stat-val">100%</div>
+                                        <div class="text-[11px] text-white/70 font-medium">Subventions &amp; RSE sécurisées</div>
+                                    </div>
+                                    <div class="p-3 rounded-2xl neomorph-pill">
+                                        <div class="text-lg font-bold text-mory-highlight stat-val">2100</div>
+                                        <div class="text-[11px] text-white/70 font-medium">Horizon simulé</div>
+                                    </div>
+                                </div>
+
+                                <div class="grid sm:grid-cols-2 gap-2 mb-6 text-xs text-mory-secondary/80">
+                                    <div class="flex items-center gap-2">
+                                        <i data-lucide="check-circle-2" class="w-4 h-4 text-mory-accent flex-shrink-0"></i>
+                                        <span>Cartographie géospatiale des zones à risque</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i data-lucide="check-circle-2" class="w-4 h-4 text-mory-accent flex-shrink-0"></i>
+                                        <span>Recommandations d'essences par microclimat</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i data-lucide="check-circle-2" class="w-4 h-4 text-mory-accent flex-shrink-0"></i>
+                                        <span>Rapport d'audit PDF pour décideurs</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i data-lucide="check-circle-2" class="w-4 h-4 text-mory-accent flex-shrink-0"></i>
+                                        <span>API intégrable à vos SIG &amp; outils internes</span>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-wrap items-center gap-4 pt-3 border-t border-white/[0.06]">
+                                    <a href="contact.html" class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-mory-accent text-mory-bg font-bold text-xs uppercase tracking-wider hover:bg-white hover:shadow-[0_0_25px_rgba(0,255,148,0.4)] transition-all duration-300">
+                                        <span>Demander un Audit Territorial (15 min)</span>
+                                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                                    </a>
+                                    <span class="text-xs text-white/50">Démonstration gratuite sur vos données</span>
+                                </div>
                             </div>
                         </div>
 
-                        <!-- Project 2 (Offset) -->
-                        <div class="group cursor-pointer md:mt-32 reveal-on-scroll">
-                            <div
-                                class="aspect-[4/5] bg-white/5 rounded-3xl overflow-hidden mb-8 relative border border-white/5 shadow-2xl shadow-black/50">
-                                <div
-                                    class="absolute inset-0 bg-mory-bg/40 group-hover:bg-transparent transition-colors duration-500">
+                        <!-- PROJECT 2 : GreenOps AI (TEXTE À GAUCHE / CARTE À DROITE) -->
+                        <div class="project-bento-reveal grid lg:grid-cols-12 gap-8 lg:gap-12 items-center neomorph-card p-6 md:p-8 lg:p-10 relative overflow-hidden">
+                            <!-- Subtle Internal Ambient Backlight -->
+                            <div class="absolute -top-24 -right-24 w-64 h-64 bg-mory-highlight/10 rounded-full blur-3xl pointer-events-none"></div>
+
+                            <!-- TEXTE & CONVERSION (GAUCHE - COL 7 - ORDER 2 SUR MOBILE / ORDER 1 SUR DESKTOP) -->
+                            <div class="lg:col-span-7 flex flex-col justify-center order-2 lg:order-1">
+                                <div class="flex flex-wrap items-center gap-2 mb-3">
+                                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-semibold bg-mory-highlight/10 text-mory-highlight border border-mory-highlight/20">
+                                        <i data-lucide="briefcase" class="w-3 h-3"></i>
+                                        Entreprises Paysagistes · Artisans &amp; Aménageurs
+                                    </span>
+                                    <span class="text-xs font-mono text-mory-secondary/60">#Productivité #ClosingDevis</span>
                                 </div>
-                                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2000&auto=format&fit=crop"
-                                    alt="Data Lake V2"
-                                    class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out opacity-80 group-hover:opacity-100">
+
+                                <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-white mb-2">
+                                    GreenOps AI <span class="text-mory-highlight text-base md:text-lg font-normal block md:inline">— Vos devis paysagers en 30 secondes chrono</span>
+                                </h3>
+
+                                <p class="text-mory-secondary/90 text-sm md:text-base leading-relaxed mb-5">
+                                    Ne perdez plus vos soirées à chiffrer à la main. Téléchargez une photo de terrain ou un plan : l'IA calcule les métrés, sélectionne les fournitures au juste prix et édite un devis commercial conforme prêt à signer.
+                                </p>
+
+                                <div class="grid sm:grid-cols-3 gap-2.5 mb-5">
+                                    <div class="p-3 rounded-2xl neomorph-pill">
+                                        <div class="text-lg font-bold text-mory-highlight stat-val">+15h</div>
+                                        <div class="text-[11px] text-white/70 font-medium">Gagnées / semaine par artisan</div>
+                                    </div>
+                                    <div class="p-3 rounded-2xl neomorph-pill">
+                                        <div class="text-lg font-bold text-white stat-val">+28%</div>
+                                        <div class="text-[11px] text-white/70 font-medium">Taux de signature client</div>
+                                    </div>
+                                    <div class="p-3 rounded-2xl neomorph-pill">
+                                        <div class="text-lg font-bold text-mory-accent stat-val">30s</div>
+                                        <div class="text-[11px] text-white/70 font-medium">Temps moyen d'édition PDF</div>
+                                    </div>
+                                </div>
+
+                                <div class="grid sm:grid-cols-2 gap-2 mb-6 text-xs text-mory-secondary/80">
+                                    <div class="flex items-center gap-2">
+                                        <i data-lucide="check-circle-2" class="w-4 h-4 text-mory-highlight flex-shrink-0"></i>
+                                        <span>Extraction automatique des surfaces sur plan ou photo</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i data-lucide="check-circle-2" class="w-4 h-4 text-mory-highlight flex-shrink-0"></i>
+                                        <span>Catalogue fournisseurs &amp; marges personnalisées</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i data-lucide="check-circle-2" class="w-4 h-4 text-mory-highlight flex-shrink-0"></i>
+                                        <span>Génération PDF professionnel avec signature électronique</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <i data-lucide="check-circle-2" class="w-4 h-4 text-mory-highlight flex-shrink-0"></i>
+                                        <span>Synchronisation WhatsApp &amp; CRM paysagiste</span>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-wrap items-center gap-4 pt-3 border-t border-white/[0.06]">
+                                    <a href="contact.html" class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-mory-highlight text-white font-bold text-xs uppercase tracking-wider hover:bg-white hover:text-mory-bg hover:shadow-[0_0_25px_rgba(255,127,63,0.4)] transition-all duration-300">
+                                        <span>Rejoindre l'Accès Pilote Gratuit</span>
+                                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                                    </a>
+                                    <span class="text-xs text-white/50">Phase beta privée · Places limitées</span>
+                                </div>
                             </div>
-                            <div class="flex justify-between items-start">
-                                <div>
-                                    <h3
-                                        class="text-3xl font-bold mb-2 group-hover:text-mory-highlight transition-colors">
-                                        Data Lake V2</h3>
-                                    <p class="text-mory-secondary">Infrastructure Entreprise</p>
+
+                            <!-- CARD COMPACTE (DROITE - COL 5 - ORDER 1 SUR MOBILE / ORDER 2 SUR DESKTOP) -->
+                            <div class="lg:col-span-5 order-1 lg:order-2">
+                                <div class="neomorph-inset overflow-hidden relative group/mockup p-2">
+                                    <div class="flex items-center justify-between px-3 py-2 bg-black/40 rounded-t-xl border-b border-white/[0.04] mb-2">
+                                        <div class="flex items-center gap-1.5">
+                                            <span class="w-2.5 h-2.5 rounded-full bg-white/20"></span>
+                                            <span class="w-2.5 h-2.5 rounded-full bg-white/20"></span>
+                                            <span class="w-2.5 h-2.5 rounded-full bg-white/20"></span>
+                                        </div>
+                                        <span class="text-[11px] font-mono text-white/40 flex items-center gap-1">
+                                            <i data-lucide="sparkles" class="w-3 h-3 text-mory-highlight"></i>
+                                            greenops.app
+                                        </span>
+                                        <span class="w-2.5"></span>
+                                    </div>
+
+                                    <div class="relative aspect-[16/11] overflow-hidden rounded-lg bg-black/50">
+                                        <img src="./assets/images/greenopq-ai10.png" alt="GreenOps IA Devis Paysagisme"
+                                            class="w-full h-full object-cover object-center group-hover/mockup:scale-105 transition-transform duration-700 ease-out opacity-90 group-hover/mockup:opacity-100">
+                                        
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent pointer-events-none"></div>
+
+                                        <div class="absolute bottom-2.5 left-2.5 right-2.5 flex items-center justify-between p-2 rounded-lg bg-black/80 backdrop-blur-md border border-white/[0.08] text-xs">
+                                            <div class="flex items-center gap-1.5">
+                                                <i data-lucide="calculator" class="w-3.5 h-3.5 text-mory-highlight"></i>
+                                                <span class="font-medium text-white/90 text-[11px]">Chiffrage en 30s</span>
+                                            </div>
+                                            <span class="text-[9px] font-mono font-bold px-1.5 py-0.5 rounded bg-mory-highlight/15 text-mory-highlight">
+                                                VISION IA
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <span
-                                    class="bg-mory-highlight/10 text-mory-highlight border border-mory-highlight/20 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">DATA
-                                    ENG</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION EXPERTISE / SERVICES (VISION OS BENTO GRID 3 PILIERS) -->
+            <section class="py-32 px-6 bg-white/[0.01] border-t border-white/[0.06] relative" id="expertise">
+                <div class="max-w-screen-2xl mx-auto">
+                    <div class="text-center max-w-3xl mx-auto mb-20 reveal-on-scroll">
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full vision-pill text-xs font-mono text-mory-accent mb-4 tracking-wider uppercase">
+                            <span class="w-1.5 h-1.5 rounded-full bg-mory-accent"></span>
+                            Ce Que Nous Construisons Pour Vous
+                        </div>
+                        <h2 class="text-3xl md:text-5xl font-bold uppercase tracking-tight text-white mb-6">
+                            L'Ingénierie IA au service de vos <span class="text-transparent bg-clip-text bg-gradient-to-r from-mory-accent to-emerald-300">Gains Métiers</span>
+                        </h2>
+                        <p class="text-mory-secondary/80 text-base">Nous transformons vos flux de données et vos processus manuels en systèmes intelligents autonomes et ultra-performants.</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <!-- Bento 1: Agents IA -->
+                        <div class="vision-glass-panel p-8 flex flex-col justify-between reveal-on-scroll group">
+                            <div>
+                                <div class="w-12 h-12 rounded-2xl bg-mory-accent/10 border border-mory-accent/30 flex items-center justify-center text-mory-accent mb-6 group-hover:scale-110 transition-transform">
+                                    <i data-lucide="bot" class="w-6 h-6"></i>
+                                </div>
+                                <h3 class="text-xl md:text-2xl font-bold text-white mb-3 group-hover:text-mory-accent transition-colors">Agents Autonomes &amp; Copilotes</h3>
+                                <p class="text-mory-secondary/80 text-sm leading-relaxed mb-6">Conception d'agents IA intelligents capables de raisonner, d'analyser des documents complexes, de manipuler vos outils et d'automatiser des flux entiers sans intervention humaine.</p>
+                            </div>
+                            <div class="pt-6 border-t border-white/[0.06] flex items-center justify-between text-xs font-mono text-white/50">
+                                <span>LLMs · RAG · Workflows</span>
+                                <i data-lucide="arrow-up-right" class="w-4 h-4 text-mory-accent"></i>
+                            </div>
+                        </div>
+
+                        <!-- Bento 2: Machine Learning Prédictif -->
+                        <div class="vision-glass-panel p-8 flex flex-col justify-between reveal-on-scroll group" style="transition-delay: 100ms;">
+                            <div>
+                                <div class="w-12 h-12 rounded-2xl bg-mory-highlight/10 border border-mory-highlight/30 flex items-center justify-center text-mory-highlight mb-6 group-hover:scale-110 transition-transform">
+                                    <i data-lucide="trending-up" class="w-6 h-6"></i>
+                                </div>
+                                <h3 class="text-xl md:text-2xl font-bold text-white mb-3 group-hover:text-mory-highlight transition-colors">Machine Learning &amp; Prédictif</h3>
+                                <p class="text-mory-secondary/80 text-sm leading-relaxed mb-6">Entraînement de modèles statistiques et algorithmes avancés sur vos données propriétaires pour anticiper les risques, optimiser vos coûts et prédire vos tendances critiques.</p>
+                            </div>
+                            <div class="pt-6 border-t border-white/[0.06] flex items-center justify-between text-xs font-mono text-white/50">
+                                <span>Scoring · Forecasting · GIS</span>
+                                <i data-lucide="arrow-up-right" class="w-4 h-4 text-mory-highlight"></i>
+                            </div>
+                        </div>
+
+                        <!-- Bento 3: Data Engineering & API Production -->
+                        <div class="vision-glass-panel p-8 flex flex-col justify-between reveal-on-scroll group" style="transition-delay: 200ms;">
+                            <div>
+                                <div class="w-12 h-12 rounded-2xl bg-white/10 border border-white/20 flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform">
+                                    <i data-lucide="database" class="w-6 h-6"></i>
+                                </div>
+                                <h3 class="text-xl md:text-2xl font-bold text-white mb-3 group-hover:text-mory-accent transition-colors">Architectures Data &amp; Cloud</h3>
+                                <p class="text-mory-secondary/80 text-sm leading-relaxed mb-6">Pipelines ETL/ELT robustes, vector databases, APIs FastAPI scalables et conteneurisation Docker pour un passage en production sécurisé et souverain.</p>
+                            </div>
+                            <div class="pt-6 border-t border-white/[0.06] flex items-center justify-between text-xs font-mono text-white/50">
+                                <span>FastAPI · PostgreSQL · Docker</span>
+                                <i data-lucide="arrow-up-right" class="w-4 h-4 text-white"></i>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- PROCESS SECTION -->
-            <section class="py-32 px-6 bg-white/5 border-t border-white/10 relative">
-                <div
-                    class="absolute top-0 right-0 w-[30vw] h-[30vw] bg-mory-highlight/10 rounded-full blur-[100px] pointer-events-none">
+            <!-- SECTION PROCESSUS / MÉTHODE -->
+            <section class="py-28 px-6 bg-white/[0.02] border-t border-white/[0.06] relative" id="processus">
+                <div class="max-w-screen-2xl mx-auto">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-20 reveal-on-scroll">
+                        <div>
+                            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full vision-pill text-xs font-mono text-mory-accent mb-4 tracking-wider uppercase">
+                                <span class="w-1.5 h-1.5 rounded-full bg-mory-accent"></span>
+                                De l'Idée à la Production
+                            </div>
+                            <h2 class="text-3xl md:text-5xl font-bold uppercase tracking-tight text-white">
+                                Notre Méthodologie <span class="text-mory-highlight">Agile</span>
+                            </h2>
+                        </div>
+                        <span class="mt-4 md:mt-0 text-sm text-mory-secondary/60 font-mono">Délivrer vite · Mesurer le ROI · Scaler</span>
+                    </div>
+
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="p-8 rounded-3xl vision-glass-panel reveal-on-scroll group hover:border-mory-accent/30 transition-colors">
+                            <span class="text-5xl font-black text-white/10 group-hover:text-mory-accent mb-6 block transition-colors stat-val">01</span>
+                            <h3 class="text-xl md:text-2xl font-bold text-white mb-3">Audit &amp; Prototypage (S1-S2)</h3>
+                            <p class="text-mory-secondary/80 text-sm leading-relaxed">Immersion dans vos opérations, cartographie de vos flux de données et livraison d'un PoC (Proof of Concept) fonctionnel en 10 jours.</p>
+                        </div>
+
+                        <div class="p-8 rounded-3xl vision-glass-panel reveal-on-scroll group hover:border-mory-highlight/30 transition-colors" style="transition-delay: 100ms;">
+                            <span class="text-5xl font-black text-white/10 group-hover:text-mory-highlight mb-6 block transition-colors stat-val">02</span>
+                            <h3 class="text-xl md:text-2xl font-bold text-white mb-3">Entraînement &amp; Architecture</h3>
+                            <p class="text-mory-secondary/80 text-sm leading-relaxed">Développement des pipelines de données, fine-tuning des modèles sur vos règles métiers et tests rigoureux de précision.</p>
+                        </div>
+
+                        <div class="p-8 rounded-3xl vision-glass-panel reveal-on-scroll group hover:border-mory-accent/30 transition-colors" style="transition-delay: 200ms;">
+                            <span class="text-5xl font-black text-white/10 group-hover:text-mory-accent mb-6 block transition-colors stat-val">03</span>
+                            <h3 class="text-xl md:text-2xl font-bold text-white mb-3">Déploiement &amp; Suivi ROI</h3>
+                            <p class="text-mory-secondary/80 text-sm leading-relaxed">Mise en production sécurisée avec monitoring continu, dashboards d'observabilité et formation de vos équipes.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="max-w-screen-2xl mx-auto relative z-10">
-                    <h2 class="text-4xl font-bold mb-24 text-center">NOTRE PROCESSUS</h2>
-                    <div class="grid md:grid-cols-3 gap-12">
-                        <!-- Step 1 -->
-                        <div
-                            class="border-t border-white/20 pt-8 reveal-on-scroll group hover:border-mory-accent transition-colors">
-                            <span
-                                class="text-6xl font-light text-white/10 group-hover:text-mory-accent mb-8 block transition-colors">01</span>
-                            <h3 class="text-2xl font-bold mb-4">Découverte</h3>
-                            <p class="text-mory-secondary">Nous analysons votre infrastructure et vos objectifs pour
-                                identifier les opportunités IA à fort impact.</p>
-                        </div>
-                        <!-- Step 2 -->
-                        <div class="border-t border-white/20 pt-8 reveal-on-scroll group hover:border-mory-highlight transition-colors"
-                            style="transition-delay: 100ms">
-                            <span
-                                class="text-6xl font-light text-white/10 group-hover:text-mory-highlight mb-8 block transition-colors">02</span>
-                            <h3 class="text-2xl font-bold mb-4">Architecture</h3>
-                            <p class="text-mory-secondary">Conception détaillée des pipelines de données et des
-                                workflows d'agents avant le développement.</p>
-                        </div>
-                        <!-- Step 3 -->
-                        <div class="border-t border-white/20 pt-8 reveal-on-scroll group hover:border-mory-accent transition-colors"
-                            style="transition-delay: 200ms">
-                            <span
-                                class="text-6xl font-light text-white/10 group-hover:text-mory-accent mb-8 block transition-colors">03</span>
-                            <h3 class="text-2xl font-bold mb-4">Déploiement</h3>
-                            <p class="text-mory-secondary">Développement itératif et tests rigoureux pour une
-                                intégration fluide en production.</p>
+            </section>
+
+            <!-- FINAL HIGH-CONVERSION CTA BANNER (VISION OS GLASS) -->
+            <section class="py-28 px-6 relative overflow-hidden">
+                <div class="max-w-screen-2xl mx-auto">
+                    <div class="vision-glass-panel p-10 md:p-16 lg:p-20 text-center relative overflow-hidden border border-mory-accent/20">
+                        <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-96 h-96 bg-mory-accent/15 rounded-full blur-3xl pointer-events-none"></div>
+
+                        <div class="max-w-3xl mx-auto relative z-10">
+                            <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full vision-pill text-xs font-mono text-mory-accent mb-6 uppercase tracking-wider">
+                                <span class="w-1.5 h-1.5 rounded-full bg-mory-accent animate-ping"></span>
+                                Prêt à passer à l'action ?
+                            </span>
+                            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold uppercase tracking-tight text-white mb-6">
+                                Accélérez votre avantage concurrentiel avec l'IA.
+                            </h2>
+                            <p class="text-mory-secondary/90 text-base md:text-lg mb-10 max-w-xl mx-auto leading-relaxed">
+                                Que vous ayez un cas d'usage précis ou un flux opérationnel à automatiser, nos ingénieurs cadrent votre solution sous 48h.
+                            </p>
+                            <div class="flex flex-wrap justify-center items-center gap-4">
+                                <a href="contact.html" class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-mory-accent text-mory-bg font-bold text-xs uppercase tracking-wider hover:bg-white hover:shadow-[0_0_30px_rgba(0,255,148,0.6)] transition-all duration-300">
+                                    <span>Planifier un Échange Stratégique</span>
+                                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                                </a>
+                                <a href="about.html" class="inline-flex items-center gap-2 px-7 py-4 rounded-full vision-pill text-white text-xs font-semibold uppercase tracking-wider hover:bg-white/10 transition-all duration-300">
+                                    <span>Découvrir le Studio</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -232,28 +506,25 @@
     </main>
 
     <!-- Footer -->
-    <footer class="py-24 px-6 border-t border-white/10 relative overflow-hidden bg-black/40">
-        <!-- Footer Glow -->
-        <div
-            class="absolute top-0 left-1/2 -translate-x-1/2 w-[50vw] h-[50vw] bg-mory-accent/5 rounded-full blur-3xl pointer-events-none">
-        </div>
-
-        <div class="max-w-screen-2xl mx-auto flex justify-between items-start relative z-10">
+    <footer class="py-20 px-6 border-t border-white/[0.08] relative overflow-hidden bg-black/50">
+        <div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8 relative z-10">
             <div>
-                <h2
-                    class="text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-mory-accent to-mory-highlight">
-                    Mory AI Labs</h2>
-                <p class="opacity-60 max-w-xs">Construire l'infrastructure intelligente de demain.</p>
+                <a href="index.html" class="text-2xl font-black tracking-tight text-white mb-2 block hover:text-mory-accent transition-colors">
+                    MORY AI LABS
+                </a>
+                <p class="text-xs text-mory-secondary/60 max-w-sm">Studio d'ingénierie en intelligence artificielle, agents autonomes et modélisation de données.</p>
             </div>
-            <div class="flex gap-12">
-                <div class="flex flex-col gap-4">
-                    <span class="text-xs font-bold uppercase tracking-widest opacity-50 text-mory-accent">Réseaux</span>
-                    <a href="https://www.linkedin.com/in/amaury-dev-data-ia/" target="_blank" rel="noopener noreferrer"
-                        class="hover:text-mory-highlight transition-colors">LinkedIn</a>
-                    <a href="https://github.com/John-Do59" target="_blank" rel="noopener noreferrer"
-                        class="hover:text-mory-highlight transition-colors">GitHub</a>
-                </div>
+            <div class="flex flex-wrap gap-8 text-xs font-mono uppercase tracking-wider text-white/70">
+                <a href="about.html" class="hover:text-mory-accent transition-colors">À Propos</a>
+                <a href="services.html" class="hover:text-mory-highlight transition-colors">Services</a>
+                <a href="https://www.linkedin.com/in/amaury-dev-data-ia/" target="_blank" rel="noopener noreferrer" class="hover:text-mory-accent transition-colors">LinkedIn</a>
+                <a href="https://github.com/John-Do59" target="_blank" rel="noopener noreferrer" class="hover:text-mory-highlight transition-colors">GitHub</a>
+                <a href="contact.html" class="text-mory-accent font-bold">Contact</a>
             </div>
+        </div>
+        <div class="max-w-screen-2xl mx-auto pt-8 mt-8 border-t border-white/[0.04] text-[11px] font-mono text-white/30 flex justify-between">
+            <span>© 2026 Mory AI Labs. Tous droits réservés.</span>
+            <span>Lille / Paris — France</span>
         </div>
     </footer>
 
