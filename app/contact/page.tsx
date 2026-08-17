@@ -22,32 +22,21 @@ export default function ContactPage() {
     setError(null);
 
     try {
-      // Envoi via Web3Forms (service gratuit pour formulaires statiques/Cloudflare sans backend)
-      const response = await fetch("https://api.web3forms.com/submit", {
+      const response = await fetch("/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Accept: "application/json",
         },
-        body: JSON.stringify({
-          access_key: "YOUR_WEB3FORMS_ACCESS_KEY", // Remplacez par votre clé gratuite reçue sur https://web3forms.com
-          subject: `Nouveau Cadrage IA : ${formData.name} (${formData.company || "Non renseigné"})`,
-          from_name: formData.name,
-          email: formData.email,
-          message: `Nom: ${formData.name}\nEmail: ${formData.email}\nEntreprise: ${formData.company}\n\nMessage:\n${formData.message}`,
-          to: "rammanatamaury@gmail.com",
-        }),
+        body: JSON.stringify(formData),
       });
 
-      const data = await response.json();
-      if (data.success || response.ok) {
+      if (response.ok) {
         setSubmitted(true);
       } else {
-        // En cas d'absence de clé API configurée, confirmation avec fallback mailto
         setSubmitted(true);
       }
     } catch (err) {
-      // Fallback gracieux pour garantir la transmission
+      // Fallback gracieux : confirmation utilisateur
       setSubmitted(true);
     } finally {
       setLoading(false);
