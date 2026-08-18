@@ -1,5 +1,6 @@
 "use client";
 
+import { useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import {
@@ -16,9 +17,18 @@ import {
   TrendingUp,
   CheckCircle2,
 } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 export default function AboutPage() {
+  const heroRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: heroRef,
+    offset: ["start start", "end start"],
+  });
+
+  const parallaxY = useTransform(scrollYProgress, [0, 1], [0, 40]);
+  const parallaxScale = useTransform(scrollYProgress, [0, 1], [1, 1.05]);
+
   const values = [
     {
       icon: BrainCircuit,
@@ -58,11 +68,30 @@ export default function AboutPage() {
 
       <div className="max-w-screen-2xl mx-auto">
         {/* Page Hero */}
-        <div className="text-center max-w-4xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full neomorph-pill text-xs font-integral font-normal text-[var(--accent-primary)] mb-6 uppercase tracking-wider">
-            <Sparkles className="w-3.5 h-3.5" />
-            Studio d'Ingénierie &amp; Venture Builder
-          </div>
+        <div ref={heroRef} className="text-center max-w-4xl mx-auto mb-16 flex flex-col items-center">
+          
+          {/* Card Emblem Rounded Rectangle Neomorphique avec Parallax & Z-Index Shadow Overlay */}
+          <motion.div
+            style={{ y: parallaxY, scale: parallaxScale }}
+            className="relative z-20 mb-8 rounded-3xl sm:rounded-[32px] p-3 sm:p-4 neomorph-card shadow-[0_25px_60px_rgba(0,0,0,0.85),0_0_35px_var(--accent-glow)] border border-[var(--card-border)] bg-[var(--bg-card)] backdrop-blur-2xl group hover:border-[var(--accent-primary)] transition-all duration-300"
+          >
+            <div className="relative w-28 h-28 sm:w-36 sm:h-36 md:w-44 md:h-44 rounded-2xl sm:rounded-[24px] overflow-hidden bg-[var(--emblem-bg)] flex items-center justify-center p-2 shadow-inner border border-white/10 transition-colors duration-500">
+              <Image
+                src="/images/Mory-AI-Labs2.png"
+                alt="Mory AI Labs Emblem"
+                fill
+                sizes="(max-width: 768px) 144px, 176px"
+                className="object-contain p-2 select-none group-hover:scale-108 transition-transform duration-700 ease-out"
+                priority
+              />
+              {/* Reflet Diagonale Verre & Lueur */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/[0.08] to-transparent pointer-events-none" />
+            </div>
+
+            {/* Halo de lueur ambiant derrière la carte */}
+            <div className="absolute -inset-2 bg-[var(--accent-glow)]/40 rounded-3xl blur-xl -z-10 group-hover:bg-[var(--accent-glow)]/70 transition-colors duration-500" />
+          </motion.div>
+
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold uppercase tracking-tight text-white mb-6 font-integral">
             L'EXCELLENCE DE L'IA <br />
             <span className="title-gradient">
