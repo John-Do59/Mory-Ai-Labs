@@ -1,6 +1,5 @@
 "use client";
 
-import { useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import {
@@ -17,18 +16,10 @@ import {
   TrendingUp,
   CheckCircle2,
 } from "lucide-react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
+import ParallaxBannerCard from "@/components/ParallaxBannerCard";
 
 export default function AboutPage() {
-  const topEmblemRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress: topScrollProgress } = useScroll({
-    target: topEmblemRef,
-    offset: ["start start", "end start"],
-  });
-
-  const topImageY = useTransform(topScrollProgress, [0, 1], [-20, 50]);
-  const topImageScale = useTransform(topScrollProgress, [0, 1], [1, 1.05]);
-
   const values = [
     {
       icon: BrainCircuit,
@@ -69,40 +60,17 @@ export default function AboutPage() {
       <div className="max-w-screen-2xl mx-auto">
         
         {/* SECTION 1 : GRANDE CARTE HORIZONTALE Mory-AI-Labs13 (1344×768) */}
-        <div
-          ref={topEmblemRef}
-          className="w-full max-w-5xl mx-auto mb-16 neomorph-card p-0 group relative overflow-hidden shadow-[0_25px_70px_rgba(0,0,0,0.85),0_0_55px_var(--accent-glow)] hover:border-[var(--accent-primary)] transition-all duration-500 rounded-3xl sm:rounded-[36px] z-20 border border-[var(--card-border)]"
-        >
-          <div className="relative w-full" style={{ paddingBottom: '57.14%' }}>
-            {/* Image horizontale native — remplit exactement la carte sans marge */}
-            <motion.div
-              style={{ y: topImageY, scale: topImageScale }}
-              className="absolute inset-0 w-full h-full"
-            >
-              <Image
-                src="/images/Mory-AI-Labs13.jpg"
-                alt="Mory AI Labs Studio"
-                fill
-                sizes="(max-width: 1280px) 100vw, 1024px"
-                className="object-cover object-center select-none transition-transform duration-700 ease-out group-hover:scale-105"
-                priority
-              />
-            </motion.div>
-
-            {/* Overlay Gradient Sombre Subtil */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[var(--bg-primary)]/70 via-transparent to-[var(--bg-primary)]/10 pointer-events-none z-10 transition-colors duration-500" />
-
-            {/* Reflet Diagonale Verre */}
-            <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/[0.05] to-transparent pointer-events-none z-10" />
-
-            {/* Badge de titre en haut à gauche */}
-            <div className="absolute top-6 left-6 z-20">
-              <span className="px-3.5 py-1.5 rounded-full neomorph-pill text-xs font-integral font-normal text-[var(--accent-primary)] uppercase tracking-wider backdrop-blur-md">
-                Studio d'Ingénierie &amp; Venture Builder
-              </span>
-            </div>
-          </div>
-        </div>
+        <ParallaxBannerCard
+          src="/images/Mory-AI-Labs13.jpg"
+          alt="Mory AI Labs Studio"
+          className="mb-16"
+          priority
+          badgeTopLeft={
+            <span className="px-3.5 py-1.5 rounded-full neomorph-pill text-xs font-integral font-normal text-[var(--accent-primary)] uppercase tracking-wider backdrop-blur-md">
+              Studio d'Ingénierie &amp; Venture Builder
+            </span>
+          }
+        />
 
         {/* SECTION 2 : TITRE & TEXTE EN DESSOUS */}
         <div className="text-center max-w-4xl mx-auto mb-20">
@@ -118,27 +86,13 @@ export default function AboutPage() {
           </p>
         </div>
 
-        {/* SECTION 2 : CARD HORIZONTALE AVEC LA PHOTO (pexels-artempodrez) RESTAURÉE */}
-        <div className="w-full max-w-5xl mx-auto mb-24 neomorph-card p-0 group relative overflow-hidden shadow-[0_25px_70px_rgba(0,0,0,0.85),0_0_40px_var(--accent-glow)] hover:border-[var(--accent-primary)] transition-all duration-300 rounded-[28px]">
-          <div className="relative w-full h-[260px] sm:h-[380px] md:h-[480px] lg:h-[540px] overflow-hidden bg-[var(--emblem-bg)] transition-colors duration-500">
-            {/* Photo pexels-artempodrez */}
-            <Image
-              src="/images/pexels-artempodrez-8533136.jpg"
-              alt="Mory AI Labs Laboratoire & Recherche IA"
-              fill
-              sizes="(max-width: 1280px) 100vw, 1200px"
-              className="object-cover object-center select-none transition-transform duration-700 ease-out group-hover:scale-105"
-              priority
-            />
-
-            {/* Overlay Gradient Sombre */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[var(--bg-primary)]/95 via-[var(--bg-primary)]/40 to-transparent pointer-events-none transition-colors duration-500" />
-
-            {/* Reflet Diagonale Verre & Lueur */}
-            <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/[0.06] to-transparent pointer-events-none" />
-
-            {/* Badges / Légende sur l'image en bas */}
-            <div className="absolute bottom-6 left-6 right-6 flex flex-wrap items-end justify-between gap-4 pointer-events-none z-10">
+        {/* SECTION 3 : GRANDE CARTE HORIZONTALE AVEC L'IMAGE Mory-AI-Labs15 (1344×768) */}
+        <ParallaxBannerCard
+          src="/images/Mory-AI-Labs15.jpg"
+          alt="Mory AI Labs Laboratoire & Recherche IA"
+          className="mb-24"
+          overlayBottom={
+            <div className="flex flex-wrap items-end justify-between gap-4">
               <div>
                 <span className="px-3.5 py-1.5 rounded-full neomorph-pill text-[11px] font-integral font-normal text-[var(--accent-primary)] uppercase tracking-wider block mb-2 w-fit backdrop-blur-md">
                   R&amp;D &amp; Usine Logicielle IA
@@ -152,8 +106,8 @@ export default function AboutPage() {
                 <span>Production &amp; Déploiement Continu</span>
               </div>
             </div>
-          </div>
-        </div>
+          }
+        />
 
         {/* Founder Bio Bento Block */}
         <motion.div

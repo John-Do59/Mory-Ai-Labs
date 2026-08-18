@@ -1,8 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
-import { useRef } from "react";
 import {
   Brain,
   Cpu,
@@ -16,16 +14,10 @@ import {
   Workflow,
   Lock,
 } from "lucide-react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
+import ParallaxBannerCard from "@/components/ParallaxBannerCard";
 
 export default function ServicesPage() {
-  const heroRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: heroRef,
-    offset: ["start start", "end start"],
-  });
-  const imageY = useTransform(scrollYProgress, [0, 1], [0, 60]);
-  const imageScale = useTransform(scrollYProgress, [0, 1], [1, 1.08]);
   const mainServices = [
     {
       icon: Brain,
@@ -98,34 +90,13 @@ export default function ServicesPage() {
       <div className="absolute top-3/4 -left-32 w-[600px] h-[600px] bg-[var(--accent-secondary)]/15 rounded-full blur-[180px] pointer-events-none -z-10 transition-all duration-700" />
 
       <div className="max-w-screen-2xl mx-auto">
-        {/* CARTE HORIZONTALE Mory-AI-Labs14 AVEC PARALLAX */}
-        <div
-          ref={heroRef}
-          className="w-full max-w-5xl mx-auto mb-10 neomorph-card p-0 group relative overflow-hidden shadow-[0_25px_70px_rgba(0,0,0,0.85),0_0_55px_var(--accent-glow)] hover:border-[var(--accent-primary)] transition-all duration-500 rounded-3xl sm:rounded-[36px] z-10 border border-[var(--card-border)]"
-        >
-          {/* Ratio natif 1344×768 ≈ 57.14% */}
-          <div className="relative w-full" style={{ paddingBottom: '57.14%' }}>
-            {/* Image horizontale avec Parallax au scroll */}
-            <motion.div
-              style={{ y: imageY, scale: imageScale }}
-              className="absolute inset-0 w-full h-full"
-            >
-              <Image
-                src="/images/Mory-AI-Labs14.jpg"
-                alt="Mory AI Labs Ingénierie & Solutions"
-                fill
-                sizes="(max-width: 1280px) 100vw, 1024px"
-                className="object-cover object-center select-none"
-                priority
-              />
-            </motion.div>
-
-            {/* Overlay gradient sombre */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[var(--bg-primary)]/70 via-transparent to-transparent pointer-events-none z-10 transition-colors duration-500" />
-            {/* Reflet diagonale verre */}
-            <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/[0.05] to-transparent pointer-events-none z-10" />
-          </div>
-        </div>
+        {/* CARTE HORIZONTALE Mory-AI-Labs14 AVEC PARALLAX & NEOMORPHISME */}
+        <ParallaxBannerCard
+          src="/images/Mory-AI-Labs14.jpg"
+          alt="Mory AI Labs Ingénierie & Solutions"
+          className="mb-10"
+          priority
+        />
 
         {/* Titre & Description EN DESSOUS de la carte image */}
         <div className="text-center max-w-4xl mx-auto mb-20">

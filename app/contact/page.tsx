@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Mail, MapPin, Send, CheckCircle2, ShieldCheck, Sparkles, Loader2, AlertCircle } from "lucide-react";
 import { motion } from "framer-motion";
+import ParallaxBannerCard from "@/components/ParallaxBannerCard";
 
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
@@ -30,13 +31,13 @@ export default function ContactPage() {
         body: JSON.stringify(formData),
       });
 
-      if (response.ok) {
-        setSubmitted(true);
-      } else {
-        setSubmitted(true);
+      if (!response.ok) {
+        throw new Error("Erreur lors de l'envoi du formulaire");
       }
-    } catch (err) {
+
       setSubmitted(true);
+    } catch (err: any) {
+      setError(err.message || "Une erreur est survenue lors de l'envoi");
     } finally {
       setLoading(false);
     }
@@ -49,16 +50,26 @@ export default function ContactPage() {
       <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-[var(--accent-secondary)]/15 rounded-full blur-[180px] pointer-events-none -z-10 transition-all duration-700" />
 
       <div className="max-w-screen-xl mx-auto w-full">
+        {/* CARTE HORIZONTALE Mory-AI-Labs16 AVEC PARALLAX & NÉOMORPHISME */}
+        <ParallaxBannerCard
+          src="/images/Mory-AI-Labs16.jpg"
+          alt="Mory AI Labs Échange Stratégique IA & Cadrage"
+          className="mb-14"
+          priority
+          badgeTopLeft={
+            <span className="px-3.5 py-1.5 rounded-full neomorph-pill text-xs font-integral font-normal text-[var(--accent-primary)] uppercase tracking-wider backdrop-blur-md flex items-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-[var(--accent-primary)] animate-ping" />
+              Échange Stratégique IA &amp; Cadrage
+            </span>
+          }
+        />
+
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.35, ease: "easeOut" }}
           className="mb-16"
         >
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full neomorph-pill text-xs font-integral font-normal text-[var(--accent-primary)] mb-6 uppercase tracking-wider">
-            <span className="w-1.5 h-1.5 rounded-full bg-[var(--accent-primary)] animate-ping" />
-            Échange Stratégique IA &amp; Cadrage
-          </div>
           <h1 className="text-4xl sm:text-6xl md:text-8xl font-black uppercase tracking-tight text-white mb-4 font-integral">
             LANCEZ UN <br />
             <span className="title-gradient">
