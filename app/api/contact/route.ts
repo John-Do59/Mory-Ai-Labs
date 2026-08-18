@@ -1,5 +1,7 @@
 import { NextResponse } from "next/server";
 
+export const runtime = "edge";
+
 export async function POST(request: Request) {
   try {
     const body = await request.json();
@@ -12,8 +14,11 @@ export async function POST(request: Request) {
       );
     }
 
-    // Si une clé d'accès Web3Forms ou Resend est configurée dans l'environnement
-    const accessKey = process.env.WEB3FORMS_ACCESS_KEY || process.env.NEXT_PUBLIC_WEB3FORMS_KEY;
+    // Clé d'accès Web3Forms (priorité env, sinon clé configurée)
+    const accessKey =
+      process.env.WEB3FORMS_ACCESS_KEY ||
+      process.env.NEXT_PUBLIC_WEB3FORMS_KEY ||
+      "67df17b9-0f35-456c-af04-27d01a36a730";
 
     if (accessKey) {
       try {

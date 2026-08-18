@@ -39,11 +39,11 @@ export default function ProjectsSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center neomorph-card shadow-coral-glow p-6 sm:p-10 md:p-12 group transition-all duration-500"
+            className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center neomorph-card p-6 sm:p-10 md:p-12 group hover:border-[var(--accent-primary)]/40 transition-all duration-500"
           >
             {/* Visual Column (Left) */}
             <div className="lg:col-span-6 order-1">
-              <div className="relative w-full h-[320px] sm:h-[420px] md:h-[460px] rounded-2xl sm:rounded-3xl overflow-hidden bg-[var(--emblem-bg)] border-2 border-[#FFA18A]/45 shadow-[0_15px_40px_rgba(0,0,0,0.9),0_0_30px_rgba(255,161,138,0.35)] transition-all duration-500 group/img group-hover:border-[#FFA18A] group-hover:shadow-[0_20px_50px_rgba(0,0,0,1),0_0_55px_rgba(255,161,138,0.65)]">
+              <div className="relative w-full h-[320px] sm:h-[420px] md:h-[460px] rounded-2xl sm:rounded-3xl overflow-hidden bg-[var(--emblem-bg)] border border-[#FFA18A]/35 shadow-[0_15px_40px_rgba(0,0,0,0.85),0_0_25px_rgba(255,161,138,0.22)] transition-all duration-500 group/img group-hover:border-[#FFA18A]/60 group-hover:shadow-[0_20px_50px_rgba(0,0,0,0.95),0_0_35px_rgba(255,161,138,0.4)]">
                 <Image
                   src="/images/ArboResilience.png"
                   alt="ArboResilience IA"
@@ -94,7 +94,7 @@ export default function ProjectsSection() {
               {/* ROI & CTA Footnote */}
               <div className="pt-6 border-t border-[var(--card-border)] flex flex-wrap items-center justify-between gap-4">
                 <div>
-                  <span className="text-xs font-integral font-normal uppercase tracking-widest text-[#FFA18A] block mb-1">
+                  <span className="text-xs font-integral font-normal uppercase tracking-widest text-[var(--accent-secondary)] block mb-1">
                     ROI &amp; Avantage Compétitif
                   </span>
                   <span className="text-xl sm:text-2xl font-bold text-white font-integral">
@@ -103,7 +103,7 @@ export default function ProjectsSection() {
                 </div>
                 <Link
                   href="/contact"
-                  className="inline-flex items-center gap-2 text-xs font-integral font-normal uppercase tracking-wider text-[#FFA18A] hover:text-white transition-colors group/btn"
+                  className="inline-flex items-center gap-2 text-xs font-integral font-normal uppercase tracking-wider text-[var(--accent-primary)] hover:text-white transition-colors group/btn"
                 >
                   <span>Étudier ce cas</span>
                   <ArrowUpRight className="w-4 h-4 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
@@ -118,12 +118,12 @@ export default function ProjectsSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center neomorph-card shadow-coral-glow p-6 sm:p-10 md:p-12 group transition-all duration-500"
+            className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center neomorph-card p-6 sm:p-10 md:p-12 group hover:border-[var(--accent-secondary)]/40 transition-all duration-500"
           >
             {/* Content Column (Left on Desktop, Right on Mobile) */}
             <div className="lg:col-span-6 order-2 lg:order-1 flex flex-col justify-between">
               <div>
-                <span className="text-xs font-integral font-normal text-[#FFA18A] uppercase tracking-widest block mb-2">
+                <span className="text-xs font-integral font-normal text-[var(--accent-secondary)] uppercase tracking-widest block mb-2">
                   CAS D'USAGE B2B CONCRETS
                 </span>
                 <h3 className="text-2xl sm:text-4xl font-bold uppercase tracking-tight text-white mb-4 font-integral">
@@ -136,15 +136,15 @@ export default function ProjectsSection() {
                 {/* Features Pill List */}
                 <div className="space-y-3 mb-8">
                   <div className="flex items-center gap-3 text-sm text-white">
-                    <CheckCircle2 className="w-5 h-5 text-[#FFA18A] shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-[var(--accent-secondary)] shrink-0" />
                     <span>Modélisation thermodynamique temps réel et séries temporelles</span>
                   </div>
                   <div className="flex items-center gap-3 text-sm text-white">
-                    <CheckCircle2 className="w-5 h-5 text-[#FFA18A] shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-[var(--accent-secondary)] shrink-0" />
                     <span>Pilotage dynamique des charges et des pointes de consommation</span>
                   </div>
                   <div className="flex items-center gap-3 text-sm text-white">
-                    <CheckCircle2 className="w-5 h-5 text-[#FFA18A] shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-[var(--accent-secondary)] shrink-0" />
                     <span>Reporting automatique conforme aux normes CSRD et ISO 50001</span>
                   </div>
                 </div>
@@ -153,7 +153,7 @@ export default function ProjectsSection() {
               {/* ROI & CTA Footnote */}
               <div className="pt-6 border-t border-[var(--card-border)] flex flex-wrap items-center justify-between gap-4">
                 <div>
-                  <span className="text-xs font-integral font-normal uppercase tracking-widest text-[#FFA18A] block mb-1">
+                  <span className="text-xs font-integral font-normal uppercase tracking-widest text-[var(--accent-secondary)] block mb-1">
                     ROI &amp; Avantage Compétitif
                   </span>
                   <span className="text-xl sm:text-2xl font-bold text-white font-integral">
@@ -162,7 +162,7 @@ export default function ProjectsSection() {
                 </div>
                 <Link
                   href="/contact"
-                  className="inline-flex items-center gap-2 text-xs font-integral font-normal uppercase tracking-wider text-[#FFA18A] hover:text-white transition-colors group/btn"
+                  className="inline-flex items-center gap-2 text-xs font-integral font-normal uppercase tracking-wider text-[var(--accent-secondary)] hover:text-white transition-colors group/btn"
                 >
                   <span>Étudier ce cas</span>
                   <ArrowUpRight className="w-4 h-4 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
@@ -172,7 +172,7 @@ export default function ProjectsSection() {
 
             {/* Visual Column (Right) */}
             <div className="lg:col-span-6 order-1 lg:order-2">
-              <div className="relative w-full h-[320px] sm:h-[420px] md:h-[460px] rounded-2xl sm:rounded-3xl overflow-hidden bg-[var(--emblem-bg)] border-2 border-[#FFA18A]/45 shadow-[0_15px_40px_rgba(0,0,0,0.9),0_0_30px_rgba(255,161,138,0.35)] transition-all duration-500 group/img group-hover:border-[#FFA18A] group-hover:shadow-[0_20px_50px_rgba(0,0,0,1),0_0_55px_rgba(255,161,138,0.65)]">
+              <div className="relative w-full h-[320px] sm:h-[420px] md:h-[460px] rounded-2xl sm:rounded-3xl overflow-hidden bg-[var(--emblem-bg)] border border-[#FFA18A]/35 shadow-[0_15px_40px_rgba(0,0,0,0.85),0_0_25px_rgba(255,161,138,0.22)] transition-all duration-500 group/img group-hover:border-[#FFA18A]/60 group-hover:shadow-[0_20px_50px_rgba(0,0,0,0.95),0_0_35px_rgba(255,161,138,0.4)]">
                 <Image
                   src="/images/greenopq-ai10.png"
                   alt="GreenOps AI Platform"
@@ -183,7 +183,7 @@ export default function ProjectsSection() {
                 {/* Overlay Dégradé Subtil */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-black/20 pointer-events-none" />
                 <div className="absolute top-4 left-4 z-10">
-                  <span className="px-3.5 py-1.5 rounded-full neomorph-pill text-xs font-integral font-normal text-[#FFA18A] uppercase tracking-wider backdrop-blur-md">
+                  <span className="px-3.5 py-1.5 rounded-full neomorph-pill text-xs font-integral font-normal text-[var(--accent-secondary)] uppercase tracking-wider backdrop-blur-md">
                     Industrie &amp; Climat
                   </span>
                 </div>
