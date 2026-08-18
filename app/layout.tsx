@@ -41,7 +41,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="fr" className={`${inter.variable} ${integralCF.variable}`} data-theme="cyber-emerald">
+    <html lang="fr" className={`${inter.variable} ${integralCF.variable}`} data-theme="ultra-violet">
       <body className="relative bg-[var(--bg-primary)] text-[var(--text-primary)] antialiased transition-colors duration-500">
         <ThemeProvider>
           <div className="grain" />

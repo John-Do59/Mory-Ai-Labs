@@ -3,6 +3,35 @@
 @tailwind utilities;
 
 :root,
+[data-theme="ultra-violet"] {
+  --bg-primary: #0C0219;
+  --bg-secondary: #3F0075;
+  --bg-card: radial-gradient(130% 130% at 50% 0%, rgba(255, 255, 255, 0.05) 0%, rgba(63, 0, 117, 0.28) 60%, rgba(12, 2, 25, 0.9) 100%);
+  --card-border: rgba(106, 1, 254, 0.35);
+  --card-border-hover: rgba(106, 1, 254, 0.7);
+  --card-shadow-hover: 0 25px 60px rgba(0, 0, 0, 0.8), 0 0 35px rgba(106, 1, 254, 0.35);
+  --accent-primary: #6A01FE;
+  --accent-secondary: #FFA18A;
+  --accent-glow: rgba(106, 1, 254, 0.65);
+  --text-primary: #FFFFFF;
+  --text-secondary: #D8B4FE;
+  --text-tertiary: #9BEDB3;
+  --title-gradient-from: #FFA18A;
+  --title-gradient-via: #FE6A2F;
+  --title-gradient-to: #6A01FE;
+  --btn-bg: linear-gradient(135deg, #6A01FE 0%, #0300D1 100%);
+  --btn-text: #FFFFFF;
+  --btn-shadow: 0 0 30px rgba(106, 1, 254, 0.65);
+  --navbar-bg: rgba(12, 2, 25, 0.92);
+  --navbar-border: rgba(106, 1, 254, 0.4);
+  --emblem-bg: #080112;
+  --emblem-border: rgba(106, 1, 254, 0.95);
+  --emblem-glow: rgba(106, 1, 254, 0.85);
+  --marquee-bg: rgba(10, 1, 20, 0.95);
+  --marquee-border: rgba(63, 0, 117, 0.5);
+  --footer-bg: #080112;
+}
+
 [data-theme="cyber-emerald"] {
   --bg-primary: #021F1A;
   --bg-secondary: #075F5A;
@@ -30,35 +59,6 @@
   --marquee-bg: rgba(1, 26, 22, 0.95);
   --marquee-border: rgba(7, 95, 90, 0.5);
   --footer-bg: #011512;
-}
-
-[data-theme="ultra-violet"] {
-  --bg-primary: #0C0219;
-  --bg-secondary: #3F0075;
-  --bg-card: radial-gradient(130% 130% at 50% 0%, rgba(255, 255, 255, 0.05) 0%, rgba(63, 0, 117, 0.28) 60%, rgba(12, 2, 25, 0.9) 100%);
-  --card-border: rgba(106, 1, 254, 0.35);
-  --card-border-hover: rgba(106, 1, 254, 0.7);
-  --card-shadow-hover: 0 25px 60px rgba(0, 0, 0, 0.8), 0 0 35px rgba(106, 1, 254, 0.35);
-  --accent-primary: #6A01FE;
-  --accent-secondary: #FFA18A;
-  --accent-glow: rgba(106, 1, 254, 0.65);
-  --text-primary: #FFFFFF;
-  --text-secondary: #D8B4FE;
-  --text-tertiary: #9BEDB3;
-  --title-gradient-from: #FFA18A;
-  --title-gradient-via: #FE6A2F;
-  --title-gradient-to: #6A01FE;
-  --btn-bg: linear-gradient(135deg, #6A01FE 0%, #0300D1 100%);
-  --btn-text: #FFFFFF;
-  --btn-shadow: 0 0 30px rgba(106, 1, 254, 0.65);
-  --navbar-bg: rgba(12, 2, 25, 0.92);
-  --navbar-border: rgba(106, 1, 254, 0.4);
-  --emblem-bg: #080112;
-  --emblem-border: rgba(106, 1, 254, 0.95);
-  --emblem-glow: rgba(106, 1, 254, 0.85);
-  --marquee-bg: rgba(10, 1, 20, 0.95);
-  --marquee-border: rgba(63, 0, 117, 0.5);
-  --footer-bg: #07010F;
 }
 
 @layer base {
