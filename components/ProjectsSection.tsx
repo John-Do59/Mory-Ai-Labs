@@ -115,25 +115,25 @@ export default function ProjectsSection() {
                   CAS D'USAGE B2B CONCRETS
                 </span>
                 <h3 className="text-2xl sm:text-4xl font-bold uppercase tracking-tight text-white mb-4 font-integral">
-                  GreenOps AI · Optimisation Énergétique &amp; Décarbonation
+                  GreenOps AI · IA Agentique, RAG &amp; Gestion des Équipes
                 </h3>
                 <p className="text-[var(--text-secondary)] text-sm sm:text-base leading-relaxed mb-6 font-sans transition-colors duration-500">
-                  Système d'agents autonomes dédié au pilotage intelligent et à l'optimisation des flux énergétiques industriels et logistiques en continu.
+                  Système intelligent d'agents autonomes et de recherche sémantique (RAG) dédié à la génération automatisée de devis, au chiffrage complexe et au pilotage optimisé des équipes opérationnelles.
                 </p>
 
                 {/* Features Pill List */}
                 <div className="space-y-3 mb-8">
                   <div className="flex items-center gap-3 text-sm text-white">
                     <CheckCircle2 className="w-5 h-5 text-[var(--accent-secondary)] shrink-0" />
-                    <span>Modélisation thermodynamique temps réel et séries temporelles</span>
+                    <span>Génération automatisée de devis et chiffrage intelligent via RAG</span>
                   </div>
                   <div className="flex items-center gap-3 text-sm text-white">
                     <CheckCircle2 className="w-5 h-5 text-[var(--accent-secondary)] shrink-0" />
-                    <span>Pilotage dynamique des charges et des pointes de consommation</span>
+                    <span>Orchestration multi-agents pour l'attribution dynamique et la gestion des équipes</span>
                   </div>
                   <div className="flex items-center gap-3 text-sm text-white">
                     <CheckCircle2 className="w-5 h-5 text-[var(--accent-secondary)] shrink-0" />
-                    <span>Reporting automatique conforme aux normes CSRD et ISO 50001</span>
+                    <span>Copilote opérationnel connecté en temps réel aux ERP, CRM et bases métiers</span>
                   </div>
                 </div>
               </div>
@@ -145,7 +145,7 @@ export default function ProjectsSection() {
                     ROI &amp; Avantage Compétitif
                   </span>
                   <span className="text-xl sm:text-2xl font-bold text-white font-integral">
-                    -25% sur la facture énergétique
+                    -75% sur le temps de création de devis
                   </span>
                 </div>
                 <Link
@@ -172,7 +172,7 @@ export default function ProjectsSection() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-black/20 pointer-events-none" />
                 <div className="absolute top-4 left-4 z-10">
                   <span className="px-3.5 py-1.5 rounded-full neomorph-pill text-xs font-integral font-normal text-[var(--accent-secondary)] uppercase tracking-wider backdrop-blur-md">
-                    Industrie &amp; Climat
+                    IA Agentique &amp; RAG
                   </span>
                 </div>
               </div>
