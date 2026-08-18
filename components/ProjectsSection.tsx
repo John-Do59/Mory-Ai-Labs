@@ -35,10 +35,10 @@ export default function ProjectsSection() {
           
           {/* Card 1: ArboResilience (Image à Gauche, Texte à Droite) */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-40px" }}
-            transition={{ duration: 0.35, ease: "easeOut" }}
+            viewport={{ once: true, margin: "120px" }}
+            transition={{ duration: 0.3, ease: "easeOut" }}
             className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center neomorph-card p-6 sm:p-10 md:p-12 group hover:border-[var(--accent-primary)]/40"
           >
             {/* Visual Column (Left) */}
@@ -114,10 +114,10 @@ export default function ProjectsSection() {
 
           {/* Card 2: GreenOps AI (Texte à Gauche, Image à Droite) */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-40px" }}
-            transition={{ duration: 0.35, ease: "easeOut" }}
+            viewport={{ once: true, margin: "120px" }}
+            transition={{ duration: 0.3, ease: "easeOut" }}
             className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center neomorph-card p-6 sm:p-10 md:p-12 group hover:border-[var(--accent-secondary)]/40"
           >
             {/* Content Column (Left on Desktop, Right on Mobile) */}

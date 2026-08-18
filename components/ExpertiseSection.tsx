@@ -48,8 +48,8 @@ export default function ExpertiseSection() {
                 key={index}
                 initial={{ opacity: 0, y: 15 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.35, delay: index * 0.08, ease: "easeOut" }}
+                viewport={{ once: true, margin: "100px" }}
+                transition={{ duration: 0.3, delay: index * 0.05, ease: "easeOut" }}
                 className="neomorph-card p-8 md:p-10 flex flex-col justify-between group hover:border-[var(--accent-primary)] transition-colors"
               >
                 <div>
