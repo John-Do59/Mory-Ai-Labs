@@ -31,25 +31,25 @@ export default function ParallaxBannerCard({
   });
 
   // Smooth cinematic vertical parallax translation and subtle scale
-  const y = useTransform(scrollYProgress, [0, 1], [-25, 35]);
-  const scale = useTransform(scrollYProgress, [0, 1], [1.02, 1.08]);
+  const y = useTransform(scrollYProgress, [0, 1], [-18, 22]);
+  const scale = useTransform(scrollYProgress, [0, 1], [1.0, 1.03]);
 
   return (
     <div
       ref={cardRef}
-      className={`w-full max-w-5xl mx-auto neomorph-card p-0 group relative overflow-hidden shadow-[0_25px_70px_rgba(0,0,0,0.85),0_0_55px_var(--accent-glow)] hover:border-[var(--accent-primary)] transition-all duration-500 rounded-3xl sm:rounded-[36px] z-10 border border-[var(--card-border)] bg-[var(--bg-card)] backdrop-blur-2xl ${className}`}
+      className={`w-full max-w-6xl mx-auto neomorph-card p-0 group relative overflow-hidden shadow-[0_25px_70px_rgba(0,0,0,0.85),0_0_55px_var(--accent-glow)] hover:border-[var(--accent-primary)] transition-all duration-500 rounded-3xl sm:rounded-[36px] z-10 border border-[var(--card-border)] bg-[var(--bg-card)] backdrop-blur-2xl ${className}`}
     >
       <div className="relative w-full overflow-hidden" style={{ paddingBottom: aspectRatioPadding }}>
         {/* Parallax Image Layer */}
         <motion.div
           style={{ y, scale }}
-          className="absolute inset-0 w-full h-[115%] -top-[7.5%]"
+          className="absolute inset-0 w-full h-[108%] -top-[4%]"
         >
           <Image
             src={src}
             alt={alt}
             fill
-            sizes="(max-width: 1280px) 100vw, 1200px"
+            sizes="(max-width: 1536px) 100vw, 1400px"
             className="object-cover object-center select-none transition-transform duration-700 ease-out group-hover:scale-105"
             priority={priority}
           />
