@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { ArrowRight, Sparkles } from "lucide-react";
+import Image from "next/image";
+import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { useTheme } from "./ThemeProvider";
 
@@ -56,9 +57,21 @@ export default function Navbar() {
             : "bg-[var(--navbar-bg)] border-[var(--navbar-border)] shadow-black/40"
         }`}
       >
-        {/* Left: Time & Location + Theme Toggle */}
-        <div className="flex items-center gap-3 sm:gap-4 text-xs md:text-sm font-medium">
-          <div className="hidden md:flex items-center gap-2 text-[var(--text-secondary)]">
+        {/* Left: Logo Image + Time & Theme Toggle */}
+        <div className="flex items-center gap-3 sm:gap-4">
+          {/* Logo Mory AI Labs 12 */}
+          <Link href="/" className="flex-shrink-0 relative w-8 h-8 sm:w-10 sm:h-10 rounded-full overflow-hidden ring-2 ring-[var(--accent-primary)]/40 hover:ring-[var(--accent-primary)] transition-all duration-300 shadow-[0_0_14px_var(--accent-glow)]">
+            <Image
+              src="/images/Mory-AI-Labs12.png"
+              alt="Mory AI Labs Logo"
+              fill
+              sizes="40px"
+              className="object-cover object-center"
+              priority
+            />
+          </Link>
+
+          <div className="hidden md:flex items-center gap-2 text-[var(--text-secondary)] text-xs">
             <span className="w-2 h-2 rounded-full bg-[var(--accent-primary)] animate-pulse" />
             <span className="font-mono text-white">{time}</span>
             <span className="opacity-40">|</span>
@@ -86,12 +99,23 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* Center: Large Logo */}
+        {/* Center: Logo Image + Text */}
         <Link
           href="/"
-          className="absolute left-1/2 -translate-x-1/2 text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-white drop-shadow-[0_0_20px_var(--accent-glow)] font-integral hover:text-[var(--accent-primary)] transition-colors"
+          className="absolute left-1/2 -translate-x-1/2 flex items-center gap-2.5 group"
         >
-          MORY AI LABS
+          <div className="relative w-7 h-7 sm:w-9 sm:h-9 rounded-full overflow-hidden ring-1 ring-[var(--accent-primary)]/50 group-hover:ring-[var(--accent-primary)] transition-all duration-300 shadow-[0_0_12px_var(--accent-glow)] flex-shrink-0">
+            <Image
+              src="/images/Mory-AI-Labs12.png"
+              alt="Mory AI Labs"
+              fill
+              sizes="36px"
+              className="object-cover object-center"
+            />
+          </div>
+          <span className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-white drop-shadow-[0_0_20px_var(--accent-glow)] font-integral group-hover:text-[var(--accent-primary)] transition-colors whitespace-nowrap">
+            MORY AI LABS
+          </span>
         </Link>
 
         {/* Right: Menu & CTA */}

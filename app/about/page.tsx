@@ -20,14 +20,14 @@ import {
 import { motion, useScroll, useTransform } from "framer-motion";
 
 export default function AboutPage() {
-  const heroRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: heroRef,
+  const topEmblemRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress: topScrollProgress } = useScroll({
+    target: topEmblemRef,
     offset: ["start start", "end start"],
   });
 
-  const parallaxY = useTransform(scrollYProgress, [0, 1], [0, 40]);
-  const parallaxScale = useTransform(scrollYProgress, [0, 1], [1, 1.05]);
+  const topImageY = useTransform(topScrollProgress, [0, 1], [-20, 50]);
+  const topImageScale = useTransform(topScrollProgress, [0, 1], [1, 1.05]);
 
   const values = [
     {
@@ -67,43 +67,58 @@ export default function AboutPage() {
       <div className="absolute top-2/3 -right-32 w-[600px] h-[600px] bg-[var(--accent-secondary)]/15 rounded-full blur-[180px] pointer-events-none -z-10 transition-all duration-700" />
 
       <div className="max-w-screen-2xl mx-auto">
-        {/* Page Hero */}
-        <div ref={heroRef} className="text-center max-w-4xl mx-auto mb-16 flex flex-col items-center">
-          
-          {/* Card Emblem Rounded Rectangle Neomorphique avec Parallax & Z-Index Shadow Overlay */}
-          <motion.div
-            style={{ y: parallaxY, scale: parallaxScale }}
-            className="relative z-20 mb-8 rounded-3xl sm:rounded-[32px] p-3 sm:p-4 neomorph-card shadow-[0_25px_60px_rgba(0,0,0,0.85),0_0_35px_var(--accent-glow)] border border-[var(--card-border)] bg-[var(--bg-card)] backdrop-blur-2xl group hover:border-[var(--accent-primary)] transition-all duration-300"
-          >
-            <div className="relative w-28 h-28 sm:w-36 sm:h-36 md:w-44 md:h-44 rounded-2xl sm:rounded-[24px] overflow-hidden bg-[var(--emblem-bg)] flex items-center justify-center p-2 shadow-inner border border-white/10 transition-colors duration-500">
+        
+        {/* SECTION 1 : GRANDE CARTE HORIZONTALE Mory-AI-Labs13 (1344×768) */}
+        <div
+          ref={topEmblemRef}
+          className="w-full max-w-5xl mx-auto mb-16 neomorph-card p-0 group relative overflow-hidden shadow-[0_25px_70px_rgba(0,0,0,0.85),0_0_55px_var(--accent-glow)] hover:border-[var(--accent-primary)] transition-all duration-500 rounded-3xl sm:rounded-[36px] z-20 border border-[var(--card-border)]"
+        >
+          <div className="relative w-full" style={{ paddingBottom: '57.14%' }}>
+            {/* Image horizontale native — remplit exactement la carte sans marge */}
+            <motion.div
+              style={{ y: topImageY, scale: topImageScale }}
+              className="absolute inset-0 w-full h-full"
+            >
               <Image
-                src="/images/Mory-AI-Labs2.png"
-                alt="Mory AI Labs Emblem"
+                src="/images/Mory-AI-Labs13.jpg"
+                alt="Mory AI Labs Studio"
                 fill
-                sizes="(max-width: 768px) 144px, 176px"
-                className="object-contain p-2 select-none group-hover:scale-108 transition-transform duration-700 ease-out"
+                sizes="(max-width: 1280px) 100vw, 1024px"
+                className="object-cover object-center select-none transition-transform duration-700 ease-out group-hover:scale-105"
                 priority
               />
-              {/* Reflet Diagonale Verre & Lueur */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/[0.08] to-transparent pointer-events-none" />
+            </motion.div>
+
+            {/* Overlay Gradient Sombre Subtil */}
+            <div className="absolute inset-0 bg-gradient-to-t from-[var(--bg-primary)]/70 via-transparent to-[var(--bg-primary)]/10 pointer-events-none z-10 transition-colors duration-500" />
+
+            {/* Reflet Diagonale Verre */}
+            <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/[0.05] to-transparent pointer-events-none z-10" />
+
+            {/* Badge de titre en haut à gauche */}
+            <div className="absolute top-6 left-6 z-20">
+              <span className="px-3.5 py-1.5 rounded-full neomorph-pill text-xs font-integral font-normal text-[var(--accent-primary)] uppercase tracking-wider backdrop-blur-md">
+                Studio d'Ingénierie &amp; Venture Builder
+              </span>
             </div>
+          </div>
+        </div>
 
-            {/* Halo de lueur ambiant derrière la carte */}
-            <div className="absolute -inset-2 bg-[var(--accent-glow)]/40 rounded-3xl blur-xl -z-10 group-hover:bg-[var(--accent-glow)]/70 transition-colors duration-500" />
-          </motion.div>
-
+        {/* SECTION 2 : TITRE & TEXTE EN DESSOUS */}
+        <div className="text-center max-w-4xl mx-auto mb-20">
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold uppercase tracking-tight text-white mb-6 font-integral">
             L'EXCELLENCE DE L'IA <br />
             <span className="title-gradient">
               AU SERVICE DU BUSINESS.
             </span>
           </h1>
-          <p className="text-[var(--text-secondary)] text-base sm:text-lg md:text-xl font-normal leading-relaxed transition-colors duration-500">
+
+          <p className="text-[var(--text-secondary)] text-base sm:text-lg md:text-xl font-normal leading-relaxed transition-colors duration-500 max-w-3xl mx-auto">
             Mory AI Labs est un studio d'ingénierie spécialisé dans la conception, l'entraînement et la mise en production de solutions d'Intelligence Artificielle sur-mesure pour les entreprises exigeantes.
           </p>
         </div>
 
-        {/* CARD HORIZONTALE AVEC OVERLAY, SHADOW ET NEOMORPHISME (Image pexels-artempodrez) */}
+        {/* SECTION 2 : CARD HORIZONTALE AVEC LA PHOTO (pexels-artempodrez) RESTAURÉE */}
         <div className="w-full max-w-5xl mx-auto mb-24 neomorph-card p-0 group relative overflow-hidden shadow-[0_25px_70px_rgba(0,0,0,0.85),0_0_40px_var(--accent-glow)] hover:border-[var(--accent-primary)] transition-all duration-300 rounded-[28px]">
           <div className="relative w-full h-[260px] sm:h-[380px] md:h-[480px] lg:h-[540px] overflow-hidden bg-[var(--emblem-bg)] transition-colors duration-500">
             {/* Photo pexels-artempodrez */}
@@ -123,16 +138,16 @@ export default function AboutPage() {
             <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/[0.06] to-transparent pointer-events-none" />
 
             {/* Badges / Légende sur l'image en bas */}
-            <div className="absolute bottom-6 left-6 right-6 flex flex-wrap items-end justify-between gap-4 pointer-events-none">
+            <div className="absolute bottom-6 left-6 right-6 flex flex-wrap items-end justify-between gap-4 pointer-events-none z-10">
               <div>
-                <span className="px-3 py-1 rounded-full neomorph-pill text-[11px] font-integral font-normal text-[var(--accent-primary)] uppercase tracking-wider block mb-2 w-fit">
+                <span className="px-3.5 py-1.5 rounded-full neomorph-pill text-[11px] font-integral font-normal text-[var(--accent-primary)] uppercase tracking-wider block mb-2 w-fit backdrop-blur-md">
                   R&amp;D &amp; Usine Logicielle IA
                 </span>
                 <p className="text-white text-base sm:text-xl font-bold font-integral drop-shadow-md">
                   Ingénierie Avancée &amp; Modélisation Sur-Mesure
                 </p>
               </div>
-              <div className="hidden sm:flex items-center gap-2 text-xs font-mono text-[var(--text-secondary)] neomorph-pill px-4 py-2">
+              <div className="hidden sm:flex items-center gap-2 text-xs font-mono text-[var(--text-secondary)] neomorph-pill px-4 py-2 backdrop-blur-md">
                 <span className="w-2 h-2 rounded-full bg-[var(--accent-primary)] animate-pulse" />
                 <span>Production &amp; Déploiement Continu</span>
               </div>
@@ -173,13 +188,16 @@ export default function AboutPage() {
             </div>
 
             <div className="lg:col-span-4 flex flex-col items-center lg:items-end justify-center">
-              <div className="w-48 h-48 sm:w-56 sm:h-56 rounded-full bg-gradient-to-tr from-[var(--accent-primary)]/30 via-[var(--accent-secondary)]/20 to-[var(--bg-secondary)]/60 p-2 shadow-[0_0_50px_var(--accent-glow)] border-2 border-[var(--accent-primary)]/50 flex items-center justify-center">
-                <div className="w-full h-full rounded-full bg-[var(--emblem-bg)] flex flex-col items-center justify-center text-center p-4 transition-colors duration-500">
-                  <span className="text-3xl font-bold text-white font-integral">100%</span>
-                  <span className="text-xs text-[var(--text-secondary)] uppercase font-integral mt-1">
-                    Exécution Sur-Mesure
-                  </span>
-                </div>
+              <div className="relative w-48 h-48 sm:w-56 sm:h-56 rounded-full overflow-hidden shadow-[0_0_50px_var(--accent-glow),0_0_80px_var(--accent-secondary)] ring-2 ring-[var(--accent-primary)]/60 hover:ring-[var(--accent-primary)] transition-all duration-500 group-hover:scale-105">
+                <Image
+                  src="/images/Mory-AI-Labs12.png"
+                  alt="Mory AI Labs"
+                  fill
+                  sizes="224px"
+                  className="object-cover object-center select-none transition-transform duration-700 ease-out hover:scale-110"
+                />
+                {/* Overlay subtil */}
+                <div className="absolute inset-0 rounded-full bg-gradient-to-t from-[var(--bg-primary)]/40 via-transparent to-transparent pointer-events-none" />
               </div>
             </div>
           </div>

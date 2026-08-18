@@ -79,7 +79,7 @@ export default function Hero() {
               
               {/* L'image circulaire cadrée au millimètre */}
               <Image
-                src="/images/Mory-AI-Labs.png"
+                src="/images/Mory-AI-Labs11.jpg"
                 alt="Mory AI Labs Emblème Circulaire"
                 fill
                 sizes="(max-width: 768px) 380px, 500px"
