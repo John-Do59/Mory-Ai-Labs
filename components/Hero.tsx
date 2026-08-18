@@ -59,7 +59,7 @@ export default function Hero() {
       {/* Hero Foreground Content */}
       <div className="max-w-screen-2xl mx-auto w-full text-center relative z-20 my-auto flex flex-col items-center">
         
-        {/* BADGE / CARD CIRCULAIRE ÉPOUSANT LA BORDURE VERTE NÉON DU CERCLE DE L'IMAGE */}
+        {/* BADGE / CARD CIRCULAIRE ÉPOUSANT PARFAITEMENT LE CERCLE DE L'IMAGE */}
         <motion.div
           style={{ y: mirrorY }}
           initial={{ opacity: 0, y: -20, scale: 0.95 }}
@@ -67,31 +67,26 @@ export default function Hero() {
           transition={{ duration: 0.9, ease: "easeOut" }}
           className="relative mb-10 group flex items-center justify-center"
         >
-          {/* Halo lumineux néon vert émeraude intense d'arrière-plan */}
-          <div className="absolute inset-0 rounded-full bg-[var(--emblem-border)]/35 blur-3xl group-hover:blur-[60px] transition-all duration-700 pointer-events-none scale-105" />
+          {/* Halo lumineux d'arrière-plan avec glow néon immersif */}
+          <div className="absolute inset-0 rounded-full bg-[var(--accent-primary)]/40 blur-3xl group-hover:blur-[65px] transition-all duration-700 pointer-events-none scale-105" />
 
-          {/* Card Circulaire épousant parfaitement le contour vert de l'image */}
-          <div className="relative w-[280px] sm:w-[380px] md:w-[460px] lg:w-[500px] aspect-square rounded-full p-1 bg-gradient-to-b from-[var(--emblem-border)]/60 via-black/90 to-[var(--bg-primary)] border-4 border-[var(--emblem-border)] shadow-[0_0_60px_var(--emblem-glow),0_0_30px_var(--emblem-glow),0_20px_50px_rgba(0,0,0,0.9)] backdrop-blur-3xl overflow-hidden flex items-center justify-center transition-all duration-700 group-hover:scale-[1.03] group-hover:shadow-[0_0_90px_var(--emblem-glow),0_0_45px_var(--emblem-glow)]">
+          {/* Disque circulaire avec bordure néon qui épouse exactement le contour du cercle */}
+          <div className="relative w-[280px] sm:w-[380px] md:w-[460px] lg:w-[500px] aspect-square rounded-full border-4 border-[var(--accent-primary)] shadow-[0_0_50px_var(--accent-glow),0_0_100px_var(--accent-glow),0_20px_50px_rgba(0,0,0,0.95),inset_0_0_25px_var(--accent-glow)] overflow-hidden flex items-center justify-center transition-all duration-700 group-hover:scale-[1.03] group-hover:shadow-[0_0_75px_var(--accent-glow),0_0_120px_var(--accent-glow)]">
             
-            {/* Surface Vitrée Circulaire Intérieure */}
-            <div className="relative w-full h-full rounded-full overflow-hidden bg-[var(--emblem-bg)] flex items-center justify-center transition-colors duration-500">
-              
-              {/* L'image circulaire prenant tout le disque intérieur */}
+            {/* L'image circulaire avec mise à l'échelle pour fusionner avec la bordure */}
+            <div className="relative w-full h-full rounded-full overflow-hidden bg-black flex items-center justify-center">
               <Image
                 src="/images/Mory-AI-Labs.png"
                 alt="Mory AI Labs Emblème Circulaire"
                 fill
                 sizes="(max-width: 768px) 380px, 500px"
-                className="object-cover object-center select-none transition-transform duration-700 ease-out group-hover:scale-105"
+                className="object-cover object-center scale-[1.03] select-none transition-transform duration-700 ease-out group-hover:scale-[1.07]"
                 priority
               />
 
-              {/* Reflet Verre Léger & Overlay Néomorphique */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/[0.07] to-transparent pointer-events-none rounded-full" />
-              <div className="absolute inset-0 bg-gradient-to-b from-white/[0.04] via-transparent to-black/30 pointer-events-none rounded-full" />
-
-              {/* Anneau de lueur néon interne vert */}
-              <div className="absolute inset-0 rounded-full border border-[var(--emblem-border)]/40 pointer-events-none" />
+              {/* Overlay Néomorphique et Reflet Verre Subtil */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/[0.08] to-transparent pointer-events-none rounded-full" />
+              <div className="absolute inset-0 bg-gradient-to-b from-white/[0.04] via-transparent to-black/35 pointer-events-none rounded-full" />
             </div>
           </div>
         </motion.div>
