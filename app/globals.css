@@ -131,13 +131,12 @@
     0 20px 50px rgba(0, 0, 0, 0.6),
     inset 0 1px 1px rgba(255, 255, 255, 0.15),
     inset 0 -1px 1px rgba(0, 0, 0, 0.4);
-  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 
 .glass-card-transparent:hover, .neomorph-card:hover {
   border-color: var(--card-border-hover);
   box-shadow: var(--card-shadow-hover);
-  transform: translateY(-4px);
 }
 
 .neomorph-inset {

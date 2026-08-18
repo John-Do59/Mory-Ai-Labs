@@ -38,18 +38,18 @@ export default function ProjectsSection() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-40px" }}
-            transition={{ duration: 0.4, ease: "easeOut" }}
-            className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center neomorph-card p-6 sm:p-10 md:p-12 group hover:border-[var(--accent-primary)]/40 transition-all duration-500"
+            transition={{ duration: 0.35, ease: "easeOut" }}
+            className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center neomorph-card p-6 sm:p-10 md:p-12 group hover:border-[var(--accent-primary)]/40"
           >
             {/* Visual Column (Left) */}
             <div className="lg:col-span-6 order-1">
-              <div className="relative w-full h-[320px] sm:h-[420px] md:h-[460px] rounded-2xl sm:rounded-3xl overflow-hidden bg-[var(--emblem-bg)] border border-[#FFA18A]/35 shadow-[0_15px_40px_rgba(0,0,0,0.85),0_0_25px_rgba(255,161,138,0.22)] transition-all duration-500 group/img group-hover:border-[#FFA18A]/60 group-hover:shadow-[0_20px_50px_rgba(0,0,0,0.95),0_0_35px_rgba(255,161,138,0.4)]">
+              <div className="relative w-full h-[320px] sm:h-[420px] md:h-[460px] rounded-2xl sm:rounded-3xl overflow-hidden bg-[var(--emblem-bg)] border border-[#FFA18A]/35 shadow-[0_15px_40px_rgba(0,0,0,0.85),0_0_25px_rgba(255,161,138,0.22)] transition-all duration-300 group/img group-hover:border-[#FFA18A]/60 group-hover:shadow-[0_20px_50px_rgba(0,0,0,0.95),0_0_35px_rgba(255,161,138,0.4)]">
                 <Image
                   src="/images/ArboResilience.png"
                   alt="ArboResilience IA"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
-                  className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105 select-none"
+                  className="object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105 select-none"
                 />
                 {/* Overlay Dégradé Subtil */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-black/20 pointer-events-none" />
@@ -117,8 +117,8 @@ export default function ProjectsSection() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-40px" }}
-            transition={{ duration: 0.4, ease: "easeOut" }}
-            className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center neomorph-card p-6 sm:p-10 md:p-12 group hover:border-[var(--accent-secondary)]/40 transition-all duration-500"
+            transition={{ duration: 0.35, ease: "easeOut" }}
+            className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center neomorph-card p-6 sm:p-10 md:p-12 group hover:border-[var(--accent-secondary)]/40"
           >
             {/* Content Column (Left on Desktop, Right on Mobile) */}
             <div className="lg:col-span-6 order-2 lg:order-1 flex flex-col justify-between">
