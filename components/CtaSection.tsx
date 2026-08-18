@@ -9,10 +9,10 @@ export default function CtaSection() {
     <section className="py-28 px-6 bg-[var(--bg-primary)] relative overflow-hidden transition-colors duration-500">
       <div className="max-w-screen-2xl mx-auto">
         <motion.div
-          initial={{ opacity: 0, scale: 0.96 }}
+          initial={{ opacity: 0, scale: 0.98 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.4, ease: "easeOut" }}
           className="relative rounded-3xl p-10 sm:p-16 md:p-20 text-center overflow-hidden bg-[var(--bg-card)] border-2 border-[var(--card-border)] shadow-[0_0_80px_var(--accent-glow)] transition-all duration-500"
         >
           {/* Ambient Glows */}

@@ -62,9 +62,9 @@ export default function Hero() {
         {/* BADGE / CARD CIRCULAIRE PREMIUM : INTÉGRATION HAUTE FIDÉLITÉ DE L'IMAGE & GLOW HOLOGRAPHIQUE */}
         <motion.div
           style={{ y: mirrorY }}
-          initial={{ opacity: 0, y: -20, scale: 0.95 }}
+          initial={{ opacity: 0, y: -15, scale: 0.97 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ duration: 0.9, ease: "easeOut" }}
+          transition={{ duration: 0.4, ease: "easeOut" }}
           className="relative mb-12 group flex items-center justify-center select-none"
         >
           {/* Double Halo Holographique Arrière-Plan (Vert Émeraude + Ultra-Violet) */}
@@ -98,9 +98,9 @@ export default function Hero() {
 
         {/* Clear & Legible Integral CF Title avec dégradé dynamique de thème */}
         <motion.div
-          initial={{ opacity: 0, y: 25 }}
+          initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, delay: 0.1 }}
+          transition={{ duration: 0.35, delay: 0.05, ease: "easeOut" }}
           className="mb-6 max-w-5xl mx-auto"
         >
           <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.1] tracking-tight uppercase font-bold text-white drop-shadow-[0_4px_30px_rgba(0,0,0,0.9)] font-integral">
@@ -115,7 +115,7 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+          transition={{ duration: 0.3, delay: 0.08 }}
           className="max-w-2xl mx-auto text-base sm:text-lg text-[var(--text-secondary)] mb-10 h-[3.5rem] flex items-center justify-center font-normal drop-shadow-md transition-colors duration-500"
         >
           <p>
@@ -126,9 +126,9 @@ export default function Hero() {
 
         {/* Action Buttons */}
         <motion.div
-          initial={{ opacity: 0, y: 15 }}
+          initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
+          transition={{ duration: 0.35, delay: 0.1, ease: "easeOut" }}
           className="flex flex-wrap items-center justify-center gap-4"
         >
           <Link

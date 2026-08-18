@@ -59,9 +59,9 @@ export default function AboutPage() {
       <div className="max-w-screen-2xl mx-auto">
         {/* Page Hero */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.35, ease: "easeOut" }}
           className="text-center max-w-4xl mx-auto mb-16"
         >
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full neomorph-pill text-xs font-integral font-normal text-[var(--accent-primary)] mb-6 uppercase tracking-wider">
@@ -81,10 +81,10 @@ export default function AboutPage() {
 
         {/* CARD HORIZONTALE AVEC OVERLAY, SHADOW ET NEOMORPHISME (Image pexels-artempodrez) */}
         <motion.div
-          initial={{ opacity: 0, y: 30, scale: 0.97 }}
+          initial={{ opacity: 0, y: 15, scale: 0.98 }}
           whileInView={{ opacity: 1, y: 0, scale: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.85, ease: "easeOut" }}
+          transition={{ duration: 0.4, ease: "easeOut" }}
           className="w-full max-w-5xl mx-auto mb-24 neomorph-card p-0 group relative overflow-hidden shadow-[0_25px_70px_rgba(0,0,0,0.85),0_0_40px_var(--accent-glow)] hover:border-[var(--accent-primary)] transition-all duration-500 rounded-[28px]"
         >
           <div className="relative w-full h-[260px] sm:h-[380px] md:h-[480px] lg:h-[540px] overflow-hidden bg-[var(--emblem-bg)] transition-colors duration-500">

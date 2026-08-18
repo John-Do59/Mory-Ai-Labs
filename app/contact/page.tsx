@@ -50,9 +50,9 @@ export default function ContactPage() {
 
       <div className="max-w-screen-xl mx-auto w-full">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.35, ease: "easeOut" }}
           className="mb-16"
         >
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full neomorph-pill text-xs font-integral font-normal text-[var(--accent-primary)] mb-6 uppercase tracking-wider">
@@ -74,9 +74,9 @@ export default function ContactPage() {
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-14">
           {/* Left Column: Direct Info */}
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
+            initial={{ opacity: 0, x: -15 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.15 }}
+            transition={{ duration: 0.35, delay: 0.05, ease: "easeOut" }}
             className="lg:col-span-5 flex flex-col justify-between neomorph-card p-8 md:p-10"
           >
             <div>
@@ -88,29 +88,21 @@ export default function ContactPage() {
                   </span>
                   <a
                     href="mailto:rammanatamaury@gmail.com"
-                    className="text-lg md:text-xl font-semibold text-white hover:text-[var(--accent-primary)] transition-colors underline decoration-[var(--accent-primary)]/50 underline-offset-4"
+                    className="text-white hover:text-[var(--accent-primary)] font-mono text-sm sm:text-base transition-colors break-all"
                   >
                     rammanatamaury@gmail.com
                   </a>
                 </div>
 
                 <div>
-                  <span className="text-xs font-integral font-normal uppercase tracking-widest text-[var(--accent-secondary)] block mb-1.5">
-                    Réseau Professionnel
+                  <span className="text-xs font-integral font-normal uppercase tracking-widest text-[var(--accent-primary)] block mb-1.5">
+                    Téléphone
                   </span>
                   <a
-                    href="https://www.linkedin.com/in/amaury-dev-data-ia/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2.5 text-base font-medium text-white hover:text-[var(--accent-secondary)] transition-colors group"
+                    href="tel:0745585097"
+                    className="text-white hover:text-[var(--accent-primary)] font-mono text-sm sm:text-base transition-colors"
                   >
-                    <svg
-                      className="w-5 h-5 fill-current text-[var(--accent-secondary)] group-hover:scale-110 transition-transform"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.64c-.88 0-1.6.72-1.6 1.6s.72 1.6 1.6 1.6c.88 0 1.6-.72 1.6-1.6s-.72-1.6-1.6-1.6Z" />
-                    </svg>
-                    <span>amaury-dev-data-ia</span>
+                    07 45 58 50 97
                   </a>
                 </div>
 
@@ -144,9 +136,9 @@ export default function ContactPage() {
 
           {/* Right Column: Interactive Form */}
           <motion.div
-            initial={{ opacity: 0, x: 20 }}
+            initial={{ opacity: 0, x: 15 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.35, delay: 0.08, ease: "easeOut" }}
             className="lg:col-span-7 neomorph-card p-8 md:p-12 relative"
           >
             {submitted ? (

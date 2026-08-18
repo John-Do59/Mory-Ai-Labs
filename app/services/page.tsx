@@ -92,9 +92,9 @@ export default function ServicesPage() {
       <div className="max-w-screen-2xl mx-auto">
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.35, ease: "easeOut" }}
           className="text-center max-w-4xl mx-auto mb-24"
         >
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full neomorph-pill text-xs font-integral font-normal text-[var(--accent-primary)] mb-6 uppercase tracking-wider">
@@ -119,10 +119,10 @@ export default function ServicesPage() {
             return (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: index * 0.1 }}
+                transition={{ duration: 0.35, delay: index * 0.05, ease: "easeOut" }}
                 className="neomorph-card p-8 sm:p-12 group hover:border-[var(--accent-primary)] transition-all duration-500"
               >
                 <div className="grid lg:grid-cols-12 gap-8 items-center">
@@ -141,15 +141,15 @@ export default function ServicesPage() {
                     </p>
                   </div>
 
-                  <div className="lg:col-span-6 lg:pl-8 lg:border-l border-[var(--card-border)]">
-                    <span className="text-xs font-integral font-normal uppercase tracking-widest text-white block mb-4">
-                      Livrables &amp; Spécifications Techniques :
+                  <div className="lg:col-span-6 border-t lg:border-t-0 lg:border-l border-[var(--card-border)] pt-6 lg:pt-0 lg:pl-8 transition-colors duration-500">
+                    <span className="text-xs font-integral font-normal uppercase tracking-wider text-[var(--accent-primary)] block mb-4">
+                      Livrables Clés :
                     </span>
-                    <div className="space-y-3.5">
-                      {service.deliverables.map((item, dIndex) => (
-                        <div key={dIndex} className="flex items-start gap-3 text-sm text-white font-mono">
-                          <CheckCircle2 className="w-5 h-5 text-[var(--accent-primary)] shrink-0 mt-0.5" />
-                          <span>{item}</span>
+                    <div className="space-y-3">
+                      {service.deliverables.map((deliv, dIdx) => (
+                        <div key={dIdx} className="flex items-center gap-3 text-sm text-white">
+                          <CheckCircle2 className="w-4 h-4 text-[var(--accent-primary)] shrink-0" />
+                          <span>{deliv}</span>
                         </div>
                       ))}
                     </div>
@@ -175,10 +175,10 @@ export default function ServicesPage() {
             {engagementTiers.map((tier, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.7, delay: index * 0.15 }}
+                transition={{ duration: 0.35, delay: index * 0.08, ease: "easeOut" }}
                 className={`neomorph-card p-8 sm:p-12 flex flex-col justify-between ${
                   tier.highlighted ? "border-2 border-[var(--accent-primary)] shadow-[0_0_40px_var(--accent-glow)]" : ""
                 }`}
