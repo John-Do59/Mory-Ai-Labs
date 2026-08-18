@@ -115,25 +115,25 @@ export default function ProjectsSection() {
                   CAS D'USAGE B2B CONCRETS
                 </span>
                 <h3 className="text-2xl sm:text-4xl font-bold uppercase tracking-tight text-white mb-4 font-integral">
-                  GreenOps AI · IA Agentique, RAG &amp; Gestion des Équipes
+                  GreenOps AI · IA &amp; RAG pour Paysagistes &amp; Entreprises du Paysage
                 </h3>
                 <p className="text-[var(--text-secondary)] text-sm sm:text-base leading-relaxed mb-6 font-sans transition-colors duration-500">
-                  Système intelligent d'agents autonomes et de recherche sémantique (RAG) dédié à la génération automatisée de devis, au chiffrage complexe et au pilotage optimisé des équipes opérationnelles.
+                  Plateforme intelligente conçue sur-mesure pour les paysagistes, artisans et solopreneurs du paysage : automatisation instantanée des devis complexes, chiffrage intelligent des végétaux &amp; matériaux via RAG, et coordination simplifiée des équipes sur le terrain.
                 </p>
 
                 {/* Features Pill List */}
                 <div className="space-y-3 mb-8">
                   <div className="flex items-center gap-3 text-sm text-white">
                     <CheckCircle2 className="w-5 h-5 text-[var(--accent-secondary)] shrink-0" />
-                    <span>Génération automatisée de devis et chiffrage intelligent via RAG</span>
+                    <span>Génération automatisée de devis précis à partir de notes vocales ou de plans</span>
                   </div>
                   <div className="flex items-center gap-3 text-sm text-white">
                     <CheckCircle2 className="w-5 h-5 text-[var(--accent-secondary)] shrink-0" />
-                    <span>Orchestration multi-agents pour l'attribution dynamique et la gestion des équipes</span>
+                    <span>Moteur RAG connecté aux catalogues fournisseurs, pépinières et grilles tarifaires</span>
                   </div>
                   <div className="flex items-center gap-3 text-sm text-white">
                     <CheckCircle2 className="w-5 h-5 text-[var(--accent-secondary)] shrink-0" />
-                    <span>Copilote opérationnel connecté en temps réel aux ERP, CRM et bases métiers</span>
+                    <span>Planning dynamique et suivi des chantiers pour solopreneurs et équipes paysagères</span>
                   </div>
                 </div>
               </div>
@@ -145,7 +145,7 @@ export default function ProjectsSection() {
                     ROI &amp; Avantage Compétitif
                   </span>
                   <span className="text-xl sm:text-2xl font-bold text-white font-integral">
-                    -75% sur le temps de création de devis
+                    Devis finalisé en moins de 3 minutes
                   </span>
                 </div>
                 <Link
@@ -163,7 +163,7 @@ export default function ProjectsSection() {
               <div className="relative w-full h-[320px] sm:h-[420px] md:h-[460px] rounded-2xl sm:rounded-3xl overflow-hidden bg-[var(--emblem-bg)] border border-[#FFA18A]/35 shadow-[0_15px_40px_rgba(0,0,0,0.85),0_0_25px_rgba(255,161,138,0.22)] transition-all duration-500 group/img group-hover:border-[#FFA18A]/60 group-hover:shadow-[0_20px_50px_rgba(0,0,0,0.95),0_0_35px_rgba(255,161,138,0.4)]">
                 <Image
                   src="/images/greenopq-ai10.png"
-                  alt="GreenOps AI Platform"
+                  alt="GreenOps AI Platform Paysagiste"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105 select-none"
@@ -172,7 +172,7 @@ export default function ProjectsSection() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-black/20 pointer-events-none" />
                 <div className="absolute top-4 left-4 z-10">
                   <span className="px-3.5 py-1.5 rounded-full neomorph-pill text-xs font-integral font-normal text-[var(--accent-secondary)] uppercase tracking-wider backdrop-blur-md">
-                    IA Agentique &amp; RAG
+                    Paysage &amp; RAG Devis
                   </span>
                 </div>
               </div>
