@@ -1,6 +1,8 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
+import { useRef } from "react";
 import {
   Brain,
   Cpu,
@@ -9,15 +11,21 @@ import {
   Zap,
   ArrowRight,
   CheckCircle2,
-  Sparkles,
   Terminal,
   Server,
   Workflow,
   Lock,
 } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 export default function ServicesPage() {
+  const heroRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: heroRef,
+    offset: ["start start", "end start"],
+  });
+  const imageY = useTransform(scrollYProgress, [0, 1], [0, 60]);
+  const imageScale = useTransform(scrollYProgress, [0, 1], [1, 1.08]);
   const mainServices = [
     {
       icon: Brain,
@@ -90,27 +98,45 @@ export default function ServicesPage() {
       <div className="absolute top-3/4 -left-32 w-[600px] h-[600px] bg-[var(--accent-secondary)]/15 rounded-full blur-[180px] pointer-events-none -z-10 transition-all duration-700" />
 
       <div className="max-w-screen-2xl mx-auto">
-        {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 15 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.35, ease: "easeOut" }}
-          className="text-center max-w-4xl mx-auto mb-24"
+        {/* CARTE HORIZONTALE Mory-AI-Labs14 AVEC PARALLAX */}
+        <div
+          ref={heroRef}
+          className="w-full max-w-5xl mx-auto mb-10 neomorph-card p-0 group relative overflow-hidden shadow-[0_25px_70px_rgba(0,0,0,0.85),0_0_55px_var(--accent-glow)] hover:border-[var(--accent-primary)] transition-all duration-500 rounded-3xl sm:rounded-[36px] z-10 border border-[var(--card-border)]"
         >
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full neomorph-pill text-xs font-integral font-normal text-[var(--accent-primary)] mb-6 uppercase tracking-wider">
-            <Sparkles className="w-3.5 h-3.5" />
-            Ingénierie &amp; Solutions
+          {/* Ratio natif 1344×768 ≈ 57.14% */}
+          <div className="relative w-full" style={{ paddingBottom: '57.14%' }}>
+            {/* Image horizontale avec Parallax au scroll */}
+            <motion.div
+              style={{ y: imageY, scale: imageScale }}
+              className="absolute inset-0 w-full h-full"
+            >
+              <Image
+                src="/images/Mory-AI-Labs14.jpg"
+                alt="Mory AI Labs Ingénierie & Solutions"
+                fill
+                sizes="(max-width: 1280px) 100vw, 1024px"
+                className="object-cover object-center select-none"
+                priority
+              />
+            </motion.div>
+
+            {/* Overlay gradient sombre */}
+            <div className="absolute inset-0 bg-gradient-to-t from-[var(--bg-primary)]/70 via-transparent to-transparent pointer-events-none z-10 transition-colors duration-500" />
+            {/* Reflet diagonale verre */}
+            <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/[0.05] to-transparent pointer-events-none z-10" />
           </div>
+        </div>
+
+        {/* Titre & Description EN DESSOUS de la carte image */}
+        <div className="text-center max-w-4xl mx-auto mb-20">
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold uppercase tracking-tight text-white mb-6 font-integral">
             NOTRE OFFRE DE SERVICES <br />
-            <span className="title-gradient">
-              EN INTELLIGENCE ARTIFICIELLE.
-            </span>
+            <span className="title-gradient">EN INTELLIGENCE ARTIFICIELLE.</span>
           </h1>
           <p className="text-[var(--text-secondary)] text-base sm:text-lg md:text-xl font-normal leading-relaxed transition-colors duration-500">
             De l'audit de faisabilité au déploiement de modèles souverains en production, nous concevons des briques logicielles intelligentes taillées pour vos enjeux métiers.
           </p>
-        </motion.div>
+        </div>
 
         {/* Main Services Grid */}
         <div className="space-y-12 mb-28">
