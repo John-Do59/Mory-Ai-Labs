@@ -59,34 +59,39 @@ export default function Hero() {
       {/* Hero Foreground Content */}
       <div className="max-w-screen-2xl mx-auto w-full text-center relative z-20 my-auto flex flex-col items-center">
         
-        {/* BADGE / CARD CIRCULAIRE ÉPOUSANT PARFAITEMENT LE CERCLE DE L'IMAGE */}
+        {/* BADGE / CARD CIRCULAIRE PREMIUM : INTÉGRATION HAUTE FIDÉLITÉ DE L'IMAGE & GLOW HOLOGRAPHIQUE */}
         <motion.div
           style={{ y: mirrorY }}
           initial={{ opacity: 0, y: -20, scale: 0.95 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.9, ease: "easeOut" }}
-          className="relative mb-10 group flex items-center justify-center"
+          className="relative mb-12 group flex items-center justify-center select-none"
         >
-          {/* Halo lumineux d'arrière-plan avec glow néon immersif */}
-          <div className="absolute inset-0 rounded-full bg-[var(--accent-primary)]/40 blur-3xl group-hover:blur-[65px] transition-all duration-700 pointer-events-none scale-105" />
+          {/* Double Halo Holographique Arrière-Plan (Vert Émeraude + Ultra-Violet) */}
+          <div className="absolute -inset-6 rounded-full bg-gradient-to-tr from-[#00FF94]/30 via-[#6A01FE]/40 to-[#98FC03]/25 blur-[60px] group-hover:blur-[80px] group-hover:opacity-100 opacity-70 transition-all duration-700 pointer-events-none" />
+          <div className="absolute -inset-2 rounded-full bg-gradient-to-bl from-[#6A01FE]/40 via-transparent to-[#00FF94]/35 blur-2xl transition-all duration-700 pointer-events-none" />
 
-          {/* Disque circulaire avec bordure néon qui épouse exactement le contour du cercle */}
-          <div className="relative w-[280px] sm:w-[380px] md:w-[460px] lg:w-[500px] aspect-square rounded-full border-4 border-[var(--accent-primary)] shadow-[0_0_50px_var(--accent-glow),0_0_100px_var(--accent-glow),0_20px_50px_rgba(0,0,0,0.95),inset_0_0_25px_var(--accent-glow)] overflow-hidden flex items-center justify-center transition-all duration-700 group-hover:scale-[1.03] group-hover:shadow-[0_0_75px_var(--accent-glow),0_0_120px_var(--accent-glow)]">
+          {/* Anneau Lumineux Extérieur Conique Bicolore (#00FF94 ⇄ #6A01FE) */}
+          <div className="relative w-[280px] sm:w-[380px] md:w-[450px] lg:w-[490px] aspect-square rounded-full p-[3px] sm:p-[4px] bg-[conic-gradient(from_210deg_at_50%_50%,#00FF94_0deg,#6A01FE_130deg,#98FC03_250deg,#00FF94_360deg)] shadow-[0_0_50px_rgba(0,255,148,0.4),0_0_80px_rgba(106,1,254,0.5),0_30px_70px_rgba(0,0,0,0.95)] transition-all duration-700 group-hover:scale-[1.025] group-hover:shadow-[0_0_70px_rgba(0,255,148,0.6),0_0_110px_rgba(106,1,254,0.75),0_35px_80px_rgba(0,0,0,1)]">
             
-            {/* L'image circulaire avec mise à l'échelle pour fusionner avec la bordure */}
-            <div className="relative w-full h-full rounded-full overflow-hidden bg-black flex items-center justify-center">
+            {/* Disque Central Noir Profond & Verre Saphir */}
+            <div className="relative w-full h-full rounded-full overflow-hidden bg-[#030B09] flex items-center justify-center">
+              
+              {/* L'image circulaire cadrée au millimètre */}
               <Image
                 src="/images/Mory-AI-Labs.png"
                 alt="Mory AI Labs Emblème Circulaire"
                 fill
                 sizes="(max-width: 768px) 380px, 500px"
-                className="object-cover object-center scale-[1.03] select-none transition-transform duration-700 ease-out group-hover:scale-[1.07]"
+                className="object-cover object-center scale-[1.02] select-none transition-transform duration-700 ease-out group-hover:scale-[1.05]"
                 priority
               />
 
-              {/* Overlay Néomorphique et Reflet Verre Subtil */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/[0.08] to-transparent pointer-events-none rounded-full" />
-              <div className="absolute inset-0 bg-gradient-to-b from-white/[0.04] via-transparent to-black/35 pointer-events-none rounded-full" />
+              {/* Reflet Verre Saphir Diagonal Subtil */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/[0.07] to-transparent pointer-events-none rounded-full" />
+              
+              {/* Ombre Portée Intérieure Délicate pour fusionner le contour */}
+              <div className="absolute inset-0 rounded-full shadow-[inset_0_0_20px_rgba(0,0,0,0.8),inset_0_1px_2px_rgba(255,255,255,0.25)] pointer-events-none" />
             </div>
           </div>
         </motion.div>
