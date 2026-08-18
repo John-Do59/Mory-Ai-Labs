@@ -1,70 +1,48 @@
 "use client";
 
-import { Bot, TrendingUp, Database, ArrowUpRight } from "lucide-react";
+import { Brain, Cpu, Database, Network, ShieldCheck, Zap } from "lucide-react";
 import { motion } from "framer-motion";
 
+const expertises = [
+  {
+    icon: Brain,
+    tag: "AGENTIQUE & AUTOMATISATION",
+    title: "Agents IA Autonomes & Copilotes",
+    description:
+      "Conception d'architectures multi-agents capables d'exécuter des workflows complexes, d'interagir avec vos APIs et d'orchestrer vos processus métier sans intervention humaine.",
+  },
+  {
+    icon: Database,
+    tag: "DATA & SOUVERAINETÉ",
+    title: "Pipelines RAG & Bases Vectorielles",
+    description:
+      "Indexation intelligente et sémantique de vos patrimoines documentaires avec pgvector et Qdrant pour des réponses contextuelles fiables à 100% et sans hallucination.",
+  },
+  {
+    icon: Cpu,
+    tag: "MACHINE LEARNING",
+    title: "Modélisation Prédictive & Fine-Tuning",
+    description:
+      "Entraînement et spécialisation de modèles ouverts (Mistral, LLaMA) et algorithmes de Computer Vision adaptés à vos contraintes sectorielles et réglementaires.",
+  },
+];
+
 export default function ExpertiseSection() {
-  const pillars = [
-    {
-      icon: Bot,
-      color: "accent",
-      title: "Agents Autonomes & Copilotes",
-      description:
-        "Conception d'agents IA intelligents capables de raisonner, d'analyser des documents complexes, de manipuler vos outils et d'automatiser des flux entiers sans intervention humaine.",
-      tags: "LLMs · RAG · Workflows",
-    },
-    {
-      icon: TrendingUp,
-      color: "highlight",
-      title: "Machine Learning & Prédictif",
-      description:
-        "Entraînement de modèles statistiques et algorithmes avancés sur vos données propriétaires pour anticiper les risques, optimiser vos coûts et prédire vos tendances critiques.",
-      tags: "Scoring · Forecasting · GIS",
-    },
-    {
-      icon: Database,
-      color: "white",
-      title: "Architectures Data & Cloud",
-      description:
-        "Pipelines ETL/ELT robustes, vector databases, APIs FastAPI scalables et conteneurisation Docker pour un passage en production sécurisé et souverain.",
-      tags: "FastAPI · PostgreSQL · Docker",
-    },
-  ];
-
   return (
-    <section className="py-32 px-6 bg-white/[0.01] border-t border-white/[0.06] relative" id="expertise">
+    <section className="py-28 px-6 bg-[var(--bg-primary)] relative overflow-hidden transition-colors duration-500">
       <div className="max-w-screen-2xl mx-auto">
-        {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.8 }}
-          className="text-center max-w-3xl mx-auto mb-20"
-        >
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full vision-pill text-xs font-mono text-mory-accent mb-4 tracking-wider uppercase">
-            <span className="w-1.5 h-1.5 rounded-full bg-mory-accent" />
-            Ce Que Nous Construisons Pour Vous
-          </div>
-          <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tight text-white mb-6">
-            L'Ingénierie IA au service de vos{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-mory-accent to-emerald-300">
-              Gains Métiers
-            </span>
+        <div className="text-center max-w-3xl mx-auto mb-20">
+          <span className="text-xs font-integral font-normal uppercase tracking-widest text-[var(--accent-primary)] block mb-3">
+            Pôles d'Excellence
+          </span>
+          <h2 className="text-3xl sm:text-5xl font-bold uppercase tracking-tight text-white font-integral">
+            NOTRE EXPERTISE TECHNIQUE
           </h2>
-          <p className="text-mory-secondary/80 text-base">
-            Nous transformons vos flux de données et vos processus manuels en systèmes intelligents
-            autonomes et ultra-performants.
-          </p>
-        </motion.div>
+        </div>
 
-        {/* 3 Bento Pillars */}
         <div className="grid md:grid-cols-3 gap-8">
-          {pillars.map((pillar, index) => {
-            const Icon = pillar.icon;
-            const isAccent = pillar.color === "accent";
-            const isHighlight = pillar.color === "highlight";
-
+          {expertises.map((item, index) => {
+            const Icon = item.icon;
             return (
               <motion.div
                 key={index}
@@ -72,46 +50,21 @@ export default function ExpertiseSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.7, delay: index * 0.15 }}
-                className="vision-glass-panel p-8 flex flex-col justify-between group"
+                className="neomorph-card p-8 md:p-10 flex flex-col justify-between group hover:border-[var(--accent-primary)] transition-colors"
               >
                 <div>
-                  <div
-                    className={`w-12 h-12 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform ${
-                      isAccent
-                        ? "bg-mory-accent/10 border border-mory-accent/30 text-mory-accent"
-                        : isHighlight
-                        ? "bg-mory-highlight/10 border border-mory-highlight/30 text-mory-highlight"
-                        : "bg-white/10 border border-white/20 text-white"
-                    }`}
-                  >
-                    <Icon className="w-6 h-6" />
+                  <div className="w-14 h-14 rounded-2xl bg-[var(--accent-primary)]/10 border border-[var(--card-border)] flex items-center justify-center text-[var(--accent-primary)] mb-8 group-hover:scale-110 transition-transform">
+                    <Icon className="w-7 h-7" />
                   </div>
-                  <h3
-                    className={`text-xl md:text-2xl font-bold text-white mb-3 transition-colors ${
-                      isAccent
-                        ? "group-hover:text-mory-accent"
-                        : isHighlight
-                        ? "group-hover:text-mory-highlight"
-                        : "group-hover:text-emerald-300"
-                    }`}
-                  >
-                    {pillar.title}
+                  <span className="text-xs font-integral font-normal text-[var(--accent-primary)] uppercase tracking-wider block mb-2">
+                    {item.tag}
+                  </span>
+                  <h3 className="text-2xl font-bold text-white mb-4 font-integral">
+                    {item.title}
                   </h3>
-                  <p className="text-mory-secondary/80 text-sm leading-relaxed mb-6">
-                    {pillar.description}
+                  <p className="text-[var(--text-secondary)] text-sm sm:text-base leading-relaxed font-sans transition-colors duration-500">
+                    {item.description}
                   </p>
-                </div>
-                <div className="pt-6 border-t border-white/[0.06] flex items-center justify-between text-xs font-mono text-white/50">
-                  <span>{pillar.tags}</span>
-                  <ArrowUpRight
-                    className={`w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 ${
-                      isAccent
-                        ? "text-mory-accent"
-                        : isHighlight
-                        ? "text-mory-highlight"
-                        : "text-white"
-                    }`}
-                  />
                 </div>
               </motion.div>
             );

@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { ThemeProvider } from "@/components/ThemeProvider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -70,12 +71,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="fr" className={`${inter.variable} ${integralCF.variable} scroll-smooth`}>
-      <body className="relative bg-mory-bg text-mory-text selection:bg-mory-accent selection:text-mory-bg antialiased">
-        <div className="grain" />
-        <Navbar />
-        <main className="relative">{children}</main>
-        <Footer />
+    <html lang="fr" className={`${inter.variable} ${integralCF.variable} scroll-smooth`} data-theme="cyber-emerald">
+      <body className="relative bg-[var(--bg-primary)] text-[var(--text-primary)] antialiased transition-colors duration-500">
+        <ThemeProvider>
+          <div className="grain" />
+          <Navbar />
+          <main className="relative">{children}</main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

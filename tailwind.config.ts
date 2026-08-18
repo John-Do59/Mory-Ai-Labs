@@ -9,12 +9,15 @@ const config: Config = {
     extend: {
       colors: {
         mory: {
-          bg: "#051610", // Vert sombre saphir forêt
-          surface: "#082018",
-          text: "#F0FDF4",
-          accent: "#00FF94", // Vert néon émeraude
-          highlight: "#FF7F3F", // Ambre néon
-          secondary: "#A7F3D0", // Menthe saphir doux
+          bg: "#022C22",          // Fond Émeraude sombre
+          deep: "#064E3B",        // Conteneurs
+          emerald: "#059669",     // Émeraude
+          accent: "#00FF94",      // Émeraude vert néon d'avant
+          highlight: "#FF7F3F",   // Ambre orange d'avant
+          secondary: "#A7F3D0",   // Vert pâle d'avant
+          white: "#FFFFFF",       // Blanc pur
+          pale: "#D1FAE5",        // Vert doux
+          text: "#FFFFFF",
         },
       },
       fontFamily: {

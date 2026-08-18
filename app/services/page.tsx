@@ -2,195 +2,157 @@
 
 import Link from "next/link";
 import {
-  Check,
-  ArrowRight,
-  Bot,
+  Brain,
+  Cpu,
   Database,
-  TrendingUp,
-  Clock,
-  Layers,
+  Shield,
+  Zap,
+  ArrowRight,
+  CheckCircle2,
   Sparkles,
+  Terminal,
+  Server,
+  Workflow,
+  Lock,
 } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function ServicesPage() {
-  const services = [
+  const mainServices = [
     {
-      num: "01",
-      category: "Automatisation & Décision",
-      title: "AGENTS IA & WORKFLOWS AUTONOMES",
-      icon: Bot,
-      color: "accent",
+      icon: Brain,
+      tag: "AGENTIQUE & AUTOMATISATION",
+      title: "Agents IA Autonomes & Copilotes",
       description:
-        "Nous concevons des agents IA personnalisés capables de gérer des flux de travail complexes de manière autonome. Du traitement de documents volumineux au pilotage de vos logiciels métiers, nos agents réduisent la charge manuelle jusqu'à 85%.",
-      points: [
-        "Intégration & Fine-Tuning de LLMs propriétaires (Mistral, LLaMA, GPT)",
-        "Systèmes multi-agents avec validation humaine (Human-in-the-loop)",
-        "Automatisation de back-office & copilotes métiers",
-        "Connecteurs API, bases de connaissances RAG & Webhooks",
+        "Création de copilotes sur-mesure capables de naviguer dans vos logiciels métiers, d'orchestrer des tâches répétitives et d'automatiser le support et les opérations avec une autonomie contrôlée.",
+      deliverables: [
+        "Architectures Multi-Agents spécialisées (LangGraph, CrewAI)",
+        "Interconnexion directe avec vos ERP, CRM et APIs métiers",
+        "Garde-fous stricts, traçabilité et validation humaine si requise",
       ],
-      deliverables: "Agent déployé en production, API sécurisée, monitoring continu.",
     },
     {
-      num: "02",
-      category: "Data Platform & Pipelines",
-      title: "DATA ENGINEERING & ARCHITECTURES",
       icon: Database,
-      color: "highlight",
+      tag: "RAG & BASES VECTORIELLES",
+      title: "Recherche Sémantique & RAG Souverain",
       description:
-        "Des flux de données robustes sont la colonne vertébrale de toute intelligence artificielle. Nous construisons des architectures ETL/ELT temps réel, des bases vectorielles et des pipelines souverains qui alimentent vos modèles avec des données propres et sécurisées.",
-      points: [
-        "Pipelines ETL / ELT haute performance (Airflow, dbt)",
-        "Architectures Cloud & On-Premise sécurisées et souveraines",
-        "Bases vectorielles & recherche sémantique (pgvector, Qdrant)",
-        "APIs FastAPI scalables et conteneurisation Docker",
+        "Indexation intelligente de vos bases documentaires (contrats, manuels, bases SQL) via des vector stores haute performance pour des réponses instantanées et garanties sans hallucination.",
+      deliverables: [
+        "Pipelines d'ingestion temps réel (pgvector, Qdrant, Milvus)",
+        "Reranking sémantique & Chunking contextuel avancé",
+        "Isolation totale des données et respect strict du RGPD",
       ],
-      deliverables: "Pipelines automatisés, base vectorielle indexée, documentation technique.",
     },
     {
-      num: "03",
-      category: "Modélisation & Prédiction",
-      title: "MACHINE LEARNING & COMPUTER VISION",
-      icon: TrendingUp,
-      color: "accent",
+      icon: Cpu,
+      tag: "DEEP LEARNING & COMPUTER VISION",
+      title: "Machine Learning & Modèles Sur-Mesure",
       description:
-        "Entraînement de modèles spécialisés sur vos séries temporelles et données métiers pour anticiper les fluctuations, calculer les risques et automatiser l'analyse visuelle de photos ou plans.",
-      points: [
-        "Modélisation prédictive & scoring de risque sur-mesure",
-        "Vision par ordinateur & extraction intelligente d'images / plans",
-        "Analyses géospatiales & simulations climatiques (GIS, CMIP6)",
-        "Dashboards décisionnels & monitoring de dérive (drift)",
+        "Entraînement et fine-tuning de modèles prédictifs et de vision industrielle pour automatiser l'analyse d'images, le scoring de risques ou la maintenance prédictive.",
+      deliverables: [
+        "Fine-Tuning de LLMs ouverts (Mistral, LLaMA, DeepSeek)",
+        "Modèles de vision par ordinateur (détection, segmentation, OCR)",
+        "Optimisation de l'inférence pour réduire les coûts GPU",
       ],
-      deliverables: "Modèle entraîné, benchmark de précision, dashboard de prédiction.",
     },
   ];
 
-  const packages = [
+  const engagementTiers = [
     {
-      title: "Audit & PoC Sprint (10 Jours)",
-      duration: "10 jours",
-      badge: "Idéal pour démarrer",
-      description:
-        "Validation de la faisabilité technique et prototypage rapide d'un premier agent ou modèle sur vos données réelles.",
+      badge: "RAPIDITÉ & VALIDATION",
+      title: "Sprint PoC 14 Jours",
+      desc: "Idéal pour valider la faisabilité technique et le ROI sur vos données réelles avant tout engagement lourd.",
       features: [
-        "Audit technique de vos données",
-        "Cadrage de l'architecture cible",
-        "Prototype fonctionnel interactif",
-        "Calcul de ROI et feuille de route",
+        "Audit & Cadrage technique sous 48h",
+        "Développement d'un prototype connecté fonctionnel",
+        "Rapport de benchmark & Chiffrage de production",
       ],
-      highlight: true,
+      cta: "Lancer un PoC",
     },
     {
-      title: "Ingénierie & Déploiement Complet",
-      duration: "4 à 8 semaines",
-      badge: "Sur-Mesure",
-      description:
-        "Conception, développement et mise en production de votre solution IA clé en main avec transfert de compétences.",
+      badge: "PRODUCTION & SCALABILITÉ",
+      title: "Déploiement End-to-End",
+      desc: "Conception, développement et mise en production de votre solution IA complète sur votre cloud souverain.",
       features: [
-        "Développement intégral des agents / pipelines",
-        "Intégration dans vos systèmes existants",
-        "Tests de charge, sécurité & RGPD",
-        "Accompagnement & formation des équipes",
+        "Architecture logicielle & pipelines robustes",
+        "Intégration CI/CD, conteneurs Docker & monitoring",
+        "Support réactif, maintenance et transfert de compétences",
       ],
-      highlight: false,
+      cta: "Cadrer le Déploiement",
+      highlighted: true,
     },
   ];
 
   return (
-    <div className="pt-36 pb-28 px-6 min-h-screen relative overflow-hidden bg-[#051610]">
-      {/* Halos */}
-      <div className="absolute top-1/4 right-1/4 w-[550px] h-[550px] bg-emerald-500/10 rounded-full blur-[180px] pointer-events-none -z-10" />
-      <div className="absolute bottom-1/3 left-1/4 w-[500px] h-[500px] bg-mory-highlight/10 rounded-full blur-[180px] pointer-events-none -z-10" />
+    <div className="pt-36 pb-28 px-6 min-h-screen relative overflow-hidden bg-[var(--bg-primary)] transition-colors duration-500">
+      {/* Background Glows */}
+      <div className="absolute top-1/4 -right-32 w-[600px] h-[600px] bg-[var(--accent-glow)] rounded-full blur-[180px] pointer-events-none -z-10 transition-all duration-700" />
+      <div className="absolute top-3/4 -left-32 w-[600px] h-[600px] bg-[var(--accent-secondary)]/15 rounded-full blur-[180px] pointer-events-none -z-10 transition-all duration-700" />
 
-      <div className="max-w-screen-xl mx-auto w-full">
+      <div className="max-w-screen-2xl mx-auto">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="mb-24"
+          className="text-center max-w-4xl mx-auto mb-24"
         >
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full neomorph-pill text-xs font-integral font-normal text-mory-accent mb-6 uppercase tracking-wider">
-            <span className="w-1.5 h-1.5 rounded-full bg-mory-accent animate-pulse" />
-            Offres d'Ingénierie &amp; Solutions
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full neomorph-pill text-xs font-integral font-normal text-[var(--accent-primary)] mb-6 uppercase tracking-wider">
+            <Sparkles className="w-3.5 h-3.5" />
+            Ingénierie &amp; Solutions
           </div>
-          <h1 className="text-4xl sm:text-6xl md:text-8xl font-black uppercase tracking-tight text-white mb-6 font-integral">
-            NOTRE <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-mory-accent via-emerald-300 to-mory-highlight">
-              EXPERTISE.
+          <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold uppercase tracking-tight text-white mb-6 font-integral">
+            NOTRE OFFRE DE SERVICES <br />
+            <span className="title-gradient">
+              EN INTELLIGENCE ARTIFICIELLE.
             </span>
           </h1>
-          <p className="text-emerald-100/90 text-lg md:text-xl max-w-2xl font-normal">
-            Du cadrage stratégique au déploiement en production : découvrez comment nous concevons
-            vos agents IA et infrastructures data sur-mesure.
+          <p className="text-[var(--text-secondary)] text-base sm:text-lg md:text-xl font-normal leading-relaxed transition-colors duration-500">
+            De l'audit de faisabilité au déploiement de modèles souverains en production, nous concevons des briques logicielles intelligentes taillées pour vos enjeux métiers.
           </p>
         </motion.div>
 
-        {/* Services List */}
-        <div className="space-y-16 mb-28">
-          {services.map((service, index) => {
-            const isAccent = service.color === "accent";
+        {/* Main Services Grid */}
+        <div className="space-y-12 mb-28">
+          {mainServices.map((service, index) => {
             const Icon = service.icon;
-
             return (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.8 }}
-                className="neomorph-card p-8 md:p-12 relative overflow-hidden"
+                transition={{ duration: 0.8, delay: index * 0.1 }}
+                className="neomorph-card p-8 sm:p-12 group hover:border-[var(--accent-primary)] transition-all duration-500"
               >
-                <div className="flex items-center justify-between gap-4 mb-4">
-                  <span
-                    className={`text-xs font-integral font-normal uppercase tracking-widest ${
-                      isAccent ? "text-mory-accent" : "text-mory-highlight"
-                    }`}
-                  >
-                    {service.num} / {service.category}
-                  </span>
-                  <div
-                    className={`w-10 h-10 rounded-xl flex items-center justify-center ${
-                      isAccent
-                        ? "bg-mory-accent/10 text-mory-accent border border-mory-accent/20"
-                        : "bg-mory-highlight/10 text-mory-highlight border border-mory-highlight/20"
-                    }`}
-                  >
-                    <Icon className="w-5 h-5" />
-                  </div>
-                </div>
-
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6 font-integral">
-                  {service.title}
-                </h2>
-
-                <div className="grid md:grid-cols-12 gap-8 items-start mb-8">
-                  <div className="md:col-span-6 text-emerald-100/90 text-base md:text-lg leading-relaxed">
-                    <p className="mb-4">{service.description}</p>
-                    <div className="p-4 rounded-xl neomorph-inset text-xs text-emerald-200/80">
-                      <strong className="text-white block mb-1 font-integral uppercase">
-                        Livrables clés :
-                      </strong>
-                      {service.deliverables}
+                <div className="grid lg:grid-cols-12 gap-8 items-center">
+                  <div className="lg:col-span-6">
+                    <div className="w-14 h-14 rounded-2xl bg-[var(--accent-primary)]/10 border border-[var(--card-border)] flex items-center justify-center text-[var(--accent-primary)] mb-6 group-hover:scale-110 transition-transform">
+                      <Icon className="w-7 h-7" />
                     </div>
+                    <span className="text-xs font-integral font-normal text-[var(--accent-primary)] uppercase tracking-wider block mb-2">
+                      {service.tag}
+                    </span>
+                    <h2 className="text-2xl sm:text-4xl font-bold text-white mb-4 font-integral">
+                      {service.title}
+                    </h2>
+                    <p className="text-[var(--text-secondary)] text-base leading-relaxed font-sans mb-6 transition-colors duration-500">
+                      {service.description}
+                    </p>
                   </div>
 
-                  <div className="md:col-span-6">
-                    <ul className="space-y-3.5">
-                      {service.points.map((pt, i) => (
-                        <li
-                          key={i}
-                          className="flex items-center gap-3 text-sm md:text-base text-white/90"
-                        >
-                          <Check
-                            className={`w-5 h-5 shrink-0 ${
-                              isAccent ? "text-mory-accent" : "text-mory-highlight"
-                            }`}
-                          />
-                          <span>{pt}</span>
-                        </li>
+                  <div className="lg:col-span-6 lg:pl-8 lg:border-l border-[var(--card-border)]">
+                    <span className="text-xs font-integral font-normal uppercase tracking-widest text-white block mb-4">
+                      Livrables &amp; Spécifications Techniques :
+                    </span>
+                    <div className="space-y-3.5">
+                      {service.deliverables.map((item, dIndex) => (
+                        <div key={dIndex} className="flex items-start gap-3 text-sm text-white font-mono">
+                          <CheckCircle2 className="w-5 h-5 text-[var(--accent-primary)] shrink-0 mt-0.5" />
+                          <span>{item}</span>
+                        </div>
                       ))}
-                    </ul>
+                    </div>
                   </div>
                 </div>
               </motion.div>
@@ -198,80 +160,64 @@ export default function ServicesPage() {
           })}
         </div>
 
-        {/* Engagement Modes */}
+        {/* Engagement Models */}
         <div className="mb-24">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <span className="text-xs font-integral font-normal uppercase tracking-widest text-mory-accent block mb-2">
-              Modalités de Collaboration
+            <span className="text-xs font-integral font-normal uppercase tracking-widest text-[var(--accent-secondary)] block mb-2">
+              Modalités d'Intervention
             </span>
             <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tight text-white font-integral">
-              Formats d'Intervention
+              Comment Nous Collaborons
             </h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {packages.map((pkg, i) => (
+            {engagementTiers.map((tier, index) => (
               <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 25 }}
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.7, delay: i * 0.15 }}
-                className={`neomorph-card p-8 md:p-10 flex flex-col justify-between ${
-                  pkg.highlight ? "border-mory-accent/30" : ""
+                transition={{ duration: 0.7, delay: index * 0.15 }}
+                className={`neomorph-card p-8 sm:p-12 flex flex-col justify-between ${
+                  tier.highlighted ? "border-2 border-[var(--accent-primary)] shadow-[0_0_40px_var(--accent-glow)]" : ""
                 }`}
               >
                 <div>
-                  <div className="flex items-center justify-between gap-2 mb-4">
-                    <span className="text-xs font-integral font-normal text-mory-accent uppercase px-3 py-1 rounded-full neomorph-pill">
-                      {pkg.badge}
-                    </span>
-                    <span className="text-xs font-mono text-emerald-300/60 flex items-center gap-1">
-                      <Clock className="w-3.5 h-3.5" />
-                      {pkg.duration}
-                    </span>
-                  </div>
-
-                  <h3 className="text-2xl font-bold text-white mb-3 font-integral">{pkg.title}</h3>
-                  <p className="text-emerald-100/80 text-sm mb-6 leading-relaxed">
-                    {pkg.description}
+                  <span className="text-xs font-integral font-normal text-[var(--accent-primary)] uppercase tracking-wider block mb-3">
+                    {tier.badge}
+                  </span>
+                  <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4 font-integral">
+                    {tier.title}
+                  </h3>
+                  <p className="text-[var(--text-secondary)] text-sm sm:text-base leading-relaxed mb-8 font-sans transition-colors duration-500">
+                    {tier.desc}
                   </p>
 
-                  <ul className="space-y-3 mb-8">
-                    {pkg.features.map((feat, idx) => (
-                      <li key={idx} className="flex items-center gap-2.5 text-xs sm:text-sm text-white/90">
-                        <Check className="w-4 h-4 text-mory-accent shrink-0" />
+                  <div className="space-y-3 mb-10">
+                    {tier.features.map((feat, fIdx) => (
+                      <div key={fIdx} className="flex items-center gap-3 text-sm text-white">
+                        <CheckCircle2 className="w-4 h-4 text-[var(--accent-primary)] shrink-0" />
                         <span>{feat}</span>
-                      </li>
+                      </div>
                     ))}
-                  </ul>
+                  </div>
                 </div>
 
                 <Link
                   href="/contact"
-                  className={`inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full font-integral font-normal text-xs uppercase tracking-wider transition-all duration-300 ${
-                    pkg.highlight
-                      ? "bg-mory-accent text-mory-bg hover:bg-white shadow-[0_0_20px_rgba(0,255,148,0.4)]"
-                      : "neomorph-pill text-white hover:bg-white/10"
+                  className={`w-full py-4 rounded-full font-integral font-normal text-xs uppercase tracking-wider text-center transition-all duration-300 flex items-center justify-center gap-2 ${
+                    tier.highlighted
+                      ? "btn-theme-primary shadow-lg"
+                      : "neomorph-pill text-white hover:border-[var(--accent-primary)]"
                   }`}
                 >
-                  <span>Demander un Cadrage</span>
+                  <span>{tier.cta}</span>
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               </motion.div>
             ))}
           </div>
-        </div>
-
-        {/* Bottom CTA */}
-        <div className="text-center">
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-2.5 px-8 py-4 rounded-full bg-mory-accent text-mory-bg font-integral font-normal text-xs uppercase tracking-wider hover:bg-white hover:shadow-[0_0_30px_rgba(0,255,148,0.5)] transition-all duration-300 shadow-xl"
-          >
-            <span>Échanger avec nos Ingénieurs</span>
-            <ArrowRight className="w-4 h-4" />
-          </Link>
         </div>
       </div>
     </div>

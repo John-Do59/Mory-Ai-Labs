@@ -1,37 +1,43 @@
-export default function Marquee() {
-  const items = [
-    "AGENTS IA AUTONOMES",
-    "MACHINE LEARNING PRÉDICTIF",
-    "COMPUTER VISION",
-    "LLM FINE-TUNING",
-    "ARCHITECTURES DATA & PIPELINES",
-    "AUTOMATISATION INTELLIGENTE",
-  ];
+"use client";
 
+import { motion } from "framer-motion";
+
+const items = [
+  "AGENTS IA AUTONOMES",
+  "FINE-TUNING LLM",
+  "DATA PIPELINES TEMPS RÉEL",
+  "RAG HYPER-PRÉCIS",
+  "COMPUTER VISION",
+  "DÉPLOIEMENT CLOUD SOUVERAIN",
+  "VENTURE BUILDER SAAS",
+  "ROI & PERFORMANCE OPÉRATIONNELLE",
+];
+
+export default function Marquee() {
   return (
-    <section className="py-8 border-y border-white/[0.08] bg-white/[0.02] overflow-hidden backdrop-blur-md">
-      <div className="flex whitespace-nowrap animate-marquee">
-        <div className="flex shrink-0 items-center">
+    <div className="py-6 border-y border-[var(--marquee-border)] bg-[var(--marquee-bg)] backdrop-blur-xl overflow-hidden relative z-20 transition-colors duration-500">
+      <div className="flex w-[200%] animate-marquee select-none">
+        <div className="flex items-center gap-12 whitespace-nowrap px-6">
           {items.map((item, index) => (
-            <span
-              key={`a-${index}`}
-              className="text-3xl md:text-4xl font-black text-transparent stroke-text-white px-8"
-            >
-              {item} •
-            </span>
+            <div key={index} className="flex items-center gap-12">
+              <span className="text-xl sm:text-2xl font-bold uppercase tracking-wider font-integral text-white hover:text-[var(--accent-primary)] transition-colors">
+                {item}
+              </span>
+              <span className="w-2.5 h-2.5 rounded-full bg-[var(--accent-primary)] shadow-[0_0_12px_var(--accent-primary)] transition-colors duration-500" />
+            </div>
           ))}
         </div>
-        <div className="flex shrink-0 items-center">
+        <div className="flex items-center gap-12 whitespace-nowrap px-6">
           {items.map((item, index) => (
-            <span
-              key={`b-${index}`}
-              className="text-3xl md:text-4xl font-black text-transparent stroke-text-white px-8"
-            >
-              {item} •
-            </span>
+            <div key={`dup-${index}`} className="flex items-center gap-12">
+              <span className="text-xl sm:text-2xl font-bold uppercase tracking-wider font-integral text-white hover:text-[var(--accent-primary)] transition-colors">
+                {item}
+              </span>
+              <span className="w-2.5 h-2.5 rounded-full bg-[var(--accent-secondary)] shadow-[0_0_12px_var(--accent-secondary)] transition-colors duration-500" />
+            </div>
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 }

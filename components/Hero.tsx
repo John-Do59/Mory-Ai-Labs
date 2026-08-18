@@ -49,12 +49,12 @@ export default function Hero() {
   return (
     <section
       ref={heroRef}
-      className="min-h-screen flex flex-col justify-between px-6 pt-28 sm:pt-32 pb-12 relative overflow-hidden bg-[#051610]"
+      className="min-h-screen flex flex-col justify-between px-6 pt-28 sm:pt-32 pb-12 relative overflow-hidden bg-[var(--bg-primary)] transition-colors duration-500"
       id="hero-section"
     >
-      {/* Ambient Forest Sapphire Background Glows */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#051610]/80 via-transparent to-[#051610] pointer-events-none -z-30" />
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[550px] bg-gradient-to-tr from-emerald-500/15 via-mory-accent/10 to-transparent rounded-full blur-[180px] pointer-events-none -z-20" />
+      {/* Background Ambient Glows */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[var(--bg-primary)]/80 via-transparent to-[var(--bg-primary)] pointer-events-none -z-30 transition-colors duration-500" />
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[850px] h-[550px] bg-gradient-to-tr from-[var(--accent-glow)] via-[var(--bg-secondary)]/30 to-transparent rounded-full blur-[180px] pointer-events-none -z-20 transition-all duration-700" />
 
       {/* Hero Foreground Content */}
       <div className="max-w-screen-2xl mx-auto w-full text-center relative z-20 my-auto flex flex-col items-center">
@@ -68,13 +68,13 @@ export default function Hero() {
           className="relative mb-10 group flex items-center justify-center"
         >
           {/* Halo lumineux circulaire d'arrière-plan */}
-          <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-mory-accent/30 via-emerald-400/20 to-mory-highlight/20 blur-2xl group-hover:blur-3xl transition-all duration-700 pointer-events-none" />
+          <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-[var(--accent-primary)]/30 via-[var(--accent-secondary)]/25 to-[var(--bg-secondary)]/30 blur-2xl group-hover:blur-3xl transition-all duration-700 pointer-events-none" />
 
           {/* Card Circulaire épousant les contours */}
-          <div className="relative w-[280px] sm:w-[380px] md:w-[460px] lg:w-[500px] aspect-square rounded-full p-2 sm:p-2.5 bg-gradient-to-b from-emerald-400/40 via-black/85 to-[#051610] border-2 border-mory-accent/50 shadow-[0_0_60px_rgba(0,255,148,0.45),0_15px_45px_rgba(0,0,0,0.9),inset_0_0_25px_rgba(0,255,148,0.2)] backdrop-blur-2xl overflow-hidden flex items-center justify-center transition-all duration-700 group-hover:scale-[1.03] group-hover:border-mory-accent group-hover:shadow-[0_0_80px_rgba(0,255,148,0.6)]">
+          <div className="relative w-[280px] sm:w-[380px] md:w-[460px] lg:w-[500px] aspect-square rounded-full p-2 sm:p-2.5 bg-gradient-to-b from-[var(--accent-primary)]/40 via-black/85 to-[var(--bg-primary)] border-2 border-[var(--emblem-border)] shadow-[0_0_60px_var(--emblem-glow),0_15px_45px_rgba(0,0,0,0.9)] backdrop-blur-2xl overflow-hidden flex items-center justify-center transition-all duration-700 group-hover:scale-[1.03] group-hover:border-[var(--accent-primary)]">
             
             {/* Surface Vitrée Circulaire Intérieure */}
-            <div className="relative w-full h-full rounded-full overflow-hidden bg-[#030E0A] flex items-center justify-center p-1 sm:p-1.5">
+            <div className="relative w-full h-full rounded-full overflow-hidden bg-[var(--emblem-bg)] flex items-center justify-center p-1 sm:p-1.5 transition-colors duration-500">
               
               {/* L'image circulaire prenant tout le disque intérieur */}
               <Image
@@ -90,7 +90,7 @@ export default function Hero() {
               <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/[0.08] to-transparent pointer-events-none rounded-full" />
 
               {/* Anneau de lueur interne */}
-              <div className="absolute inset-0 rounded-full border border-mory-accent/20 pointer-events-none" />
+              <div className="absolute inset-0 rounded-full border border-[var(--accent-primary)]/20 pointer-events-none" />
             </div>
 
             {/* Biseau lumineux supérieur */}
@@ -98,7 +98,7 @@ export default function Hero() {
           </div>
         </motion.div>
 
-        {/* Clear & Legible Integral CF Title */}
+        {/* Clear & Legible Integral CF Title avec dégradé dynamique de thème */}
         <motion.div
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
@@ -107,7 +107,7 @@ export default function Hero() {
         >
           <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.1] tracking-tight uppercase font-bold text-white drop-shadow-[0_4px_30px_rgba(0,0,0,0.9)] font-integral">
             INTELLIGENCE ARTIFICIELLE <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-mory-accent via-emerald-300 to-mory-highlight">
+            <span className="title-gradient">
               SUR-MESURE &amp; SOUVERAINE.
             </span>
           </h1>
@@ -118,11 +118,11 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="max-w-2xl mx-auto text-base sm:text-lg text-emerald-100/90 mb-10 h-[3.5rem] flex items-center justify-center font-normal drop-shadow-md"
+          className="max-w-2xl mx-auto text-base sm:text-lg text-[var(--text-secondary)] mb-10 h-[3.5rem] flex items-center justify-center font-normal drop-shadow-md transition-colors duration-500"
         >
           <p>
             {currentText}
-            <span className="text-mory-accent font-bold animate-pulse ml-0.5">|</span>
+            <span className="text-[var(--accent-primary)] font-bold animate-pulse ml-0.5">|</span>
           </p>
         </motion.div>
 
@@ -135,14 +135,14 @@ export default function Hero() {
         >
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2.5 px-8 py-4 rounded-full bg-mory-accent text-mory-bg font-integral font-normal text-xs md:text-sm uppercase tracking-wider hover:bg-white hover:shadow-[0_0_30px_rgba(0,255,148,0.6)] transition-all duration-300 shadow-xl shadow-black/50"
+            className="inline-flex items-center gap-2.5 px-8 py-4 rounded-full btn-theme-primary font-integral font-normal text-xs md:text-sm uppercase tracking-wider shadow-xl shadow-black/50"
           >
             <span>Démarrer un Cadrage IA</span>
             <ArrowRight className="w-4 h-4" />
           </Link>
           <a
             href="#solutions"
-            className="inline-flex items-center gap-2 px-7 py-4 rounded-full neomorph-pill text-white font-integral font-normal text-xs md:text-sm uppercase tracking-wider hover:bg-white/10 transition-all duration-300"
+            className="inline-flex items-center gap-2 px-7 py-4 rounded-full neomorph-pill text-white font-integral font-normal text-xs md:text-sm uppercase tracking-wider hover:border-[var(--accent-primary)] transition-all duration-300"
           >
             <span>Explorer nos Solutions</span>
             <ChevronDown className="w-4 h-4 opacity-60" />
@@ -150,14 +150,14 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      {/* Bottom Status Bar (z-20) */}
-      <div className="max-w-screen-2xl mx-auto w-full relative z-20 flex flex-wrap items-center justify-between gap-4 text-xs font-integral font-normal uppercase tracking-wider text-white/70 pt-6 border-t border-emerald-500/15 mt-8">
+      {/* Bottom Status Bar */}
+      <div className="max-w-screen-2xl mx-auto w-full relative z-20 flex flex-wrap items-center justify-between gap-4 text-xs font-integral font-normal uppercase tracking-wider text-[var(--text-secondary)] pt-6 border-t border-[var(--card-border)] mt-8 transition-colors duration-500">
         <div className="flex items-center gap-2">
-          <span className="w-2 h-2 rounded-full bg-mory-accent animate-pulse" />
-          <span>Agents Autonomes &amp; Modèles Prédictifs Métiers</span>
+          <span className="w-2 h-2 rounded-full bg-[var(--accent-primary)] animate-pulse" />
+          <span className="text-white">Agents Autonomes &amp; Modèles Prédictifs Métiers</span>
         </div>
         <div className="flex items-center gap-4">
-          <span>100% Souverain &amp; Sécurisé</span>
+          <span className="text-white">100% Souverain &amp; Sécurisé</span>
           <span className="opacity-40">|</span>
           <span>Lille &amp; Paris</span>
         </div>
