@@ -59,7 +59,7 @@ export default function Hero() {
       {/* Hero Foreground Content */}
       <div className="max-w-screen-2xl mx-auto w-full text-center relative z-20 my-auto flex flex-col items-center">
         
-        {/* BADGE / CARD CIRCULAIRE ÉPOUSANT LA BORDURE VERTE DU CERCLE DE L'IMAGE */}
+        {/* BADGE / CARD CIRCULAIRE ÉPOUSANT LA BORDURE VERTE NÉON DU CERCLE DE L'IMAGE */}
         <motion.div
           style={{ y: mirrorY }}
           initial={{ opacity: 0, y: -20, scale: 0.95 }}
@@ -67,14 +67,14 @@ export default function Hero() {
           transition={{ duration: 0.9, ease: "easeOut" }}
           className="relative mb-10 group flex items-center justify-center"
         >
-          {/* Halo lumineux circulaire d'arrière-plan */}
-          <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-[var(--accent-primary)]/30 via-[var(--accent-secondary)]/25 to-[var(--bg-secondary)]/30 blur-2xl group-hover:blur-3xl transition-all duration-700 pointer-events-none" />
+          {/* Halo lumineux néon vert émeraude intense d'arrière-plan */}
+          <div className="absolute inset-0 rounded-full bg-[var(--emblem-border)]/35 blur-3xl group-hover:blur-[60px] transition-all duration-700 pointer-events-none scale-105" />
 
-          {/* Card Circulaire épousant les contours */}
-          <div className="relative w-[280px] sm:w-[380px] md:w-[460px] lg:w-[500px] aspect-square rounded-full p-2 sm:p-2.5 bg-gradient-to-b from-[var(--accent-primary)]/40 via-black/85 to-[var(--bg-primary)] border-2 border-[var(--emblem-border)] shadow-[0_0_60px_var(--emblem-glow),0_15px_45px_rgba(0,0,0,0.9)] backdrop-blur-2xl overflow-hidden flex items-center justify-center transition-all duration-700 group-hover:scale-[1.03] group-hover:border-[var(--accent-primary)]">
+          {/* Card Circulaire épousant parfaitement le contour vert de l'image */}
+          <div className="relative w-[280px] sm:w-[380px] md:w-[460px] lg:w-[500px] aspect-square rounded-full p-1 bg-gradient-to-b from-[var(--emblem-border)]/60 via-black/90 to-[var(--bg-primary)] border-4 border-[var(--emblem-border)] shadow-[0_0_60px_var(--emblem-glow),0_0_30px_var(--emblem-glow),0_20px_50px_rgba(0,0,0,0.9)] backdrop-blur-3xl overflow-hidden flex items-center justify-center transition-all duration-700 group-hover:scale-[1.03] group-hover:shadow-[0_0_90px_var(--emblem-glow),0_0_45px_var(--emblem-glow)]">
             
             {/* Surface Vitrée Circulaire Intérieure */}
-            <div className="relative w-full h-full rounded-full overflow-hidden bg-[var(--emblem-bg)] flex items-center justify-center p-1 sm:p-1.5 transition-colors duration-500">
+            <div className="relative w-full h-full rounded-full overflow-hidden bg-[var(--emblem-bg)] flex items-center justify-center transition-colors duration-500">
               
               {/* L'image circulaire prenant tout le disque intérieur */}
               <Image
@@ -86,15 +86,13 @@ export default function Hero() {
                 priority
               />
 
-              {/* Reflet Verre Saphir Diagonal */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/[0.08] to-transparent pointer-events-none rounded-full" />
+              {/* Reflet Verre Léger & Overlay Néomorphique */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/[0.07] to-transparent pointer-events-none rounded-full" />
+              <div className="absolute inset-0 bg-gradient-to-b from-white/[0.04] via-transparent to-black/30 pointer-events-none rounded-full" />
 
-              {/* Anneau de lueur interne */}
-              <div className="absolute inset-0 rounded-full border border-[var(--accent-primary)]/20 pointer-events-none" />
+              {/* Anneau de lueur néon interne vert */}
+              <div className="absolute inset-0 rounded-full border border-[var(--emblem-border)]/40 pointer-events-none" />
             </div>
-
-            {/* Biseau lumineux supérieur */}
-            <div className="absolute inset-x-1/4 top-0 h-[2px] bg-gradient-to-r from-transparent via-white/70 to-transparent pointer-events-none" />
           </div>
         </motion.div>
 
