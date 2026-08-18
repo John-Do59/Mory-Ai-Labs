@@ -58,12 +58,7 @@ export default function AboutPage() {
 
       <div className="max-w-screen-2xl mx-auto">
         {/* Page Hero */}
-        <motion.div
-          initial={{ opacity: 0, y: 15 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.35, ease: "easeOut" }}
-          className="text-center max-w-4xl mx-auto mb-16"
-        >
+        <div className="text-center max-w-4xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full neomorph-pill text-xs font-integral font-normal text-[var(--accent-primary)] mb-6 uppercase tracking-wider">
             <Sparkles className="w-3.5 h-3.5" />
             Studio d'Ingénierie &amp; Venture Builder
@@ -77,16 +72,10 @@ export default function AboutPage() {
           <p className="text-[var(--text-secondary)] text-base sm:text-lg md:text-xl font-normal leading-relaxed transition-colors duration-500">
             Mory AI Labs est un studio d'ingénierie spécialisé dans la conception, l'entraînement et la mise en production de solutions d'Intelligence Artificielle sur-mesure pour les entreprises exigeantes.
           </p>
-        </motion.div>
+        </div>
 
         {/* CARD HORIZONTALE AVEC OVERLAY, SHADOW ET NEOMORPHISME (Image pexels-artempodrez) */}
-        <motion.div
-          initial={{ opacity: 0, y: 15, scale: 0.98 }}
-          whileInView={{ opacity: 1, y: 0, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.4, ease: "easeOut" }}
-          className="w-full max-w-5xl mx-auto mb-24 neomorph-card p-0 group relative overflow-hidden shadow-[0_25px_70px_rgba(0,0,0,0.85),0_0_40px_var(--accent-glow)] hover:border-[var(--accent-primary)] transition-all duration-500 rounded-[28px]"
-        >
+        <div className="w-full max-w-5xl mx-auto mb-24 neomorph-card p-0 group relative overflow-hidden shadow-[0_25px_70px_rgba(0,0,0,0.85),0_0_40px_var(--accent-glow)] hover:border-[var(--accent-primary)] transition-all duration-300 rounded-[28px]">
           <div className="relative w-full h-[260px] sm:h-[380px] md:h-[480px] lg:h-[540px] overflow-hidden bg-[var(--emblem-bg)] transition-colors duration-500">
             {/* Photo pexels-artempodrez */}
             <Image
@@ -120,7 +109,7 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
 
         {/* Founder Bio Bento Block */}
         <motion.div

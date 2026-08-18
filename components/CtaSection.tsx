@@ -8,13 +8,7 @@ export default function CtaSection() {
   return (
     <section className="py-28 px-6 bg-[var(--bg-primary)] relative overflow-hidden transition-colors duration-500">
       <div className="max-w-screen-2xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, scale: 0.98 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.4, ease: "easeOut" }}
-          className="relative rounded-3xl p-10 sm:p-16 md:p-20 text-center overflow-hidden bg-[var(--bg-card)] border-2 border-[var(--card-border)] shadow-[0_0_80px_var(--accent-glow)] transition-all duration-500"
-        >
+        <div className="relative rounded-3xl p-10 sm:p-16 md:p-20 text-center overflow-hidden bg-[var(--bg-card)] border-2 border-[var(--card-border)] shadow-[0_0_80px_var(--accent-glow)] transition-all duration-500">
           {/* Ambient Glows */}
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-gradient-to-r from-[var(--accent-glow)] via-[var(--accent-secondary)]/20 to-[var(--bg-secondary)]/30 blur-[120px] pointer-events-none" />
 
@@ -37,13 +31,13 @@ export default function CtaSection() {
 
             <Link
               href="/contact"
-              className="inline-flex items-center gap-3 px-10 py-5 rounded-full btn-theme-primary font-integral font-normal text-xs md:text-sm uppercase tracking-wider shadow-2xl"
+              className="inline-flex items-center gap-3 px-10 py-5 rounded-full btn-theme-primary font-integral font-normal text-xs md:text-sm uppercase tracking-wider shadow-2xl hover:scale-105 transition-transform"
             >
               <span>Démarrer un Cadrage Technique</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

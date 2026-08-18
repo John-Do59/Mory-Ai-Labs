@@ -41,14 +41,10 @@ export default function ProcessSection() {
 
         <div className="grid md:grid-cols-3 gap-8">
           {steps.map((step, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 15 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "100px" }}
-                transition={{ duration: 0.3, delay: index * 0.05, ease: "easeOut" }}
-                className="neomorph-card p-8 md:p-10 flex flex-col justify-between group hover:border-[var(--accent-primary)] transition-colors"
-              >
+            <div
+              key={index}
+              className="neomorph-card p-8 md:p-10 flex flex-col justify-between group hover:border-[var(--accent-primary)] transition-all duration-300"
+            >
               <div>
                 <span className="text-5xl font-bold text-[var(--accent-primary)]/30 group-hover:text-[var(--accent-primary)]/70 transition-colors block mb-4 font-integral">
                   {step.num}
@@ -63,7 +59,7 @@ export default function ProcessSection() {
                   {step.description}
                 </p>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

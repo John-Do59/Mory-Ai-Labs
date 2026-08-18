@@ -20,39 +20,9 @@ const integralCF = localFont({
       style: "normal",
     },
     {
-      path: "../public/fonts/IntegralCF-RegularOblique.woff2",
-      weight: "400",
-      style: "italic",
-    },
-    {
-      path: "../public/fonts/IntegralCF-DemiBold.woff2",
-      weight: "600",
-      style: "normal",
-    },
-    {
-      path: "../public/fonts/IntegralCF-DemiBoldOblique.woff2",
-      weight: "600",
-      style: "italic",
-    },
-    {
       path: "../public/fonts/IntegralCF-Bold.woff2",
       weight: "700",
       style: "normal",
-    },
-    {
-      path: "../public/fonts/IntegralCF-BoldOblique.woff2",
-      weight: "700",
-      style: "italic",
-    },
-    {
-      path: "../public/fonts/IntegralCF-Heavy.woff2",
-      weight: "900",
-      style: "normal",
-    },
-    {
-      path: "../public/fonts/IntegralCF-HeavyOblique.woff2",
-      weight: "900",
-      style: "italic",
     },
   ],
   variable: "--font-integral",
@@ -71,7 +41,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="fr" className={`${inter.variable} ${integralCF.variable} scroll-smooth`} data-theme="cyber-emerald">
+    <html lang="fr" className={`${inter.variable} ${integralCF.variable}`} data-theme="cyber-emerald">
       <body className="relative bg-[var(--bg-primary)] text-[var(--text-primary)] antialiased transition-colors duration-500">
         <ThemeProvider>
           <div className="grain" />

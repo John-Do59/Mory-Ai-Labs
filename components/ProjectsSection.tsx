@@ -34,13 +34,7 @@ export default function ProjectsSection() {
         <div className="space-y-24">
           
           {/* Card 1: ArboResilience (Image à Gauche, Texte à Droite) */}
-          <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "120px" }}
-            transition={{ duration: 0.3, ease: "easeOut" }}
-            className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center neomorph-card p-6 sm:p-10 md:p-12 group hover:border-[var(--accent-primary)]/40"
-          >
+          <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center neomorph-card p-6 sm:p-10 md:p-12 group hover:border-[var(--accent-primary)]/40 transition-colors duration-300">
             {/* Visual Column (Left) */}
             <div className="lg:col-span-6 order-1">
               <div className="relative w-full h-[320px] sm:h-[420px] md:h-[460px] rounded-2xl sm:rounded-3xl overflow-hidden bg-[var(--emblem-bg)] border border-[#FFA18A]/35 shadow-[0_15px_40px_rgba(0,0,0,0.85),0_0_25px_rgba(255,161,138,0.22)] transition-all duration-300 group/img group-hover:border-[#FFA18A]/60 group-hover:shadow-[0_20px_50px_rgba(0,0,0,0.95),0_0_35px_rgba(255,161,138,0.4)]">
@@ -110,16 +104,10 @@ export default function ProjectsSection() {
                 </Link>
               </div>
             </div>
-          </motion.div>
+          </div>
 
           {/* Card 2: GreenOps AI (Texte à Gauche, Image à Droite) */}
-          <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "120px" }}
-            transition={{ duration: 0.3, ease: "easeOut" }}
-            className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center neomorph-card p-6 sm:p-10 md:p-12 group hover:border-[var(--accent-secondary)]/40"
-          >
+          <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center neomorph-card p-6 sm:p-10 md:p-12 group hover:border-[var(--accent-secondary)]/40 transition-colors duration-300">
             {/* Content Column (Left on Desktop, Right on Mobile) */}
             <div className="lg:col-span-6 order-2 lg:order-1 flex flex-col justify-between">
               <div>
@@ -189,7 +177,7 @@ export default function ProjectsSection() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
 
         </div>
       </div>

@@ -44,13 +44,9 @@ export default function ExpertiseSection() {
           {expertises.map((item, index) => {
             const Icon = item.icon;
             return (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 15 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "100px" }}
-                transition={{ duration: 0.3, delay: index * 0.05, ease: "easeOut" }}
-                className="neomorph-card p-8 md:p-10 flex flex-col justify-between group hover:border-[var(--accent-primary)] transition-colors"
+                className="neomorph-card p-8 md:p-10 flex flex-col justify-between group hover:border-[var(--accent-primary)] transition-all duration-300"
               >
                 <div>
                   <div className="w-14 h-14 rounded-2xl bg-[var(--accent-primary)]/10 border border-[var(--card-border)] flex items-center justify-center text-[var(--accent-primary)] mb-8 group-hover:scale-110 transition-transform">
@@ -66,7 +62,7 @@ export default function ExpertiseSection() {
                     {item.description}
                   </p>
                 </div>
-              </motion.div>
+              </div>
             );
           })}
         </div>
