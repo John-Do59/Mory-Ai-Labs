@@ -99,10 +99,10 @@ export default function ContactPage() {
                     Téléphone
                   </span>
                   <a
-                    href="tel:0745585097"
+                    href="tel:0601022320"
                     className="text-white hover:text-[var(--accent-primary)] font-mono text-sm sm:text-base transition-colors"
                   >
-                    07 45 58 50 97
+                    06 01 02 23 20
                   </a>
                 </div>
 
