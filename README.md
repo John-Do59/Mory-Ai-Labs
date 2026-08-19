@@ -1,46 +1,88 @@
-# Mory AI Labs Website
+<p align="center">
+  <img src="public/images/Mory-AI-Labs16.png" alt="Mory AI Labs Presentation Banner" width="100%" style="border-radius: 16px;" />
+</p>
 
-A modern, high-performance website for an AI/Data agency, built with:
+<h1 align="center">Mory AI Labs</h1>
 
-- **HTML5**
-- **Tailwind CSS (v4)**
-- **GSAP** (Animations)
-- **Vanilla JavaScript**
+<p align="center">
+  <strong>Studio d'Ingénierie & Venture Builder en Intelligence Artificielle</strong><br />
+  Agents Autonomes · Modèles Prédictifs Métiers · Architectures RAG Souveraines
+</p>
 
-## Project Structure
+<p align="center">
+  <a href="https://moryailabs.com">🌐 moryailabs.com</a>
+</p>
 
-- `index.html`: Home page (Hero, Marquee, Selected Works)
-- `about.html`: Agency mission and vision
-- `services.html`: Detailed service offerings
-- `contact.html`: Inquiry form
-- `src/`: Source files (CSS, JS)
-- `assets/`: Compiled CSS and images
+---
 
-## Development
+## ⚡ Stack Technologique
 
-1. Install dependencies:
+- **Framework** : [Next.js 15 (App Router)](https://nextjs.org/) + [React 19](https://react.dev/)
+- **Langage** : [TypeScript](https://www.typescriptlang.org/)
+- **Styling & Design System** : [Tailwind CSS](https://tailwindcss.com/) + Néomorphisme & Verre Dépoli
+- **Animations & Parallax** : [Framer Motion](https://www.framer.com/motion/)
+- **Icônes & Typographie** : [Lucide React](https://lucide.dev/) + Integral CF & Inter
+- **Formulaires & Edge API** : Edge Runtime + Web3Forms
+- **Déploiement & CDN** : [Cloudflare Pages](https://pages.cloudflare.com/)
 
-    ```bash
-    npm install
-    ```
+---
 
-2. Watch for CSS changes (optional, if modifying styles):
+## 🚀 Démarrage Rapide
 
-    ```bash
-    npx @tailwindcss/cli -i ./src/css/input.css -o ./assets/css/style.css --watch
-    ```
+### 1. Installation des dépendances
 
-3. Serve locally using VS Code Live Server or python:
+```bash
+npm install
+```
 
-    ```bash
-    python3 -m http.server
-    ```
+### 2. Lancement du serveur de développement
 
-## Deployment
+```bash
+npm run dev
+```
 
-This project is ready for GitHub Pages.
+Ouvrez [http://localhost:3000](http://localhost:3000) dans votre navigateur.
 
-1. Push this folder to a GitHub repository.
-2. Go to Settings > Pages.
-3. Select the `main` branch and `/` root folder.
-4. Save.
+### 3. Build de production
+
+```bash
+npm run build
+npm run start
+```
+
+---
+
+## 📁 Architecture du Projet
+
+```text
+├── app/                  # Routes Next.js App Router
+│   ├── about/            # Page À Propos
+│   ├── services/         # Page Services & Offre IA
+│   ├── contact/          # Page Contact & Cadrage
+│   ├── api/contact/      # API Route Edge Runtime
+│   ├── globals.css       # Design System & Thèmes Cyber-Emerald / Ultra-Violet
+│   └── layout.tsx        # Root Layout & Theme Provider
+├── components/           # Composants UI modulaires
+│   ├── ParallaxBannerCard.tsx  # Carte bannière réutilisable avec Parallax & Néomorphisme
+│   ├── Hero.tsx                # Hero Section holographique
+│   ├── Navbar.tsx              # Navigation & Theme Switcher
+│   ├── ProjectsSection.tsx     # Études de cas (GreenOps AI, etc.)
+│   ├── ExpertiseSection.tsx    # Domaines d'expertise R&D
+│   ├── ProcessSection.tsx      # Roadmap d'exécution & méthodologie
+│   └── Footer.tsx              # Pied de page
+├── public/               # Assets statiques, polices et images HD
+└── assets/               # Images et sources graphiques
+```
+
+---
+
+## 🌐 Déploiement
+
+Le projet est configuré pour un déploiement continu et instantané sur **Cloudflare Pages** à chaque push sur la branche `main`.
+
+---
+
+<p align="center">
+  <sub>© 2026 Mory AI Labs. Tous droits réservés.</sub>
+</p>
+

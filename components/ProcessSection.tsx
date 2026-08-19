@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import ParallaxBannerCard from "./ParallaxBannerCard";
 
 const steps = [
   {
@@ -30,6 +31,13 @@ export default function ProcessSection() {
   return (
     <section className="py-28 px-6 bg-[var(--bg-primary)] border-t border-[var(--card-border)] relative overflow-hidden transition-colors duration-500">
       <div className="max-w-screen-2xl mx-auto">
+        {/* CARTE HORIZONTALE Mory-AI-Labs16 AVEC PARALLAX & NÉOMORPHISME AU CENTRE */}
+        <ParallaxBannerCard
+          src="/images/Mory-AI-Labs16.png"
+          alt="Mory AI Labs Roadmap d'Exécution"
+          className="mb-16"
+        />
+
         <div className="text-center max-w-3xl mx-auto mb-20">
           <span className="text-xs font-integral font-normal uppercase tracking-widest text-[var(--accent-primary)] block mb-3">
             Méthodologie Éprouvée
