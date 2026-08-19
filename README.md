@@ -82,7 +82,13 @@ Le projet est configuré pour un déploiement continu et instantané sur **Cloud
 
 ---
 
+## 📄 Licence
+
+Ce projet est sous licence [MIT](LICENSE) - voir le fichier [LICENSE](LICENSE) pour plus de détails.
+
+---
+
 <p align="center">
-  <sub>© 2026 Mory AI Labs. Tous droits réservés.</sub>
+  <sub>© 2026 Rammanat Amaury / Mory AI Labs. Tous droits réservés.</sub>
 </p>
 
