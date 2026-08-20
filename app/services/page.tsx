@@ -93,7 +93,7 @@ export default function ServicesPage() {
         {/* CARTE HORIZONTALE Mory-AI-Labs14 AVEC PARALLAX & NEOMORPHISME */}
         <ParallaxBannerCard
           src="/images/Mory-AI-Labs14.webp"
-          alt="Mory AI Labs Ingénierie & Solutions"
+          alt="Mory AI Labs — Services &amp; Applications IA"
           className="mb-10"
           priority
         />

@@ -25,14 +25,14 @@ export default function AboutPage() {
       icon: BrainCircuit,
       title: "Intelligence Stratégique",
       description:
-        "Nous ne développons pas de l'IA pour la beauté de l'algorithme, mais pour générer un retour sur investissement tangible et quantifiable dès les premiers déploiements.",
+        "Je ne développe pas de l'IA pour la beauté de l'algorithme, mais pour générer un retour sur investissement direct, concret et mesurable dès les premières semaines.",
       tag: "Approche ROI-Centric",
     },
     {
       icon: ShieldCheck,
       title: "Souveraineté & Sécurité",
       description:
-        "Vos données métiers restent votre propriété exclusive. Nous privilégions le déploiement de modèles ouverts (open-source) sur vos infrastructures cloud privées ou souveraines.",
+        "Vos données métiers restent votre propriété exclusive. Je privilégie le déploiement de modèles ouverts (open-source) sur vos infrastructures cloud privées ou souveraines.",
       tag: "Protection Maximale",
     },
     {
@@ -62,12 +62,12 @@ export default function AboutPage() {
         {/* SECTION 1 : GRANDE CARTE HORIZONTALE Mory-AI-Labs13 (1344×768) */}
         <ParallaxBannerCard
           src="/images/Mory-AI-Labs13.webp"
-          alt="Mory AI Labs Studio"
+          alt="Mory AI Labs — AI Engineer"
           className="mb-16"
           priority
           badgeTopLeft={
             <span className="px-3.5 py-1.5 rounded-full neomorph-pill text-xs font-integral font-normal text-[var(--accent-primary)] uppercase tracking-wider backdrop-blur-md">
-              Studio d'Ingénierie &amp; Venture Builder
+              AI Engineer Full-Stack · De A à Z
             </span>
           }
         />
@@ -89,16 +89,16 @@ export default function AboutPage() {
         {/* SECTION 3 : GRANDE CARTE HORIZONTALE AVEC L'IMAGE Mory-AI-Labs15 (1344×768) */}
         <ParallaxBannerCard
           src="/images/Mory-AI-Labs15.webp"
-          alt="Mory AI Labs Laboratoire & Recherche IA"
+          alt="Mory AI Labs — Applications IA &amp; Modèles"
           className="mb-24"
           overlayBottom={
             <div className="flex flex-wrap items-end justify-between gap-4">
               <div>
                 <span className="px-3.5 py-1.5 rounded-full neomorph-pill text-[11px] font-integral font-normal text-[var(--accent-primary)] uppercase tracking-wider block mb-2 w-fit backdrop-blur-md">
-                  R&amp;D &amp; Usine Logicielle IA
+                  Architecture &amp; Modèles IA
                 </span>
                 <p className="text-white text-base sm:text-xl font-bold font-integral drop-shadow-md">
-                  Ingénierie Avancée &amp; Modélisation Sur-Mesure
+                  Du Pipeline de Données au Produit en Production
                 </p>
               </div>
               <div className="hidden sm:flex items-center gap-2 text-xs font-mono text-[var(--text-secondary)] neomorph-pill px-4 py-2 backdrop-blur-md">
@@ -183,7 +183,7 @@ export default function AboutPage() {
               Principes Fondateurs
             </span>
             <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tight text-white font-integral">
-              Notre Philosophie d'Ingénierie
+              Ma Philosophie de Travail
             </h2>
           </div>
 

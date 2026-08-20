@@ -146,8 +146,7 @@ export default function ContactPage() {
                   Demande Transmise !
                 </h3>
                 <p className="text-[var(--text-secondary)] text-base max-w-md mx-auto mb-8 font-normal">
-                  Merci pour votre message. Nous analysons vos éléments techniques et revenons vers vous
-                  avec une première estimation sous 48 heures.
+                  Merci pour votre message ! J'analyse votre demande et je vous réponds personnellement sous 48 heures.
                 </p>
                 <button
                   onClick={() => {
