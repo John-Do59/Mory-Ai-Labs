@@ -21,38 +21,38 @@ export default function ServicesPage() {
   const mainServices = [
     {
       icon: Brain,
-      tag: "AGENTIQUE & AUTOMATISATION",
+      tag: "AUTOMATISATION MÉTIER",
       title: "Agents IA Autonomes & Copilotes",
       description:
-        "Création de copilotes sur-mesure capables de naviguer dans vos logiciels métiers, d'orchestrer des tâches répétitives et d'automatiser le support et les opérations avec une autonomie contrôlée.",
+        "Création d'assistants sur-mesure capables de naviguer dans vos outils métiers, d'exécuter des tâches répétitives et d'automatiser vos processus avec un contrôle total.",
       deliverables: [
-        "Architectures Multi-Agents spécialisées (LangGraph, CrewAI)",
-        "Interconnexion directe avec vos ERP, CRM et APIs métiers",
-        "Garde-fous stricts, traçabilité et validation humaine si requise",
+        "Agents connectés directement à vos logiciels, ERP et CRM",
+        "Automatisation de devis, traitement de documents et support client",
+        "Traçabilité complète, sécurité et validation humaine intégrée",
       ],
     },
     {
       icon: Database,
-      tag: "RAG & BASES VECTORIELLES",
-      title: "Recherche Sémantique & RAG Souverain",
+      tag: "VOS DONNÉES & IA",
+      title: "Applications IA Connectées à vos Données",
       description:
-        "Indexation intelligente de vos bases documentaires (contrats, manuels, bases SQL) via des vector stores haute performance pour des réponses instantanées et garanties sans hallucination.",
+        "Indexation intelligente de vos bases documentaires (contrats, manuels, historiques SQL) pour des réponses fiables, instantanées et sourcées à 100%.",
       deliverables: [
-        "Pipelines d'ingestion temps réel (pgvector, Qdrant, Milvus)",
-        "Reranking sémantique & Chunking contextuel avancé",
+        "Recherche intelligente multi-documents et bases de données",
+        "Réponses précises sans hallucination avec sources citées",
         "Isolation totale des données et respect strict du RGPD",
       ],
     },
     {
       icon: Cpu,
-      tag: "DEEP LEARNING & COMPUTER VISION",
+      tag: "PRÉDICTION & VISION",
       title: "Machine Learning & Modèles Sur-Mesure",
       description:
-        "Entraînement et fine-tuning de modèles prédictifs et de vision industrielle pour automatiser l'analyse d'images, le scoring de risques ou la maintenance prédictive.",
+        "Entraînement de modèles prédictifs et d'analyse d'images spécialisés sur votre secteur pour anticiper les risques, prédire les pannes ou automatiser le contrôle visuel.",
       deliverables: [
-        "Fine-Tuning de LLMs ouverts (Mistral, LLaMA, DeepSeek)",
-        "Modèles de vision par ordinateur (détection, segmentation, OCR)",
-        "Optimisation de l'inférence pour réduire les coûts GPU",
+        "Modèles entraînés sur vos données historiques et règles métier",
+        "Analyse automatique de photos de terrain et détection visuelle",
+        "Architecture optimisée pour un fonctionnement rapide et économique",
       ],
     },
   ];

@@ -130,13 +130,13 @@ export default function AboutPage() {
               </p>
               <div className="flex flex-wrap gap-4 text-xs font-mono text-white">
                 <span className="px-3.5 py-1.5 rounded-full neomorph-pill">
-                  FastAPI · PyTorch · Next.js · Qdrant
+                  Applications IA Full-Stack (Web &amp; Cloud)
                 </span>
                 <span className="px-3.5 py-1.5 rounded-full neomorph-pill">
-                  Architectures RAG Avancées
+                  IA Connectée à vos Données Métier
                 </span>
                 <span className="px-3.5 py-1.5 rounded-full neomorph-pill">
-                  Multi-Agents Autonomes
+                  Agents Autonomes &amp; Automatisation
                 </span>
               </div>
             </div>
@@ -262,15 +262,15 @@ export default function AboutPage() {
                 <ul className="space-y-2.5 text-xs text-white font-mono">
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-[var(--accent-primary)] shrink-0" />
-                    <span>Next.js 15 · TypeScript · FastAPI · Tailwind</span>
+                    <span>Applications web complètes, dashboards &amp; espaces clients</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-[var(--accent-primary)] shrink-0" />
-                    <span>Systèmes de paiement, abonnements &amp; dashboards</span>
+                    <span>Systèmes de paiement, abonnements &amp; facturation</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-[var(--accent-primary)] shrink-0" />
-                    <span>Copilotes conversationnels intégrés aux flux clients</span>
+                    <span>Assistants IA conversationnels intégrés aux flux utilisateurs</span>
                   </li>
                 </ul>
               </div>
@@ -304,15 +304,15 @@ export default function AboutPage() {
                 <ul className="space-y-2.5 text-xs text-white font-mono">
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-[var(--accent-secondary)] shrink-0" />
-                    <span>Pipelines ETL/ELT temps réel · Vector Stores (pgvector, Qdrant)</span>
+                    <span>Connexion directe à vos bases de données, CRM et documents</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-[var(--accent-secondary)] shrink-0" />
-                    <span>RAG avancé multi-sources &amp; structuration de documents</span>
+                    <span>Recherche intelligente et réponses précises sans hallucination</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-[var(--accent-secondary)] shrink-0" />
-                    <span>Sécurité des données &amp; étanchéité RGPD stricte</span>
+                    <span>Isolation totale de vos données &amp; conformité RGPD stricte</span>
                   </li>
                 </ul>
               </div>
@@ -346,15 +346,15 @@ export default function AboutPage() {
                 <ul className="space-y-2.5 text-xs text-white font-mono">
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-[var(--accent-primary)] shrink-0" />
-                    <span>Fine-tuning LLM sur règles métiers spécifiques</span>
+                    <span>Modèles entraînés sur votre vocabulaire et vos règles métier</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-[var(--accent-primary)] shrink-0" />
-                    <span>Scoring prédictif, séries temporelles &amp; forecasting</span>
+                    <span>Scoring prédictif, détection d'anomalies &amp; prévisions</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-[var(--accent-primary)] shrink-0" />
-                    <span>Extraction et analyse intelligente d'images &amp; plans</span>
+                    <span>Analyse automatique de photos de terrain &amp; documents scannés</span>
                   </li>
                 </ul>
               </div>
