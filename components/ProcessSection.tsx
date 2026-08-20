@@ -7,9 +7,9 @@ const steps = [
   {
     num: "01",
     phase: "PHASE 1 · 2 SEMAINES",
-    title: "On échange, je prototype",
+    title: "Cadrage & Prototypage Rapide",
     description:
-      "Vous m'expliquez votre problème métier. En 14 jours, je vous livre un prototype fonctionnel connecté à vos données réelles — pour que vous puissiez juger sur pièce.",
+      "Analyse précise de votre besoin et conception d'un premier prototype fonctionnel connecté à vos données réelles pour valider le ROI et l'adoption métier.",
   },
   {
     num: "02",

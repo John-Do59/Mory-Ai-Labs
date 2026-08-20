@@ -59,26 +59,26 @@ export default function ServicesPage() {
 
   const engagementTiers = [
     {
-      badge: "RAPIDITÉ & VALIDATION",
-      title: "Sprint 14 Jours — Testez avant de vous engager",
-      desc: "Vous m'expliquez votre problème. En 14 jours je vous livre un prototype fonctionnel sur vos vraies données. Vous décidez ensuite si vous voulez aller plus loin.",
+      badge: "FORFAIT CADRÉ & RAPIDE",
+      title: "Sprint Prototype (14 Jours)",
+      desc: "Une mission forfaitaire courte et à budget maîtrisé pour concevoir et tester un premier prototype fonctionnel sur vos données réelles, et valider le ROI avant tout engagement lourd.",
       features: [
-        "Échange initial et analyse de faisabilité sous 48h",
-        "Prototype connecté à vos données réelles",
-        "Rapport de benchmark & chiffrage du projet complet",
+        "Cadrage technique et définition précise du périmètre",
+        "Développement d'un prototype connecté à vos données",
+        "Rapport de performance & feuille de route de production",
       ],
-      cta: "Démarrer un Sprint",
+      cta: "Commander un Sprint",
     },
     {
-      badge: "PROJET COMPLET",
-      title: "De l'Idée au Produit Déployé",
-      desc: "Architecture, développement, entraînement des modèles, mise en production et monitoring — je gère l'intégralité du projet de A à Z.",
+      badge: "CLÉ EN MAIN",
+      title: "Développement & Déploiement Complet",
+      desc: "Conception, développement sur-mesure, entraînement des modèles, mise en production et monitoring — une prestation complète de A à Z avec un interlocuteur unique.",
       features: [
-        "Stack complète : frontend, backend, ML, DevOps",
-        "Déploiement sécurisé sur votre cloud souverain",
-        "Vous repartez avec le code source et la documentation",
+        "Stack complète : frontend, backend, IA/ML, DevOps",
+        "Déploiement sécurisé sur votre cloud ou serveurs dédiés",
+        "Code source, documentation et propriété intellectuelle 100% à vous",
       ],
-      cta: "Discuter du projet",
+      cta: "Lancer un Projet",
       highlighted: true,
     },
   ];
