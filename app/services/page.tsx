@@ -84,10 +84,10 @@ export default function ServicesPage() {
   ];
 
   return (
-    <div className="pt-36 pb-28 px-6 min-h-screen relative overflow-hidden bg-[var(--bg-primary)] transition-colors duration-500">
+    <div className="pt-24 sm:pt-36 pb-16 sm:pb-28 px-4 sm:px-6 min-h-screen relative overflow-hidden bg-[var(--bg-primary)] transition-colors duration-500">
       {/* Background Glows */}
-      <div className="absolute top-1/4 -right-32 w-[600px] h-[600px] bg-[var(--accent-glow)] rounded-full blur-[180px] pointer-events-none -z-10 transition-all duration-700" />
-      <div className="absolute top-3/4 -left-32 w-[600px] h-[600px] bg-[var(--accent-secondary)]/15 rounded-full blur-[180px] pointer-events-none -z-10 transition-all duration-700" />
+      <div className="absolute top-1/4 -right-32 w-[320px] sm:w-[600px] h-[320px] sm:h-[600px] bg-[var(--accent-glow)] rounded-full blur-[120px] sm:blur-[180px] pointer-events-none -z-10 transition-all duration-700" />
+      <div className="absolute top-3/4 -left-32 w-[320px] sm:w-[600px] h-[320px] sm:h-[600px] bg-[var(--accent-secondary)]/15 rounded-full blur-[120px] sm:blur-[180px] pointer-events-none -z-10 transition-all duration-700" />
 
       <div className="max-w-screen-2xl mx-auto">
         {/* CARTE HORIZONTALE Mory-AI-Labs14 AVEC PARALLAX & NEOMORPHISME */}
@@ -99,18 +99,18 @@ export default function ServicesPage() {
         />
 
         {/* Titre & Description EN DESSOUS de la carte image */}
-        <div className="text-center max-w-4xl mx-auto mb-20">
-          <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold uppercase tracking-tight text-white mb-6 font-integral">
+        <div className="text-center max-w-4xl mx-auto mb-14 sm:mb-20">
+          <h1 className="text-3xl sm:text-6xl md:text-7xl font-bold uppercase tracking-tight text-white mb-4 sm:mb-6 font-integral leading-tight">
             CE QUE JE PEUX <br />
             <span className="title-gradient">CONSTRUIRE POUR VOUS.</span>
           </h1>
-          <p className="text-[var(--text-secondary)] text-base sm:text-lg md:text-xl font-normal leading-relaxed transition-colors duration-500">
+          <p className="text-[var(--text-secondary)] text-sm sm:text-lg md:text-xl font-normal leading-relaxed transition-colors duration-500 px-2">
             Du prototype en 14 jours au produit déployé en production — je gère toute la stack : frontend, backend, machine learning, DevOps. Un seul interlocuteur, zéro intermédiaire.
           </p>
         </div>
 
         {/* Main Services Grid */}
-        <div className="space-y-12 mb-28">
+        <div className="space-y-8 sm:space-y-12 mb-20 sm:mb-28">
           {mainServices.map((service, index) => {
             const Icon = service.icon;
             return (
@@ -120,7 +120,7 @@ export default function ServicesPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.35, delay: index * 0.05, ease: "easeOut" }}
-                className="neomorph-card p-8 sm:p-12 group hover:border-[var(--accent-primary)] transition-all duration-500"
+                className="neomorph-card p-6 sm:p-10 md:p-12 group hover:border-[var(--accent-primary)] transition-all duration-500"
               >
                 <div className="grid lg:grid-cols-12 gap-8 items-center">
                   <div className="lg:col-span-6">

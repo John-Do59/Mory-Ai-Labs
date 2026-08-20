@@ -61,14 +61,14 @@ export default function ParallaxBannerCard({
 
         {/* Optional Top-Left Badge */}
         {badgeTopLeft && (
-          <div className="absolute top-6 left-6 z-20 pointer-events-auto">
+          <div className="absolute top-3 left-3 sm:top-6 sm:left-6 z-20 pointer-events-auto max-w-[90%]">
             {badgeTopLeft}
           </div>
         )}
 
         {/* Optional Bottom Overlay / Content */}
         {overlayBottom && (
-          <div className="absolute bottom-6 left-6 right-6 z-20 pointer-events-auto">
+          <div className="absolute bottom-3 left-3 right-3 sm:bottom-6 sm:left-6 sm:right-6 z-20 pointer-events-auto">
             {overlayBottom}
           </div>
         )}

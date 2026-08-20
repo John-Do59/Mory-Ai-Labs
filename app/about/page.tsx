@@ -52,10 +52,10 @@ export default function AboutPage() {
   ];
 
   return (
-    <div className="pt-36 pb-28 px-6 min-h-screen relative overflow-hidden bg-[var(--bg-primary)] transition-colors duration-500">
+    <div className="pt-24 sm:pt-36 pb-16 sm:pb-28 px-4 sm:px-6 min-h-screen relative overflow-hidden bg-[var(--bg-primary)] transition-colors duration-500">
       {/* Background Glows */}
-      <div className="absolute top-1/4 -left-32 w-[600px] h-[600px] bg-[var(--accent-glow)] rounded-full blur-[180px] pointer-events-none -z-10 transition-all duration-700" />
-      <div className="absolute top-2/3 -right-32 w-[600px] h-[600px] bg-[var(--accent-secondary)]/15 rounded-full blur-[180px] pointer-events-none -z-10 transition-all duration-700" />
+      <div className="absolute top-1/4 -left-32 w-[320px] sm:w-[600px] h-[320px] sm:h-[600px] bg-[var(--accent-glow)] rounded-full blur-[120px] sm:blur-[180px] pointer-events-none -z-10 transition-all duration-700" />
+      <div className="absolute top-2/3 -right-32 w-[320px] sm:w-[600px] h-[320px] sm:h-[600px] bg-[var(--accent-secondary)]/15 rounded-full blur-[120px] sm:blur-[180px] pointer-events-none -z-10 transition-all duration-700" />
 
       <div className="max-w-screen-2xl mx-auto">
         
@@ -73,15 +73,15 @@ export default function AboutPage() {
         />
 
         {/* SECTION 2 : TITRE & TEXTE EN DESSOUS */}
-        <div className="text-center max-w-4xl mx-auto mb-20">
-          <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold uppercase tracking-tight text-white mb-6 font-integral">
+        <div className="text-center max-w-4xl mx-auto mb-14 sm:mb-20">
+          <h1 className="text-3xl xs:text-4xl sm:text-6xl md:text-7xl font-bold uppercase tracking-tight text-white mb-4 sm:mb-6 font-integral leading-tight">
             DU TERRAIN AU CODE. <br />
             <span className="title-gradient">
               MON PARCOURS.
             </span>
           </h1>
 
-          <p className="text-[var(--text-secondary)] text-base sm:text-lg md:text-xl font-normal leading-relaxed transition-colors duration-500 max-w-3xl mx-auto">
+          <p className="text-[var(--text-secondary)] text-sm sm:text-lg md:text-xl font-normal leading-relaxed transition-colors duration-500 max-w-3xl mx-auto px-2">
             Avant d'écrire ma première ligne de code, j'ai travaillé sur le terrain — en logistique, grande distribution, BTP, industrie et paysage. C'est cette expérience qui donne à mes applications IA une longueur d'avance : je comprends les métiers pour lesquels je construis.
           </p>
         </div>
@@ -115,14 +115,14 @@ export default function AboutPage() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="neomorph-card p-8 md:p-14 mb-24 relative overflow-hidden group hover:border-[var(--accent-primary)] transition-colors"
+          className="neomorph-card p-6 sm:p-10 md:p-14 mb-16 sm:mb-24 relative overflow-hidden group hover:border-[var(--accent-primary)] transition-colors"
         >
-          <div className="grid lg:grid-cols-12 gap-10 items-center">
+          <div className="grid lg:grid-cols-12 gap-8 sm:gap-10 items-center">
             <div className="lg:col-span-8">
               <span className="text-xs font-integral font-normal uppercase tracking-widest text-[var(--accent-primary)] block mb-2">
                 Fondateur &amp; AI Engineer
               </span>
-              <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 font-integral">
+              <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6 font-integral">
                 Amaury Rammanat
               </h2>
               <p className="text-[var(--text-secondary)] text-base md:text-lg leading-relaxed mb-6 font-sans transition-colors duration-500">
@@ -158,7 +158,7 @@ export default function AboutPage() {
         </motion.div>
 
         {/* Stats Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-24">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 mb-16 sm:mb-24">
           {stats.map((stat, index) => (
             <motion.div
               key={index}
@@ -166,12 +166,12 @@ export default function AboutPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="neomorph-card p-8 text-center flex flex-col justify-center items-center"
+              className="neomorph-card p-4 sm:p-8 text-center flex flex-col justify-center items-center"
             >
-              <span className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[var(--accent-primary)] to-[var(--accent-secondary)] mb-2 stat-val">
+              <span className="text-3xl sm:text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[var(--accent-primary)] to-[var(--accent-secondary)] mb-1 sm:mb-2 stat-val">
                 {stat.value}
               </span>
-              <p className="text-xs md:text-sm text-[var(--text-secondary)] font-medium transition-colors duration-500">{stat.label}</p>
+              <p className="text-[11px] sm:text-xs md:text-sm text-[var(--text-secondary)] font-medium transition-colors duration-500 leading-snug">{stat.label}</p>
             </motion.div>
           ))}
         </div>
