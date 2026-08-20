@@ -81,6 +81,10 @@ export default function ProjectsSection() {
                   </div>
                   <div className="flex items-center gap-3 text-sm text-white">
                     <CheckCircle2 className="w-5 h-5 text-[var(--accent-primary)] shrink-0" />
+                    <span>Intégration des caractéristiques &amp; traits botaniques (bases TRY, GBIF)</span>
+                  </div>
+                  <div className="flex items-center gap-3 text-sm text-white">
+                    <CheckCircle2 className="w-5 h-5 text-[var(--accent-primary)] shrink-0" />
                     <span>Modélisation croisant données météo historiques et scénarios climatiques futurs</span>
                   </div>
                 </div>
