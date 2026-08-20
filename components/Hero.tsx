@@ -7,8 +7,9 @@ import { ArrowRight, ChevronDown } from "lucide-react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 const typewriterPhrases = [
-  "De la R&D prédictive aux agents métiers autonomes : nous concevons, entraînons et déployons vos solutions d'IA propriétaires.",
-  "Architectures de données souveraines et modèles d'apprentissage sur-mesure pour transformer vos opérations.",
+  "Du pipeline de données au produit déployé — un seul interlocuteur, zéro intermédiaire.",
+  "J'ai travaillé en logistique, BTP, industrie et paysage. Aujourd'hui je construis l'IA pour ces métiers.",
+  "Agents IA, apps sur-mesure, SaaS métier : je transforme vos données en outils qui travaillent pour vous.",
 ];
 
 export default function Hero() {
@@ -80,7 +81,7 @@ export default function Hero() {
               {/* L'image circulaire cadrée au millimètre */}
               <Image
                 src="/images/Mory-AI-Labs11.jpg"
-                alt="Mory AI Labs Emblème Circulaire"
+                alt="Mory AI Labs — AI Engineer Indépendant"
                 fill
                 sizes="(max-width: 768px) 380px, 500px"
                 className="object-cover object-center scale-[1.02] select-none transition-transform duration-700 ease-out group-hover:scale-[1.05]"
@@ -104,9 +105,9 @@ export default function Hero() {
           className="mb-6 max-w-5xl mx-auto"
         >
           <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.1] tracking-tight uppercase font-bold text-white drop-shadow-[0_4px_30px_rgba(0,0,0,0.9)] font-integral">
-            INTELLIGENCE ARTIFICIELLE <br />
+            JE CONSTRUIS VOS <br />
             <span className="title-gradient">
-              SUR-MESURE &amp; SOUVERAINE.
+              APPLICATIONS IA.
             </span>
           </h1>
         </motion.div>
@@ -135,14 +136,14 @@ export default function Hero() {
             href="/contact"
             className="inline-flex items-center gap-2.5 px-8 py-4 rounded-full btn-theme-primary font-integral font-normal text-xs md:text-sm uppercase tracking-wider shadow-xl shadow-black/50"
           >
-            <span>Démarrer un Cadrage IA</span>
+            <span>Parlons de votre projet</span>
             <ArrowRight className="w-4 h-4" />
           </Link>
           <a
             href="#solutions"
             className="inline-flex items-center gap-2 px-7 py-4 rounded-full neomorph-pill text-white font-integral font-normal text-xs md:text-sm uppercase tracking-wider hover:border-[var(--accent-primary)] transition-all duration-300"
           >
-            <span>Explorer nos Solutions</span>
+            <span>Voir mes réalisations</span>
             <ChevronDown className="w-4 h-4 opacity-60" />
           </a>
         </motion.div>
@@ -152,12 +153,12 @@ export default function Hero() {
       <div className="max-w-screen-2xl mx-auto w-full relative z-20 flex flex-wrap items-center justify-between gap-4 text-xs font-integral font-normal uppercase tracking-wider text-[var(--text-secondary)] pt-6 border-t border-[var(--card-border)] mt-8 transition-colors duration-500">
         <div className="flex items-center gap-2">
           <span className="w-2 h-2 rounded-full bg-[var(--accent-primary)] animate-pulse" />
-          <span className="text-white">Agents Autonomes &amp; Modèles Prédictifs Métiers</span>
+          <span className="text-white">AI Engineer Indépendant</span>
         </div>
         <div className="flex items-center gap-4">
-          <span className="text-white">100% Souverain &amp; Sécurisé</span>
+          <span className="text-white">Prototype livré en 14 jours</span>
           <span className="opacity-40">|</span>
-          <span>Lille &amp; Paris</span>
+          <span>Lille, France</span>
         </div>
       </div>
     </section>

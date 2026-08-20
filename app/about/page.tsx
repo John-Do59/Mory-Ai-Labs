@@ -45,10 +45,10 @@ export default function AboutPage() {
   ];
 
   const stats = [
-    { value: "< 14j", label: "Délai de livraison d'un PoC opérationnel" },
-    { value: "100%", label: "Propriété intellectuelle cédée au client" },
-    { value: "0", label: "Dépendance aux modèles propriétaires fermés" },
-    { value: "24/7", label: "Disponibilité des agents autonomes déployés" },
+    { value: "14j", label: "Du brief au prototype fonctionnel" },
+    { value: "100%", label: "Vous repartez avec le code source" },
+    { value: "1", label: "Seul interlocuteur, de A à Z" },
+    { value: "5+", label: "Secteurs d'activité maîtrisés de l'intérieur" },
   ];
 
   return (
@@ -75,14 +75,14 @@ export default function AboutPage() {
         {/* SECTION 2 : TITRE & TEXTE EN DESSOUS */}
         <div className="text-center max-w-4xl mx-auto mb-20">
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold uppercase tracking-tight text-white mb-6 font-integral">
-            L'EXCELLENCE DE L'IA <br />
+            DU TERRAIN AU CODE. <br />
             <span className="title-gradient">
-              AU SERVICE DU BUSINESS.
+              MON PARCOURS.
             </span>
           </h1>
 
           <p className="text-[var(--text-secondary)] text-base sm:text-lg md:text-xl font-normal leading-relaxed transition-colors duration-500 max-w-3xl mx-auto">
-            Mory AI Labs est un studio d'ingénierie spécialisé dans la conception, l'entraînement et la mise en production de solutions d'Intelligence Artificielle sur-mesure pour les entreprises exigeantes.
+            Avant d'écrire ma première ligne de code, j'ai travaillé sur le terrain — en logistique, grande distribution, BTP, industrie et paysage. C'est cette expérience qui donne à mes applications IA une longueur d'avance : je comprends les métiers pour lesquels je construis.
           </p>
         </div>
 
@@ -120,13 +120,13 @@ export default function AboutPage() {
           <div className="grid lg:grid-cols-12 gap-10 items-center">
             <div className="lg:col-span-8">
               <span className="text-xs font-integral font-normal uppercase tracking-widest text-[var(--accent-primary)] block mb-2">
-                Fondateur &amp; Lead Ingénieur IA
+                Fondateur &amp; AI Engineer
               </span>
               <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 font-integral">
-                Rammanat Amaury
+                Amaury Rammanat
               </h2>
               <p className="text-[var(--text-secondary)] text-base md:text-lg leading-relaxed mb-6 font-sans transition-colors duration-500">
-                Passionné par l'architecture logicielle de pointe et les modèles d'apprentissage profond, Rammanat Amaury a fondé Mory AI Labs avec une conviction forte : l'IA générative et prédictive doit cesser d'être un gadget pour devenir un levier opérationnel direct et rentable pour les entreprises.
+                Gestionnaire de stock, magasinier polyvalent, paysagiste — j'ai traversé la grande distribution, le BTP, l'industrie, la logistique, le secteur public et privé. J'ai vu de l'intérieur comment les entreprises perdent du temps faute d'outils adaptés. Ma reconversion en AI Engineer n'est pas un accident : c'est la réponse directe à des problèmes que j'ai vécus moi-même sur le terrain. Aujourd'hui, je construis les applications IA que ces métiers n'ont jamais eues.
               </p>
               <div className="flex flex-wrap gap-4 text-xs font-mono text-white">
                 <span className="px-3.5 py-1.5 rounded-full neomorph-pill">
@@ -223,13 +223,13 @@ export default function AboutPage() {
         <div className="mb-24">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="text-xs font-integral font-normal uppercase tracking-widest text-[var(--accent-secondary)] block mb-3">
-              Venture Builder &amp; Usine Logicielle IA
+              Stack Technique &amp; Expertise Full-Stack
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold uppercase tracking-tight text-white font-integral mb-4">
-              De l'Idée au SaaS IA <span className="title-gradient">Prêt à Générer du Chiffre</span>
+              Ce que je maîtrise <span className="title-gradient">de A à Z</span>
             </h2>
             <p className="text-[var(--text-secondary)] text-sm md:text-base transition-colors duration-500">
-              Nous combinons le meilleur du génie logiciel, de la data science et de l'exécution business pour concevoir des produits autonomes et ultra-rentables.
+              Du design de l'interface au déploiement cloud, je gère l'intégralité de la stack — un seul interlocuteur pour votre projet complet.
             </p>
           </div>
 
@@ -253,10 +253,10 @@ export default function AboutPage() {
                 </div>
 
                 <h3 className="text-2xl font-bold text-white mb-3 font-integral">
-                  Développement SaaS IA &amp; Copilotes
+                  Frontend &amp; Applications Web IA
                 </h3>
                 <p className="text-[var(--text-secondary)] text-sm leading-relaxed mb-6 font-sans transition-colors duration-500">
-                  Création de plateformes SaaS de bout en bout : interfaces réactives Next.js / React, APIs rapides et robustes, architecture multi-tenant et expérience utilisateur ultra-fluide orientée conversion.
+                  Interfaces réactives et premium avec Next.js / React / TypeScript. De la landing page à l'application SaaS complète avec dashboard, authentification et UX orientée conversion.
                 </p>
 
                 <ul className="space-y-2.5 text-xs text-white font-mono">
@@ -295,10 +295,10 @@ export default function AboutPage() {
                 </div>
 
                 <h3 className="text-2xl font-bold text-white mb-3 font-integral">
-                  Data Engineering &amp; Pipelines RAG
+                  Backend, APIs &amp; Pipelines de Données
                 </h3>
                 <p className="text-[var(--text-secondary)] text-sm leading-relaxed mb-6 font-sans transition-colors duration-500">
-                  Ingestion, transformation et indexation sémantique de vos flux de données. Nous bâtissons des bases vectorielles scalables pour alimenter vos agents sans hallucination et avec une latence minimale.
+                  APIs performantes avec FastAPI / Python, pipelines de données structurés, bases vectorielles pour vos agents IA — tout ce qui fait tourner votre produit en coulisses.
                 </p>
 
                 <ul className="space-y-2.5 text-xs text-white font-mono">
@@ -337,10 +337,10 @@ export default function AboutPage() {
                 </div>
 
                 <h3 className="text-2xl font-bold text-white mb-3 font-integral">
-                  Machine Learning &amp; Computer Vision
+                  Machine Learning &amp; Vision par Ordinateur
                 </h3>
                 <p className="text-[var(--text-secondary)] text-sm leading-relaxed mb-6 font-sans transition-colors duration-500">
-                  Fine-tuning de modèles ouverts de pointe (Mistral, LLaMA) et algorithmes prédictifs spécialisés sur vos données historiques pour anticiper les risques et automatiser la vision par ordinateur.
+                  Modèles prédictifs entraînés sur vos données métier, analyse automatique d'images et de photos terrain. Des outils de prédiction qui connaissent votre secteur — pas des boîtes noires génériques.
                 </p>
 
                 <ul className="space-y-2.5 text-xs text-white font-mono">
@@ -379,10 +379,10 @@ export default function AboutPage() {
                 </div>
 
                 <h3 className="text-2xl font-bold text-white mb-3 font-integral">
-                  DevOps, Cloud &amp; Accélération Business
+                  DevOps, Cloud &amp; Déploiement
                 </h3>
                 <p className="text-[var(--text-secondary)] text-sm leading-relaxed mb-6 font-sans transition-colors duration-500">
-                  Mise en production sécurisée avec intégration continue, observabilité en temps réel et accompagnement stratégique pour maximiser l'adoption, la réduction des coûts et la rentabilité dès le jour 1.
+                  Docker, CI/CD, déploiement sur cloud souverain, monitoring en temps réel. Je gère la mise en production de A à Z — votre app tourne, je surveille que ça reste stable.
                 </p>
 
                 <ul className="space-y-2.5 text-xs text-white font-mono">
@@ -413,16 +413,16 @@ export default function AboutPage() {
           className="neomorph-card p-10 text-center flex flex-col items-center justify-center"
         >
           <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4 font-integral">
-            Prêt à transformer vos opérations avec l'IA ?
+            Un projet en tête ?
           </h3>
           <p className="text-[var(--text-secondary)] text-base max-w-xl mb-8 font-sans transition-colors duration-500">
-            Planifiez un échange technique de 30 minutes pour auditer vos cas d'usage avec nos ingénieurs.
+            Décrivez-moi votre problématique métier en quelques lignes. Je vous réponds personnellement sous 48h avec une première analyse — gratuite, sans engagement.
           </p>
           <Link
             href="/contact"
             className="inline-flex items-center gap-2.5 px-8 py-4 rounded-full btn-theme-primary font-integral font-normal text-xs uppercase tracking-wider shadow-xl"
           >
-            <span>Démarrer une collaboration</span>
+            <span>Parlons de votre projet</span>
             <ArrowRight className="w-4 h-4" />
           </Link>
         </motion.div>

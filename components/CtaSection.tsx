@@ -15,25 +15,25 @@ export default function CtaSection() {
           <div className="relative z-10 max-w-3xl mx-auto">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full neomorph-pill text-xs font-integral font-normal text-[var(--accent-primary)] mb-6 uppercase tracking-wider">
               <Sparkles className="w-3.5 h-3.5" />
-              Prêt à Passer à la Vitesse Supérieure ?
+              Un projet en tête ?
             </div>
 
             <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold uppercase tracking-tight text-white mb-6 font-integral">
-              CONSTRUISONS VOTRE <br />
+              DÉCRIVEZ-MOI VOTRE <br />
               <span className="title-gradient">
-                AVANTAGE IA DÈS AUJOURD'HUI.
+                PROBLÈME MÉTIER.
               </span>
             </h2>
 
             <p className="text-[var(--text-secondary)] text-base sm:text-lg mb-10 max-w-xl mx-auto font-normal transition-colors duration-500">
-              Échangez directement avec nos ingénieurs IA pour cadrer votre cas d'usage, évaluer la faisabilité et chiffrer un PoC sous 48 heures.
+              Envoyez-moi un email avec votre problématique. Je vous réponds personnellement sous 48 heures avec une première analyse de faisabilité — gratuite, sans engagement.
             </p>
 
             <Link
               href="/contact"
               className="inline-flex items-center gap-3 px-10 py-5 rounded-full btn-theme-primary font-integral font-normal text-xs md:text-sm uppercase tracking-wider shadow-2xl hover:scale-105 transition-transform"
             >
-              <span>Démarrer un Cadrage Technique</span>
+              <span>Parlons de votre projet</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>

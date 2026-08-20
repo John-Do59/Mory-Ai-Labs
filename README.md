@@ -5,8 +5,8 @@
 <h1 align="center">Mory AI Labs</h1>
 
 <p align="center">
-  <strong>Studio d'Ingénierie & Venture Builder en Intelligence Artificielle</strong><br />
-  Agents Autonomes · Modèles Prédictifs Métiers · Architectures RAG Souveraines
+  <strong>AI Engineer Indépendant — Applications IA Sur-Mesure</strong><br />
+  Agents Autonomes · SaaS Métier · Machine Learning · Du Code au Cloud
 </p>
 
 <p align="center">

@@ -71,14 +71,13 @@ export default function ContactPage() {
           className="mb-16"
         >
           <h1 className="text-4xl sm:text-6xl md:text-8xl font-black uppercase tracking-tight text-white mb-4 font-integral">
-            LANCEZ UN <br />
+            PARLONS DE <br />
             <span className="title-gradient">
-              PROJET IA.
+              VOTRE PROJET.
             </span>
           </h1>
           <p className="text-[var(--text-secondary)] text-lg md:text-xl max-w-2xl font-normal transition-colors duration-500">
-            Partagez-nous votre défi métier ou votre projet de solution sur-mesure. Nos ingénieurs
-            analysent votre besoin et vous répondent sous 24 à 48 heures.
+            Décrivez-moi votre problématique métier en quelques lignes. Je vous réponds personnellement sous 48 heures avec une première analyse de faisabilité — gratuite, sans engagement.
           </p>
         </motion.div>
 
@@ -95,25 +94,13 @@ export default function ContactPage() {
               <div className="space-y-8">
                 <div>
                   <span className="text-xs font-integral font-normal uppercase tracking-widest text-[var(--accent-primary)] block mb-1.5">
-                    Email Direct
+                    Email
                   </span>
                   <a
                     href="mailto:rammanatamaury@gmail.com"
                     className="text-white hover:text-[var(--accent-primary)] font-mono text-sm sm:text-base transition-colors break-all"
                   >
                     rammanatamaury@gmail.com
-                  </a>
-                </div>
-
-                <div>
-                  <span className="text-xs font-integral font-normal uppercase tracking-widest text-[var(--accent-primary)] block mb-1.5">
-                    Téléphone
-                  </span>
-                  <a
-                    href="tel:0601022320"
-                    className="text-white hover:text-[var(--accent-primary)] font-mono text-sm sm:text-base transition-colors"
-                  >
-                    06 01 02 23 20
                   </a>
                 </div>
 
@@ -140,7 +127,7 @@ export default function ContactPage() {
               </div>
               <div className="flex items-center gap-2">
                 <Sparkles className="w-4 h-4 text-[var(--accent-secondary)]" />
-                <span>Cadrage technique et chiffrage sous 48h</span>
+                <span>Réponse personnelle sous 48h — gratuite</span>
               </div>
             </div>
           </motion.div>
@@ -249,7 +236,7 @@ export default function ContactPage() {
                     </>
                   ) : (
                     <>
-                      <span>Transmettre la Demande de Cadrage</span>
+                      <span>Envoyer mon message</span>
                       <Send className="w-4 h-4" />
                     </>
                   )}

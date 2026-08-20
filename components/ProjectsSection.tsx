@@ -17,16 +17,16 @@ export default function ProjectsSection() {
         <div className="text-center max-w-3xl mx-auto mb-20">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full neomorph-pill text-xs font-integral font-normal text-[var(--accent-primary)] mb-6 uppercase tracking-wider">
             <Sparkles className="w-3.5 h-3.5" />
-            CAS D'USAGE B2B CONCRETS
+            MES RÉALISATIONS
           </div>
           <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold uppercase tracking-tight text-white mb-6 font-integral">
-            SOLUTIONS &amp; PRODUITS <br />
+            CE QUE J'AI <br />
             <span className="title-gradient">
-              DÉPLOYÉS EN PRODUCTION.
+              CONSTRUIT.
             </span>
           </h2>
           <p className="text-[var(--text-secondary)] text-base sm:text-lg font-normal transition-colors duration-500">
-            Études de cas réelles conçues et orchestrées par notre studio pour transformer des problématiques industrielles en valeur économique mesurable.
+            Des applications IA nées du terrain — construites parce que j'ai vu les problèmes de mes propres yeux, en tant qu'ancien paysagiste et logisticien.
           </p>
         </div>
 
@@ -49,7 +49,7 @@ export default function ProjectsSection() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-black/20 pointer-events-none" />
                 <div className="absolute top-4 left-4 z-10">
                   <span className="px-3.5 py-1.5 rounded-full neomorph-pill text-xs font-integral font-normal text-[var(--accent-primary)] uppercase tracking-wider backdrop-blur-md">
-                    Écologie &amp; Prédiction
+                    Mon Produit · Nature &amp; Climat
                   </span>
                 </div>
               </div>
@@ -59,13 +59,13 @@ export default function ProjectsSection() {
             <div className="lg:col-span-6 order-2 flex flex-col justify-between">
               <div>
                 <span className="text-xs font-integral font-normal text-[var(--accent-primary)] uppercase tracking-widest block mb-2">
-                  CAS D'USAGE B2B CONCRETS
+                  PRODUIT PROPRE
                 </span>
                 <h3 className="text-2xl sm:text-4xl font-bold uppercase tracking-tight text-white mb-4 font-integral">
                   ArboResilience · Diagnostic &amp; Résilience du Patrimoine Arboré
                 </h3>
                 <p className="text-[var(--text-secondary)] text-sm sm:text-base leading-relaxed mb-6 font-sans transition-colors duration-500">
-                  Plateforme intelligente de vision par ordinateur et de modélisation prédictive des risques d'arbres pour les collectivités et gestionnaires d'infrastructures.
+                  Quand tu as entretenu des espaces verts pendant des années, tu sais ce qui fragilise un arbre. J'ai construit ArboResilience pour donner aux collectivités les outils de diagnostic et de prédiction que j'aurais aimé avoir sur le terrain.
                 </p>
 
                 {/* Features Pill List */}
@@ -112,13 +112,13 @@ export default function ProjectsSection() {
             <div className="lg:col-span-6 order-2 lg:order-1 flex flex-col justify-between">
               <div>
                 <span className="text-xs font-integral font-normal text-[var(--accent-secondary)] uppercase tracking-widest block mb-2">
-                  CAS D'USAGE B2B CONCRETS
+                  PRODUIT PROPRE
                 </span>
                 <h3 className="text-2xl sm:text-4xl font-bold uppercase tracking-tight text-white mb-4 font-integral">
-                  GreenOps AI · IA &amp; RAG pour Paysagistes &amp; Entreprises du Paysage
+                  GreenOps AI · L'IA du Paysagiste
                 </h3>
                 <p className="text-[var(--text-secondary)] text-sm sm:text-base leading-relaxed mb-6 font-sans transition-colors duration-500">
-                  Plateforme intelligente conçue sur-mesure pour les paysagistes, artisans et solopreneurs du paysage : automatisation instantanée des devis complexes, chiffrage intelligent des végétaux &amp; matériaux via RAG, et coordination simplifiée des équipes sur le terrain.
+                  Ancien paysagiste, je sais qu'un devis précis prend des heures. GreenOps AI fait le même travail en 3 minutes — parce que le moteur est alimenté par une vraie connaissance du métier. Devis automatiques, chiffrage des végétaux et matériaux, coordination terrain.
                 </p>
 
                 {/* Features Pill List */}
@@ -172,7 +172,7 @@ export default function ProjectsSection() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-black/20 pointer-events-none" />
                 <div className="absolute top-4 left-4 z-10">
                   <span className="px-3.5 py-1.5 rounded-full neomorph-pill text-xs font-integral font-normal text-[var(--accent-secondary)] uppercase tracking-wider backdrop-blur-md">
-                    Paysage &amp; RAG Devis
+                    Mon Produit · Paysage &amp; Devis IA
                   </span>
                 </div>
               </div>

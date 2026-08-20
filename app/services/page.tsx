@@ -60,25 +60,25 @@ export default function ServicesPage() {
   const engagementTiers = [
     {
       badge: "RAPIDITÉ & VALIDATION",
-      title: "Sprint PoC 14 Jours",
-      desc: "Idéal pour valider la faisabilité technique et le ROI sur vos données réelles avant tout engagement lourd.",
+      title: "Sprint 14 Jours — Testez avant de vous engager",
+      desc: "Vous m'expliquez votre problème. En 14 jours je vous livre un prototype fonctionnel sur vos vraies données. Vous décidez ensuite si vous voulez aller plus loin.",
       features: [
-        "Audit & Cadrage technique sous 48h",
-        "Développement d'un prototype connecté fonctionnel",
-        "Rapport de benchmark & Chiffrage de production",
+        "Échange initial et analyse de faisabilité sous 48h",
+        "Prototype connecté à vos données réelles",
+        "Rapport de benchmark & chiffrage du projet complet",
       ],
-      cta: "Lancer un PoC",
+      cta: "Démarrer un Sprint",
     },
     {
-      badge: "PRODUCTION & SCALABILITÉ",
-      title: "Déploiement End-to-End",
-      desc: "Conception, développement et mise en production de votre solution IA complète sur votre cloud souverain.",
+      badge: "PROJET COMPLET",
+      title: "De l'Idée au Produit Déployé",
+      desc: "Architecture, développement, entraînement des modèles, mise en production et monitoring — je gère l'intégralité du projet de A à Z.",
       features: [
-        "Architecture logicielle & pipelines robustes",
-        "Intégration CI/CD, conteneurs Docker & monitoring",
-        "Support réactif, maintenance et transfert de compétences",
+        "Stack complète : frontend, backend, ML, DevOps",
+        "Déploiement sécurisé sur votre cloud souverain",
+        "Vous repartez avec le code source et la documentation",
       ],
-      cta: "Cadrer le Déploiement",
+      cta: "Discuter du projet",
       highlighted: true,
     },
   ];
@@ -101,11 +101,11 @@ export default function ServicesPage() {
         {/* Titre & Description EN DESSOUS de la carte image */}
         <div className="text-center max-w-4xl mx-auto mb-20">
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold uppercase tracking-tight text-white mb-6 font-integral">
-            NOTRE OFFRE DE SERVICES <br />
-            <span className="title-gradient">EN INTELLIGENCE ARTIFICIELLE.</span>
+            CE QUE JE PEUX <br />
+            <span className="title-gradient">CONSTRUIRE POUR VOUS.</span>
           </h1>
           <p className="text-[var(--text-secondary)] text-base sm:text-lg md:text-xl font-normal leading-relaxed transition-colors duration-500">
-            De l'audit de faisabilité au déploiement de modèles souverains en production, nous concevons des briques logicielles intelligentes taillées pour vos enjeux métiers.
+            Du prototype en 14 jours au produit déployé en production — je gère toute la stack : frontend, backend, machine learning, DevOps. Un seul interlocuteur, zéro intermédiaire.
           </p>
         </div>
 
@@ -161,10 +161,10 @@ export default function ServicesPage() {
         <div className="mb-24">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <span className="text-xs font-integral font-normal uppercase tracking-widest text-[var(--accent-secondary)] block mb-2">
-              Modalités d'Intervention
+              On travaille ensemble comment ?
             </span>
             <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tight text-white font-integral">
-              Comment Nous Collaborons
+              DEUX FAÇONS DE DÉMARRER
             </h2>
           </div>
 

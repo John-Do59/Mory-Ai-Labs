@@ -6,24 +6,24 @@ import { motion } from "framer-motion";
 const expertises = [
   {
     icon: Brain,
-    tag: "AGENTIQUE & AUTOMATISATION",
-    title: "Agents IA Autonomes & Copilotes",
+    tag: "AUTOMATISATION MÉTIER",
+    title: "Agents IA & Assistants Sur-Mesure",
     description:
-      "Conception d'architectures multi-agents capables d'exécuter des workflows complexes, d'interagir avec vos APIs et d'orchestrer vos processus métier sans intervention humaine.",
+      "Vos équipes passent des heures sur des tâches répétitives ? Je construis des agents IA qui les exécutent seuls : génération de devis, tri de documents, réponses aux clients. Vous gardez le contrôle, l'IA fait le travail.",
   },
   {
     icon: Database,
-    tag: "DATA & SOUVERAINETÉ",
-    title: "Pipelines RAG & Bases Vectorielles",
+    tag: "VOS DONNÉES, VOS RÉPONSES",
+    title: "Applications IA Connectées à Vos Données",
     description:
-      "Indexation intelligente et sémantique de vos patrimoines documentaires avec pgvector et Qdrant pour des réponses contextuelles fiables à 100% et sans hallucination.",
+      "Vos manuels, contrats et bases de données contiennent des réponses que vos équipes cherchent manuellement ? Je construis des apps qui interrogent vos documents et renvoient des réponses sourcées et fiables — sans que vos données quittent votre serveur.",
   },
   {
     icon: Cpu,
-    tag: "MACHINE LEARNING",
-    title: "Modélisation Prédictive & Fine-Tuning",
+    tag: "PRÉDICTION & VISION",
+    title: "Machine Learning & Analyse d'Images",
     description:
-      "Entraînement et spécialisation de modèles ouverts (Mistral, LLaMA) et algorithmes de Computer Vision adaptés à vos contraintes sectorielles et réglementaires.",
+      "Prédire les pannes, scorer les risques, analyser des photos de terrain automatiquement ? J'entraîne des modèles spécialisés sur vos données historiques — des outils de prédiction taillés pour votre métier, pas des solutions génériques.",
   },
 ];
 
@@ -33,10 +33,10 @@ export default function ExpertiseSection() {
       <div className="max-w-screen-2xl mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-20">
           <span className="text-xs font-integral font-normal uppercase tracking-widest text-[var(--accent-primary)] block mb-3">
-            Pôles d'Excellence
+            Ce que je construis
           </span>
           <h2 className="text-3xl sm:text-5xl font-bold uppercase tracking-tight text-white font-integral">
-            NOTRE EXPERTISE TECHNIQUE
+            MES DOMAINES D'INTERVENTION
           </h2>
         </div>
 

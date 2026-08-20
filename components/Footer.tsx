@@ -11,7 +11,7 @@ export default function Footer() {
             MORY AI LABS
           </Link>
           <p className="text-xs text-[var(--text-secondary)]/70 max-w-sm text-center md:text-left">
-            Studio d'ingénierie &amp; Venture Builder en Intelligence Artificielle générative, modélisation prédictive et agents autonomes souverains.
+            AI Engineer indépendant — je conçois et déploie des applications IA sur-mesure, du pipeline de données au produit en production.
           </p>
         </div>
 

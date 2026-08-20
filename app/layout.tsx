@@ -30,9 +30,9 @@ const integralCF = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Mory AI Labs | Studio d'Ingénierie IA & Agents Autonomes",
+  title: "Mory AI Labs | AI Engineer Indépendant — Applications IA Sur-Mesure",
   description:
-    "Laboratoire d'ingénierie et de développement de solutions d'intelligence artificielle sur-mesure, agents autonomes et modèles prédictifs haute performance.",
+    "Amaury Rammanat, AI Engineer indépendant basé à Lille. Je conçois et déploie des applications IA sur-mesure : agents autonomes, SaaS métier, machine learning. Prototype livré en 14 jours.",
 };
 
 export default function RootLayout({

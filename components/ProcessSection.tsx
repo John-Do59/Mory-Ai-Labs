@@ -7,23 +7,23 @@ const steps = [
   {
     num: "01",
     phase: "PHASE 1 · 2 SEMAINES",
-    title: "Cadrage & PoC Validé",
+    title: "On échange, je prototype",
     description:
-      "Audit de faisabilité technique sur vos données réelles, benchmark d'architectures et livraison d'un prototype fonctionnel chiffré.",
+      "Vous m'expliquez votre problème métier. En 14 jours, je vous livre un prototype fonctionnel connecté à vos données réelles — pour que vous puissiez juger sur pièce.",
   },
   {
     num: "02",
     phase: "PHASE 2 · 4-8 SEMAINES",
-    title: "Ingénierie & Fine-Tuning",
+    title: "Je construis le produit",
     description:
-      "Entraînement des modèles spécialisés, intégration des pipelines RAG, développement des agents et tests de robustesse sous charge.",
+      "Architecture, développement, entraînement des modèles, tests de charge — je gère toute la stack pour livrer une application robuste et prête pour la production.",
   },
   {
     num: "03",
     phase: "PHASE 3 · DÉPLOIEMENT",
-    title: "Mise en Prod & Monitoring",
+    title: "Déploiement & Transfert",
     description:
-      "Intégration dans votre infrastructure cloud souveraine, observabilité de latence / dérive et transfert de compétences à vos équipes.",
+      "Je déploie sur votre cloud, je configure le monitoring, et je vous forme. Vous repartez avec le code source, la documentation, et un produit qui tourne.",
   },
 ];
 
@@ -40,10 +40,10 @@ export default function ProcessSection() {
 
         <div className="text-center max-w-3xl mx-auto mb-20">
           <span className="text-xs font-integral font-normal uppercase tracking-widest text-[var(--accent-primary)] block mb-3">
-            Méthodologie Éprouvée
+            Comment je travaille
           </span>
           <h2 className="text-3xl sm:text-5xl font-bold uppercase tracking-tight text-white font-integral">
-            NOTRE ROADMAP D'EXÉCUTION
+            DE L'IDÉE AU PRODUIT DÉPLOYÉ
           </h2>
         </div>
 
