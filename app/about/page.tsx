@@ -126,7 +126,7 @@ export default function AboutPage() {
                 Amaury Rammanat
               </h2>
               <p className="text-[var(--text-secondary)] text-base md:text-lg leading-relaxed mb-6 font-sans transition-colors duration-500">
-                Gestionnaire de stock, magasinier polyvalent, paysagiste — j'ai traversé la grande distribution, le BTP, l'industrie, la logistique, le secteur public et privé. J'ai vu de l'intérieur comment les entreprises perdent du temps faute d'outils adaptés. Ma reconversion en AI Engineer n'est pas un accident : c'est la réponse directe à des problèmes que j'ai vécus moi-même sur le terrain. Aujourd'hui, je construis les applications IA que ces métiers n'ont jamais eues.
+                Avant de concevoir des systèmes d'IA, j'ai passé des années sur le terrain — en logistique, en industrie et dans le paysage. Cette réalité opérationnelle, je la connais par cœur : les heures perdues sur des tâches manuelles, les devis chronophages et l'absence d'outils numériques adaptés. Devenu AI Engineer, je construis des applications et des agents pensés pour le monde réel : simples à prendre en main, connectés à vos données et immédiatement rentables.
               </p>
               <div className="flex flex-wrap gap-4 text-xs font-mono text-white">
                 <span className="px-3.5 py-1.5 rounded-full neomorph-pill">
