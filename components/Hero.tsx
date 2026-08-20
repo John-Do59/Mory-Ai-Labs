@@ -80,7 +80,7 @@ export default function Hero() {
               
               {/* L'image circulaire cadrée au millimètre */}
               <Image
-                src="/images/Mory-AI-Labs11.jpg"
+                src="/images/Mory-AI-Labs11.webp"
                 alt="Mory AI Labs — AI Engineer Indépendant"
                 fill
                 sizes="(max-width: 768px) 380px, 500px"

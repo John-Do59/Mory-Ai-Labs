@@ -52,7 +52,7 @@ export default function ContactPage() {
       <div className="max-w-screen-xl mx-auto w-full">
         {/* CARTE HORIZONTALE Mory-AI-Labs16 AVEC PARALLAX & NÉOMORPHISME */}
         <ParallaxBannerCard
-          src="/images/Mory-AI-Labs16.jpg"
+          src="/images/Mory-AI-Labs16.webp"
           alt="Mory AI Labs Échange Stratégique IA & Cadrage"
           className="mb-14"
           priority

@@ -61,7 +61,7 @@ export default function AboutPage() {
         
         {/* SECTION 1 : GRANDE CARTE HORIZONTALE Mory-AI-Labs13 (1344×768) */}
         <ParallaxBannerCard
-          src="/images/Mory-AI-Labs13.jpg"
+          src="/images/Mory-AI-Labs13.webp"
           alt="Mory AI Labs Studio"
           className="mb-16"
           priority
@@ -88,7 +88,7 @@ export default function AboutPage() {
 
         {/* SECTION 3 : GRANDE CARTE HORIZONTALE AVEC L'IMAGE Mory-AI-Labs15 (1344×768) */}
         <ParallaxBannerCard
-          src="/images/Mory-AI-Labs15.jpg"
+          src="/images/Mory-AI-Labs15.webp"
           alt="Mory AI Labs Laboratoire & Recherche IA"
           className="mb-24"
           overlayBottom={
@@ -144,7 +144,7 @@ export default function AboutPage() {
             <div className="lg:col-span-4 flex flex-col items-center lg:items-end justify-center">
               <div className="relative w-48 h-48 sm:w-56 sm:h-56 rounded-full overflow-hidden shadow-[0_0_50px_var(--accent-glow),0_0_80px_var(--accent-secondary)] ring-2 ring-[var(--accent-primary)]/60 hover:ring-[var(--accent-primary)] transition-all duration-500 group-hover:scale-105">
                 <Image
-                  src="/images/Mory-AI-Labs12.png"
+                  src="/images/Mory-AI-Labs12.webp"
                   alt="Mory AI Labs"
                   fill
                   sizes="224px"

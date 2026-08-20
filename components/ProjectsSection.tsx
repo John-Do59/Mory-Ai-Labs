@@ -39,11 +39,12 @@ export default function ProjectsSection() {
             <div className="lg:col-span-6 order-1">
               <div className="relative w-full h-[320px] sm:h-[420px] md:h-[460px] rounded-2xl sm:rounded-3xl overflow-hidden bg-[var(--emblem-bg)] border border-[#FFA18A]/35 shadow-[0_15px_40px_rgba(0,0,0,0.85),0_0_25px_rgba(255,161,138,0.22)] transition-all duration-300 group/img group-hover:border-[#FFA18A]/60 group-hover:shadow-[0_20px_50px_rgba(0,0,0,0.95),0_0_35px_rgba(255,161,138,0.4)]">
                 <Image
-                  src="/images/ArboResilience.png"
-                  alt="ArboResilience IA"
+                  src="/images/ArboResilience.webp"
+                  alt="ArboResilience — Diagnostic Arboré IA"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
-                  className="object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105 select-none"
+                  className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105 select-none"
+                  priority
                 />
                 {/* Overlay Dégradé Subtil */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-black/20 pointer-events-none" />
@@ -162,7 +163,7 @@ export default function ProjectsSection() {
             <div className="lg:col-span-6 order-1 lg:order-2">
               <div className="relative w-full h-[320px] sm:h-[420px] md:h-[460px] rounded-2xl sm:rounded-3xl overflow-hidden bg-[var(--emblem-bg)] border border-[#FFA18A]/35 shadow-[0_15px_40px_rgba(0,0,0,0.85),0_0_25px_rgba(255,161,138,0.22)] transition-all duration-500 group/img group-hover:border-[#FFA18A]/60 group-hover:shadow-[0_20px_50px_rgba(0,0,0,0.95),0_0_35px_rgba(255,161,138,0.4)]">
                 <Image
-                  src="/images/greenopq-ai10.png"
+                  src="/images/greenopq-ai10.webp"
                   alt="GreenOps AI Platform Paysagiste"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"

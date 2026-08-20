@@ -33,7 +33,7 @@ export default function ProcessSection() {
       <div className="max-w-screen-2xl mx-auto">
         {/* CARTE HORIZONTALE Mory-AI-Labs16 AVEC PARALLAX & NÉOMORPHISME AU CENTRE */}
         <ParallaxBannerCard
-          src="/images/Mory-AI-Labs16.png"
+          src="/images/Mory-AI-Labs16.webp"
           alt="Mory AI Labs Roadmap d'Exécution"
           className="mb-16"
         />

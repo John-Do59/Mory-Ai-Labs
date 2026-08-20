@@ -92,7 +92,7 @@ export default function ServicesPage() {
       <div className="max-w-screen-2xl mx-auto">
         {/* CARTE HORIZONTALE Mory-AI-Labs14 AVEC PARALLAX & NEOMORPHISME */}
         <ParallaxBannerCard
-          src="/images/Mory-AI-Labs14.jpg"
+          src="/images/Mory-AI-Labs14.webp"
           alt="Mory AI Labs Ingénierie & Solutions"
           className="mb-10"
           priority

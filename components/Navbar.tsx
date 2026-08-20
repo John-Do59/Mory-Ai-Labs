@@ -62,7 +62,7 @@ export default function Navbar() {
           {/* Logo Mory AI Labs 12 */}
           <Link href="/" className="flex-shrink-0 relative w-8 h-8 sm:w-10 sm:h-10 rounded-full overflow-hidden ring-2 ring-[var(--accent-primary)]/40 hover:ring-[var(--accent-primary)] transition-all duration-300 shadow-[0_0_14px_var(--accent-glow)]">
             <Image
-              src="/images/Mory-AI-Labs12.png"
+              src="/images/Mory-AI-Labs12.webp"
               alt="Mory AI Labs Logo"
               fill
               sizes="40px"
@@ -106,7 +106,7 @@ export default function Navbar() {
         >
           <div className="relative w-7 h-7 sm:w-9 sm:h-9 rounded-full overflow-hidden ring-1 ring-[var(--accent-primary)]/50 group-hover:ring-[var(--accent-primary)] transition-all duration-300 shadow-[0_0_12px_var(--accent-glow)] flex-shrink-0">
             <Image
-              src="/images/Mory-AI-Labs12.png"
+              src="/images/Mory-AI-Labs12.webp"
               alt="Mory AI Labs"
               fill
               sizes="36px"
