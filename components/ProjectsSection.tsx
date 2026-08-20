@@ -66,7 +66,7 @@ export default function ProjectsSection() {
                   ArboResilience · Prédiction Climatique &amp; Viabilité des Arbres (2026-2100)
                 </h3>
                 <p className="text-[var(--text-secondary)] text-sm sm:text-base leading-relaxed mb-6 font-sans transition-colors duration-500">
-                  Quand tu as entretenu des espaces verts pendant des années, tu sais que planter la mauvaise essence au mauvais endroit coûte cher. J'ai conçu ArboResilience pour permettre aux collectivités et gestionnaires d'anticiper la survie de leurs plantations face au changement climatique.
+                  Quand tu as entretenu des espaces verts pendant des années, tu sais que planter la mauvaise essence au mauvais endroit coûte cher. J'ai conçu ArboResilience pour permettre aux collectivités, arboriculteurs et gestionnaires d'anticiper la survie de leurs espèces et adapter leurs plantations au changement climatique.
                 </p>
 
                 {/* Features Pill List */}
