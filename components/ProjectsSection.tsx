@@ -94,10 +94,10 @@ export default function ProjectsSection() {
               <div className="pt-6 border-t border-[var(--card-border)] flex flex-wrap items-center justify-between gap-4">
                 <div>
                   <span className="text-xs font-integral font-normal uppercase tracking-widest text-[var(--accent-secondary)] block mb-1">
-                    Impact &amp; Décision d'Avenir
+                    Politiques de Plantation &amp; Budgets
                   </span>
                   <span className="text-xl sm:text-2xl font-bold text-white font-integral">
-                    0 erreur de plantation jusqu'en 2100
+                    Sécuriser l'investissement sur chaque arbre planté (500€ à 2 000€ / sujet)
                   </span>
                 </div>
                 <Link
