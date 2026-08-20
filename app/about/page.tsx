@@ -126,7 +126,7 @@ export default function AboutPage() {
                 Amaury Rammanat
               </h2>
               <p className="text-[var(--text-secondary)] text-base md:text-lg leading-relaxed mb-6 font-sans transition-colors duration-500">
-                Avant de concevoir des systèmes d'IA, j'ai passé des années sur le terrain — en logistique, en industrie et dans le paysage. Cette réalité opérationnelle, je la connais par cœur : les heures perdues sur des tâches manuelles, les devis chronophages et l'absence d'outils numériques adaptés. Devenu AI Engineer, je construis des applications et des agents pensés pour le monde réel : simples à prendre en main, connectés à vos données et immédiatement rentables.
+                Avant de concevoir des systèmes d'IA, j'ai passé des années sur le terrain — en logistique, en industrie et dans le paysage. Cette réalité opérationnelle, je la connais par cœur : les heures perdues sur des tâches manuelles, les devis chronophages et le manque d'outils adaptés. J'ai très vite compris que l'IA était le tournant technologique majeur à ne pas manquer pour transformer ces métiers. Devenu AI Engineer, je construis aujourd'hui des applications et des agents pensés pour le monde réel : simples à prendre en main, connectés à vos données et immédiatement rentables.
               </p>
               <div className="flex flex-wrap gap-4 text-xs font-mono text-white">
                 <span className="px-3.5 py-1.5 rounded-full neomorph-pill">
