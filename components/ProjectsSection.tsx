@@ -63,25 +63,25 @@ export default function ProjectsSection() {
                   PRODUIT PROPRE
                 </span>
                 <h3 className="text-2xl sm:text-4xl font-bold uppercase tracking-tight text-white mb-4 font-integral">
-                  ArboResilience · Diagnostic &amp; Résilience du Patrimoine Arboré
+                  ArboResilience · Prédiction Climatique &amp; Viabilité des Arbres (2026-2100)
                 </h3>
                 <p className="text-[var(--text-secondary)] text-sm sm:text-base leading-relaxed mb-6 font-sans transition-colors duration-500">
-                  Quand tu as entretenu des espaces verts pendant des années, tu sais ce qui fragilise un arbre. J'ai construit ArboResilience pour donner aux collectivités les outils de diagnostic et de prédiction que j'aurais aimé avoir sur le terrain.
+                  Quand tu as entretenu des espaces verts pendant des années, tu sais que planter la mauvaise essence au mauvais endroit coûte cher. J'ai conçu ArboResilience pour permettre aux collectivités et gestionnaires d'anticiper la survie de leurs plantations face au changement climatique.
                 </p>
 
                 {/* Features Pill List */}
                 <div className="space-y-3 mb-8">
                   <div className="flex items-center gap-3 text-sm text-white">
                     <CheckCircle2 className="w-5 h-5 text-[var(--accent-primary)] shrink-0" />
-                    <span>Détection automatisée des défauts structurels par Computer Vision</span>
+                    <span>Sélection par adresse précise ou commune partout en France</span>
                   </div>
                   <div className="flex items-center gap-3 text-sm text-white">
                     <CheckCircle2 className="w-5 h-5 text-[var(--accent-primary)] shrink-0" />
-                    <span>Scoring prédictif de risque d'arrachement selon les vents et essences</span>
+                    <span>Prédiction de viabilité de chaque essence d'arbre de 2026 à 2100</span>
                   </div>
                   <div className="flex items-center gap-3 text-sm text-white">
                     <CheckCircle2 className="w-5 h-5 text-[var(--accent-primary)] shrink-0" />
-                    <span>Tableau de bord cartographique SIG et alertes en temps réel</span>
+                    <span>Modélisation croisant données météo historiques et scénarios climatiques futurs</span>
                   </div>
                 </div>
               </div>
@@ -90,10 +90,10 @@ export default function ProjectsSection() {
               <div className="pt-6 border-t border-[var(--card-border)] flex flex-wrap items-center justify-between gap-4">
                 <div>
                   <span className="text-xs font-integral font-normal uppercase tracking-widest text-[var(--accent-secondary)] block mb-1">
-                    ROI &amp; Avantage Compétitif
+                    Impact &amp; Décision d'Avenir
                   </span>
                   <span className="text-xl sm:text-2xl font-bold text-white font-integral">
-                    -40% sur les coûts d'intervention
+                    0 erreur de plantation jusqu'en 2100
                   </span>
                 </div>
                 <Link
